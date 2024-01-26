@@ -1,0 +1,49 @@
+.bg-image {
+  position: relative;
+  background-image: url("Assets/image 25.png");
+  opacity: 90%;
+  padding-bottom: 5%;
+}
+
+.logo {
+}
+
+.trans {
+  width: 100%;
+
+  margin: 3rem;
+}
+
+p {
+  padding-top: 2rem;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 35px;
+  font-weight: 600;
+  letter-spacing: 0em;
+  color: #022c49;
+}
+
+a {
+  opacity: none !important;
+}
+.iqb{
+	display: flex;
+	justify-content: center;
+	align-items: baseline;
+
+}
+
+.par p{
+	font-size: 18px !important;
+	font-weight: 500;
+}
+
+.par{
+	width: 90%;
+margin: 0 auto;
+}
+
+.par p span{
+font-weight: 650;
+}

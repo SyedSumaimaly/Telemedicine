@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="tailwind.config.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+  <title>Document</title>
+</head>
+
+<body>
+  <!--       NAVIGATION BAR      -->
+
+  <nav class="fixed top-0 z-50 w-full bg-white border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+    <div class="px-3 py-3 lg:px-5 lg:pl-3">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center justify-start rtl:justify-end">
+          <button data-drawer-target="logo-sidebar" data-drawer-toggle="logo-sidebar" aria-controls="logo-sidebar"
+            type="button"
+            class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+            <span class="sr-only">Open sidebar</span>
+            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path clip-rule="evenodd" fill-rule="evenodd"
+                d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z">
+              </path>
+            </svg>
+          </button>
+          <a href="https://flowbite.com" class="flex ms-2 md:me-24">
+            <!-- <img
+                src="https://flowbite.com/docs/images/logo.svg"
+                class="h-8 me-3"
+                alt="FlowBite Logo"
+              />
+              <span
+                class="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white"
+                >Flowbite</span
+              > -->
+            <h2 class="font-bold text-lg">VIDEO MEDICO</h2>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- navigation end -->
+
+  <!-- left side bar -->
+
+  <aside id="logo-sidebar"
+    class="fixed top-0 left-0 z-40 w-52 h-screen pt-20 transition-transform -translate-x-full bg-[#0574B2] border-r border-gray-200 sm:translate-x-0 dark:bg-gray-800 dark:border-gray-700"
+    aria-label="Sidebar">
+    <div class="h-full px-3 pb-4 overflow-y-auto bg-[#0574B2] dark:bg-gray-800">
+      <ul class="space-y-2 font-medium">
+        <li>
+          <a href="#"
+            class="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-[#015b8d] dark:hover:bg-gray-700 group">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+              <path
+                d="M10.2834 0.479612C10.2089 0.402444 10.1099 0.359375 10.0069 0.359375C9.90385 0.359375 9.80481 0.402444 9.73037 0.479612L0.52539 10.0089C0.486298 10.0494 0.455197 10.0981 0.43397 10.152C0.412742 10.2059 0.401829 10.264 0.401891 10.3226L0.400391 19.2661C0.400391 19.726 0.568961 20.167 0.869019 20.4922C1.16908 20.8173 1.57604 21 2.00039 21H6.80537C7.01755 21 7.22103 20.9087 7.37106 20.7461C7.52109 20.5835 7.60537 20.363 7.60537 20.1331V12.7641C7.60537 12.6491 7.64752 12.5389 7.72253 12.4576C7.79754 12.3763 7.89929 12.3306 8.00537 12.3306H12.0054C12.1114 12.3306 12.2132 12.3763 12.2882 12.4576C12.3632 12.5389 12.4054 12.6491 12.4054 12.7641V20.1331C12.4054 20.363 12.4896 20.5835 12.6397 20.7461C12.7897 20.9087 12.9932 21 13.2054 21H18.0083C18.4327 21 18.8397 20.8173 19.1397 20.4922C19.4398 20.167 19.6083 19.726 19.6083 19.2661V10.3226C19.6084 10.264 19.5975 10.2059 19.5763 10.152C19.555 10.0981 19.5239 10.0494 19.4848 10.0089L10.2834 0.479612Z"
+                fill="white" />
+            </svg>
+            <span class="ms-3">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="#"
+            class="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-[#015b8d] dark:hover:bg-gray-700 group">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path opacity="0.3"
+                d="M17.4121 2.62964C15.5641 2.62964 13.7641 3.92446 13.1401 5.71629H10.8961C10.2601 3.92446 8.46011 2.62964 6.61211 2.62964C4.21211 2.62964 2.41211 4.59149 2.41211 7.2073C2.41211 10.9871 6.18011 14.7147 11.8921 20.3517L12.0121 20.4825L12.1321 20.3517C17.8441 14.7147 21.6121 10.9871 21.6121 7.2073C21.6121 4.59149 19.8121 2.62964 17.4121 2.62964Z"
+                fill="#0189CD" />
+              <path
+                d="M17.4 0C15.312 0 13.308 1.0594 12 2.73352C10.692 1.0594 8.688 0 6.6 0C2.904 0 0 3.16512 0 7.19346C0 12.1373 4.08 16.1657 10.26 22.2866L12 24L13.74 22.2736C19.92 16.1657 24 12.1373 24 7.19346C24 3.16512 21.096 0 17.4 0ZM12.12 20.3379L12 20.4687L11.88 20.3379C6.168 14.7008 2.4 10.9733 2.4 7.19346C2.4 4.57766 4.2 2.6158 6.6 2.6158C8.448 2.6158 10.248 3.91063 10.884 5.70245H13.128C13.752 3.91063 15.552 2.6158 17.4 2.6158C19.8 2.6158 21.6 4.57766 21.6 7.19346C21.6 10.9733 17.832 14.7008 12.12 20.3379Z"
+                fill="white" />
+            </svg>
+            <span class="flex-1 ms-3 whitespace-nowrap">Fav. Doctors</span>
+            <!-- <span
+                class="inline-flex items-center justify-center px-2 ms-3 text-sm font-medium text-gray-800 bg-gray-100 rounded-full dark:bg-gray-700 dark:text-gray-300"
+                >Pro</span
+              > -->
+          </a>
+        </li>
+        <li>
+          <a href="#"
+            class="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-[#015b8d] dark:hover:bg-gray-700 group">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M12 2.4C10.3209 2.39969 8.67111 2.83978 7.21526 3.67635C5.75942 4.51292 4.54845 5.7167 3.70323 7.16754C2.85801 8.61838 2.4081 10.2655 2.39841 11.9446C2.38872 13.6237 2.81959 15.2759 3.64801 16.7364C4.20794 16.0087 4.92772 15.4195 5.75171 15.0144C6.5757 14.6092 7.48181 14.399 8.4 14.4H15.6C16.5182 14.399 17.4243 14.6092 18.2483 15.0144C19.0723 15.4195 19.7921 16.0087 20.352 16.7364C21.1804 15.2759 21.6113 13.6237 21.6016 11.9446C21.5919 10.2655 21.142 8.61838 20.2968 7.16754C19.4516 5.7167 18.2406 4.51292 16.7847 3.67635C15.3289 2.83978 13.6791 2.39969 12 2.4ZM21.5316 19.2912C23.136 17.1995 24.0039 14.6361 24 12C24 5.3724 18.6276 0 12 0C5.37241 0 1.35039e-05 5.3724 1.35039e-05 12C-0.00394822 14.6361 0.863899 17.1996 2.46841 19.2912L2.46241 19.3128L2.88841 19.8084C4.01387 21.1242 5.41127 22.1803 6.98428 22.9039C8.5573 23.6276 10.2685 24.0015 12 24C14.4328 24.0045 16.8089 23.2655 18.81 21.882C19.6631 21.2926 20.4367 20.5956 21.1116 19.8084L21.5376 19.3128L21.5316 19.2912ZM12 4.8C11.0452 4.8 10.1295 5.17928 9.45442 5.85441C8.77929 6.52954 8.4 7.44521 8.4 8.39999C8.4 9.35477 8.77929 10.2704 9.45442 10.9456C10.1295 11.6207 11.0452 12 12 12C12.9548 12 13.8705 11.6207 14.5456 10.9456C15.2207 10.2704 15.6 9.35477 15.6 8.39999C15.6 7.44521 15.2207 6.52954 14.5456 5.85441C13.8705 5.17928 12.9548 4.8 12 4.8Z"
+                fill="white" />
+            </svg>
+            <span class="flex-1 ms-3 whitespace-nowrap">Profile</span>
+            <!-- <span
+                class="inline-flex items-center justify-center w-3 h-3 p-3 ms-3 text-sm font-medium text-blue-800 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300"
+                >3</span
+              > -->
+          </a>
+        </li>
+        <li>
+          <a href="#"
+            class="flex items-center p-2 text-[#022C49] bg-white  rounded-lg dark:text-white dark:hover:bg-gray-700 group">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+              <path
+                d="M14.3077 10.6154C16.6868 10.6154 18.6154 8.68677 18.6154 6.30769C18.6154 3.92862 16.6868 2 14.3077 2C11.9286 2 10 3.92862 10 6.30769C10 8.68677 11.9286 10.6154 14.3077 10.6154Z"
+                fill="white" stroke="#022C49" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M2 24.7692C2 19.3313 6.95932 14.9231 13.0769 14.9231" stroke="#022C49" stroke-width="3"
+                stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M20.4613 26C23.5201 26 25.9998 23.5204 25.9998 20.4616C25.9998 17.4027 23.5201 14.9231 20.4613 14.9231C17.4025 14.9231 14.9229 17.4027 14.9229 20.4616C14.9229 23.5204 17.4025 26 20.4613 26Z"
+                fill="white" stroke="#022C49" stroke-width="3" />
+              <path d="M19.8457 18.6155V21.077H22.3072" stroke="#022C49" stroke-width="3" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+            <span class="flex-1 ms-3 whitespace-nowrap">My Booking</span>
+          </a>
+        </li>
+        <li>
+          <a href="#"
+            class="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-[#015b8d] dark:hover:bg-gray-700 group">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" viewBox="0 0 24 20" fill="none">
+              <path
+                d="M0 0V15H12.3826C12.1276 14.1933 11.998 13.3493 11.9986 12.5H4.79945C4.79945 11.837 4.54663 11.2011 4.09659 10.7322C3.64655 10.2634 3.03617 10 2.39973 10V5C3.73158 5 4.79945 3.8875 4.79945 2.5H16.7981C16.7981 3.16304 17.0509 3.79893 17.5009 4.26777C17.951 4.73661 18.5614 5 19.1978 5V5.075C20.0017 5.075 20.8056 5.225 21.5975 5.5V0H0ZM10.7988 3.75C8.759 3.7875 7.19918 5.375 7.19918 7.5C7.19918 9.625 8.759 11.175 10.7988 11.25C11.2547 11.25 11.7227 11.15 12.1666 10.9625C12.4906 9.5875 13.0305 8.2875 14.3624 7.0125C14.2184 5.35 12.7066 3.7125 10.7988 3.75ZM19.1978 6.25L21.8975 9.0625L19.1978 11.875V10C16.9781 10 15.5262 12.45 16.5101 14.525L15.2023 15.8875C13.0905 12.5625 15.3702 8.125 19.1978 8.125V6.25ZM19.1978 20L16.4981 17.1875L19.1978 14.375V16.25C21.4176 16.25 22.8694 13.8 21.8855 11.725L23.1934 10.3625C25.3051 13.6875 23.0254 18.125 19.1978 18.125V20Z"
+                fill="white" />
+            </svg>
+            </svg>
+            <span class="flex-1 ms-3 whitespace-nowrap">Payments</span>
+          </a>
+        </li>
+        <li>
+          <a href="#"
+            class="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-[#015b8d] dark:hover:bg-gray-700 group">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M24 5.62522C24 4.75599 23.3733 3.96378 22.4133 3.61169L13.08 0.189799C12.3867 -0.0632665 11.6 -0.0632665 10.92 0.189799L1.58667 3.61169C0.626667 3.96378 0 4.75599 0 5.62522V10.7966C0 16.9032 5.12 22.6136 12 24C15.0667 23.3838 17.7733 21.9095 19.84 19.9179L15.68 16.485C14.3982 17.1841 12.863 17.4959 11.3344 17.3676C9.80591 17.2393 8.37819 16.6787 7.29333 15.7809C6.04451 14.7488 5.34308 13.3499 5.34308 11.8913C5.34308 10.4328 6.04451 9.03393 7.29333 8.00183C8.54404 6.97128 10.2392 6.39245 12.0067 6.39245C13.7741 6.39245 15.4693 6.97128 16.72 8.00183C17.8053 8.89837 18.4828 10.0763 18.6382 11.337C18.7936 12.5977 18.4176 13.8641 17.5733 14.9226L21.44 18.1135C23.0533 15.9569 24 13.4152 24 10.7966V5.62522Z"
+                fill="white" />
+              <path
+                d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z"
+                fill="white" />
+            </svg>
+            <span class="flex-1 ms-3 whitespace-nowrap">Read T & C</span>
+          </a>
+        </li>
+        <li>
+          <a href="#"
+            class="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-[#015b8d] dark:hover:bg-gray-700 group">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M12.711 13.2001L9.95034 15.948C9.83784 16.0596 9.74854 16.1923 9.6876 16.3385C9.62667 16.4848 9.59529 16.6416 9.59529 16.8C9.59529 16.9585 9.62667 17.1153 9.6876 17.2615C9.74854 17.4078 9.83784 17.5405 9.95034 17.652C10.0619 17.7645 10.1947 17.8538 10.3409 17.9147C10.4872 17.9756 10.6441 18.007 10.8025 18.007C10.961 18.007 11.1179 17.9756 11.2641 17.9147C11.4104 17.8538 11.5432 17.7645 11.6547 17.652L16.4559 12.8521C16.5651 12.7379 16.6508 12.6034 16.7079 12.4561C16.828 12.1639 16.828 11.8362 16.7079 11.5441C16.6508 11.3968 16.5651 11.2622 16.4559 11.1481L11.6547 6.34809C11.5428 6.2362 11.41 6.14745 11.2637 6.0869C11.1175 6.02635 10.9608 5.99518 10.8025 5.99518C10.6443 5.99518 10.4875 6.02635 10.3413 6.0869C10.1951 6.14745 10.0622 6.2362 9.95034 6.34809C9.83842 6.45997 9.74965 6.5928 9.68908 6.73899C9.62852 6.88517 9.59734 7.04185 9.59734 7.20008C9.59734 7.35831 9.62852 7.515 9.68908 7.66118C9.74965 7.80737 9.83842 7.94019 9.95034 8.05208L12.711 10.8001H1.20028C0.881947 10.8001 0.576651 10.9265 0.351554 11.1515C0.126458 11.3766 0 11.6818 0 12.0001C0 12.3183 0.126458 12.6235 0.351554 12.8486C0.576651 13.0736 0.881947 13.2001 1.20028 13.2001H12.711ZM12.0028 0.000119632C9.7596 -0.00989286 7.55847 0.608772 5.64909 1.78594C3.73971 2.96311 2.1985 4.65167 1.20028 6.66009C1.05703 6.94652 1.03346 7.27811 1.13475 7.58192C1.23605 7.88573 1.45391 8.13686 1.74041 8.28008C2.02691 8.42329 2.35858 8.44686 2.66246 8.34559C2.96634 8.24432 3.21754 8.02651 3.36079 7.74008C4.1196 6.20807 5.27384 4.90644 6.70423 3.96968C8.13463 3.03293 9.78928 2.49505 11.4972 2.41162C13.2051 2.32819 14.9044 2.70224 16.4193 3.49511C17.9342 4.28799 19.2099 5.47093 20.1145 6.92168C21.019 8.37243 21.5197 10.0384 21.5647 11.7473C21.6098 13.4563 21.1975 15.1463 20.3706 16.6426C19.5437 18.139 18.3321 19.3874 16.861 20.2589C15.3899 21.1304 13.7128 21.5934 12.0028 21.6C10.2131 21.6078 8.45737 21.1109 6.93726 20.1663C5.41715 19.2218 4.19421 17.8679 3.4088 16.26C3.26555 15.9736 3.01435 15.7558 2.71047 15.6545C2.40659 15.5533 2.07492 15.5768 1.78842 15.72C1.50192 15.8633 1.28406 16.1144 1.18276 16.4182C1.08147 16.722 1.10504 17.0536 1.24829 17.34C2.19991 19.2546 3.64588 20.8803 5.43664 22.0489C7.2274 23.2174 9.29792 23.8865 11.434 23.9868C13.5701 24.0871 15.6943 23.615 17.5867 22.6194C19.4791 21.6238 21.0712 20.1408 22.1981 18.3238C23.325 16.5068 23.9459 14.4218 23.9966 12.2845C24.0473 10.1471 23.5259 8.03503 22.4864 6.16669C21.4468 4.29834 19.9269 2.74159 18.0838 1.65744C16.2406 0.573291 14.1413 0.00112337 12.0028 0.000119632Z"
+                fill="white" />
+            </svg>
+            <span class="flex-1 ms-3 whitespace-nowrap">Sign out</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </aside>
+
+  <!-- left side bar end -->
+
+  <!-- dashboard -->
+  <div class="mt-16 sm:ml-52">
+    <div class="p-4 grid grid-cols-12">
+      <div class="flex gap-5 flex-col md:flex-row w-11/12 col-span-11">
+        <!-- component -->
+        <div class="bg-[#F8F8F8] shadow-lg flex flex-col items-center rounded-lg p-4 w-full md:w-1/2">
+          <span class="w-full ps-5">You have 4 accepted Bookings Available</span>
+          <div
+            class="w-11/12 bg-white p-4 dark:bg-gray-800 dark:border-gray-700">
+            <div class="flex mb-2">
+              <div>
+                <img src="Assets/doctor1.png" width="50px" height="50px" class="rounded-full" alt="">
+              </div>
+              <div class="ms-2 ">
+                <h5 class="text-sm md:text-lg font-bold tracking-tight text-gray-900 dark:text-white">Dr. Isabella Giovanna</h5>
+                <span class="text-gray-500 text-[13px] sm:text-sm">Allergy and immunology</span>
+              </div>
+            </div>
+            <p class="font-normal text-gray-700 dark:text-gray-400 text-[13px] sm:text-sm">Purpose:Acute Allergy, Eczema, rhinitis</p>
+            <p class="font-normal text-gray-700 dark:text-gray-400 text-[13px] sm:text-sm">Date: 20, January 2024,</p>
+            <p class="font-normal text-gray-700 dark:text-gray-400 text-[13px] sm:text-sm">Time: 11:00am-12:00</p>
+            <div class="flex justify-end">
+              <a href="#"
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#022C49] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                Cancel
+              </a>
+            </div>
+          </div>
+          <div
+            class="w-11/12 bg-white max-w-sm p-4 mt-2 dark:bg-gray-800 dark:border-gray-700">
+            <div class="flex mb-2">
+              <div>
+                <img src="Assets/doctor2.png" width="50px" height="50px" class="rounded-full" alt="">
+              </div>
+              <div class="ms-2 ">
+                <h5 class="text-sm md:text-lg font-bold tracking-tight text-gray-900 dark:text-white">Dr. Armani Romeo</h5>
+                <span class="text-gray-500 text-[13px] sm:text-sm">Allergy and immunology</span>
+              </div>
+            </div>
+            <p class="font-normal text-gray-700 dark:text-gray-400 text-[13px] sm:text-sm">Purpose:Acute Allergy, Eczema, rhinitis</p>
+            <p class="font-normal text-gray-700 dark:text-gray-400 text-[13px] sm:text-sm">Date: 20, January 2024,</p>
+            <p class="font-normal text-gray-700 dark:text-gray-400 text-[13px] sm:text-sm">Time: 11:00am-12:00</p>
+            <div class="flex justify-end">
+              <a href="#"
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#022C49] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                Cancel
+              </a>
+            </div>
+          </div>
+          <div
+            class="w-11/12 bg-white max-w-sm p-4 mt-2 dark:bg-gray-800 dark:border-gray-700">
+            <div class="flex mb-2">
+              <div>
+                <img src="Assets/doctor3.png" width="50px" height="50px" class="rounded-full" alt="">
+              </div>
+              <div class="ms-2 ">
+                <h5 class="text-sm md:text-lg font-bold tracking-tight text-gray-900 dark:text-white">Dr. Cecilia Vanlentino</h5>
+                <span class="text-gray-500 text-[13px] sm:text-sm">Allergy and immunology</span>
+              </div>
+            </div>
+            <p class="font-normal text-gray-700 dark:text-gray-400 text-[13px] sm:text-sm">Purpose:Acute Allergy, Eczema, rhinitis</p>
+            <p class="font-normal text-gray-700 dark:text-gray-400 text-[13px] sm:text-sm">Date: 20, January 2024,</p>
+            <p class="font-normal text-gray-700 dark:text-gray-400 text-[13px] sm:text-sm">Time: 11:00am-12:00</p>
+            <div class="flex justify-end">
+              <a href="#"
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#022C49] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                Cancel
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="bg-[#0574B2] shadow-lg flex flex-col items-center rounded-lg p-4 w-full md:w-1/2">
+          <span class="w-full ps-5 text-white">You have 4 accepted Bookings Available</span>
+          <div
+            class="w-11/12 max-w-sm p-4 bg-white dark:bg-gray-800 dark:border-gray-700">
+            <div class="flex mb-2">
+              <div>
+                <img src="Assets/doctor1.png" width="50px" height="50px" class="rounded-full" alt="">
+              </div>
+              <div class="ms-2 ">
+                <h5 class="text-sm md:text-lg font-bold tracking-tight text-gray-900 dark:text-white">Dr. Isabella Giovanna</h5>
+                <span class="text-gray-500 text-[13px] sm:text-sm">Allergy and immunology</span>
+              </div>
+            </div>
+            <p class="font-normal text-gray-700 dark:text-gray-400 text-[13px] sm:text-sm">Purpose:Acute Allergy, Eczema, rhinitis</p>
+            <p class="font-normal text-gray-700 dark:text-gray-400 text-[13px] sm:text-sm">Date: 20, January 2024,</p>
+            <p class="font-normal text-gray-700 dark:text-gray-400 text-[13px] sm:text-sm">Time: 11:00am-12:00</p>
+            <div class="flex justify-end">
+              <a href="#"
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#022C49] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                Cancel
+              </a>
+            </div>
+          </div>
+          <div
+            class="w-11/12 max-w-sm p-4 bg-white mt-2 dark:bg-gray-800 dark:border-gray-700">
+            <div class="flex mb-2">
+              <div>
+                <img src="Assets/doctor2.png" width="50px" height="50px" class="rounded-full" alt="">
+              </div>
+              <div class="ms-2 ">
+                <h5 class="text-sm md:text-lg font-bold tracking-tight text-gray-900 dark:text-white">Dr. Armani Romeo</h5>
+                <span class="text-gray-500 text-[13px] sm:text-sm">Allergy and immunology</span>
+              </div>
+            </div>
+            <p class="font-normal text-gray-700 dark:text-gray-400 text-[13px] sm:text-sm">Purpose:Acute Allergy, Eczema, rhinitis</p>
+            <p class="font-normal text-gray-700 dark:text-gray-400 text-[13px] sm:text-sm">Date: 20, January 2024,</p>
+            <p class="font-normal text-gray-700 dark:text-gray-400 text-[13px] sm:text-sm">Time: 11:00am-12:00</p>
+            <div class="flex justify-end">
+              <a href="#"
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#022C49] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                Cancel
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- right side bar -->
+      <div class="flex flex-col items-center col-span-1">
+        <div>
+          <img src="Assets/doctor4.png" class="rounded-full" width="80px" height="80px" alt="">
+        </div>
+        <div class="bg-[#F8F8F8] h-5/6 w-full rounded-lg shadow-[0_0px_30px_-10px_rgba(0,0,0,0.3)] mt-16 p-5 flex flex-col items-center gap-10">
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+              <path d="M29.3693 20.7127C29.2397 20.5788 29.1125 20.4449 28.9876 20.3156C27.2703 18.5337 26.2313 17.4583 26.2313 12.4138C26.2313 9.80223 25.5031 7.65937 24.0675 6.05223C23.0091 4.86495 21.5782 3.96429 19.6923 3.29866C19.6681 3.28708 19.6464 3.27189 19.6283 3.25379C18.95 1.30513 17.0937 0 15.0002 0C12.9066 0 11.0512 1.30513 10.3728 3.25179C10.3547 3.26921 10.3334 3.28393 10.3096 3.29531C5.90864 4.84955 3.76982 7.83147 3.76982 12.4118C3.76982 17.4583 2.73242 18.5337 1.01355 20.3136C0.888659 20.4429 0.761423 20.5741 0.631845 20.7107C0.297128 21.057 0.085057 21.4783 0.0207303 21.9248C-0.0435964 22.3712 0.0425135 22.8241 0.26887 23.2299C0.750495 24.1004 1.77697 24.6408 2.94864 24.6408H27.0603C28.2265 24.6408 29.246 24.1011 29.7292 23.2346C29.9565 22.8287 30.0434 22.3754 29.9797 21.9285C29.9159 21.4815 29.7041 21.0596 29.3693 20.7127ZM15.0002 30C16.1282 29.9992 17.2349 29.7365 18.2029 29.2399C19.171 28.7432 19.9643 28.031 20.4987 27.1788C20.5239 27.138 20.5363 27.0922 20.5348 27.046C20.5333 26.9999 20.5179 26.9548 20.49 26.9152C20.4622 26.8757 20.423 26.843 20.3761 26.8203C20.3292 26.7976 20.2762 26.7857 20.2223 26.7857H9.7796C9.72568 26.7856 9.67263 26.7974 9.62562 26.82C9.5786 26.8427 9.53923 26.8754 9.51132 26.915C9.48342 26.9545 9.46794 26.9996 9.46639 27.0459C9.46484 27.0921 9.47728 27.1379 9.50249 27.1788C10.0368 28.0309 10.83 28.743 11.7979 29.2397C12.7658 29.7364 13.8723 29.9991 15.0002 30Z" fill="#0189CD"/>
+            </svg>
+          </div>
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+              <g clip-path="url(#clip0_470_635)">
+                <mask id="mask0_470_635" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="30" height="30">
+                  <path d="M15 27.5C16.6418 27.5021 18.2679 27.1798 19.7848 26.5515C21.3016 25.9231 22.6793 25.0012 23.8388 23.8388C25.0012 22.6793 25.9231 21.3016 26.5515 19.7848C27.1798 18.2679 27.5021 16.6418 27.5 15C27.5021 13.3582 27.1797 11.7321 26.5514 10.2153C25.9231 8.69843 25.0012 7.3207 23.8388 6.16126C22.6793 4.99878 21.3016 4.07688 19.7848 3.44856C18.2679 2.82024 16.6418 2.49788 15 2.50001C13.3582 2.49792 11.7321 2.82029 10.2153 3.44861C8.69843 4.07693 7.3207 4.99881 6.16126 6.16126C4.99881 7.3207 4.07693 8.69843 3.44861 10.2153C2.82029 11.7321 2.49792 13.3582 2.50001 15C2.49788 16.6418 2.82024 18.2679 3.44856 19.7848C4.07688 21.3016 4.99878 22.6793 6.16126 23.8388C7.3207 25.0012 8.69843 25.9231 10.2153 26.5514C11.7321 27.1797 13.3582 27.5021 15 27.5Z" fill="white" stroke="white" stroke-width="4" stroke-linejoin="round"/>
+                  <path d="M15 17.8906V15.3906C15.7417 15.3906 16.4667 15.1707 17.0834 14.7586C17.7001 14.3466 18.1807 13.7609 18.4645 13.0757C18.7484 12.3905 18.8226 11.6365 18.6779 10.909C18.5333 10.1816 18.1761 9.51342 17.6517 8.98898C17.1272 8.46453 16.459 8.10738 15.7316 7.96268C15.0042 7.81799 14.2502 7.89225 13.5649 8.17608C12.8797 8.45991 12.294 8.94055 11.882 9.55724C11.4699 10.1739 11.25 10.8989 11.25 11.6406" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M15 23.5156C15.4144 23.5156 15.8118 23.351 16.1049 23.058C16.3979 22.765 16.5625 22.3675 16.5625 21.9531C16.5625 21.5387 16.3979 21.1413 16.1049 20.8483C15.8118 20.5552 15.4144 20.3906 15 20.3906C14.5856 20.3906 14.1882 20.5552 13.8951 20.8483C13.6021 21.1413 13.4375 21.5387 13.4375 21.9531C13.4375 22.3675 13.6021 22.765 13.8951 23.058C14.1882 23.351 14.5856 23.5156 15 23.5156Z" fill="black"/>
+                </mask>
+                <g mask="url(#mask0_470_635)">
+                  <path d="M0 0H30V30H0V0Z" fill="#0189CD"/>
+                </g>
+              </g>
+              <defs>
+                <clipPath id="clip0_470_635">
+                  <rect width="30" height="30" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+              <path d="M29.6 12.7202L26.25 11.7202C26.0184 10.9115 25.6999 10.1302 25.3 9.39015L26.94 6.32015C27.0015 6.20427 27.0241 6.07164 27.0043 5.94193C26.9844 5.81223 26.9233 5.69237 26.83 5.60015L24.44 3.20015C24.3478 3.10682 24.2279 3.04571 24.0982 3.0259C23.9685 3.00608 23.8359 3.02862 23.72 3.09015L20.67 4.72015C19.9226 4.30081 19.1311 3.96544 18.31 3.72015L17.31 0.410153C17.2677 0.288169 17.1878 0.182752 17.0818 0.109075C16.9757 0.0353978 16.8491 -0.00273924 16.72 0.000153169H13.34C13.2101 0.000757742 13.0839 0.0427877 12.9795 0.120126C12.8752 0.197465 12.7983 0.306076 12.76 0.430153L11.76 3.73015C10.932 3.97413 10.1338 4.30953 9.38 4.73015L6.38 3.11015C6.26412 3.04862 6.13148 3.02608 6.00178 3.0459C5.87208 3.06571 5.75222 3.12682 5.66 3.22015L3.23 5.59015C3.13667 5.68237 3.07556 5.80223 3.05575 5.93193C3.03593 6.06164 3.05846 6.19427 3.12 6.31015L4.74 9.31015C4.32006 10.0607 3.98467 10.8556 3.74 11.6802L0.43 12.6802C0.305923 12.7185 0.197312 12.7954 0.119973 12.8997C0.0426345 13.004 0.000604574 13.1303 0 13.2602V16.6402C0.000604574 16.77 0.0426345 16.8963 0.119973 17.0006C0.197312 17.1049 0.305923 17.1818 0.43 17.2202L3.76 18.2202C4.00735 19.031 4.34268 19.8123 4.76 20.5502L3.12 23.6902C3.05846 23.806 3.03593 23.9387 3.05575 24.0684C3.07556 24.1981 3.13667 24.3179 3.23 24.4102L5.62 26.8002C5.71222 26.8935 5.83208 26.9546 5.96178 26.9744C6.09148 26.9942 6.22412 26.9717 6.34 26.9102L9.43 25.2602C10.161 25.6546 10.932 25.9697 11.73 26.2002L12.73 29.5702C12.7683 29.6942 12.8452 29.8028 12.9495 29.8802C13.0539 29.9575 13.1801 29.9995 13.31 30.0002H16.69C16.8199 29.9995 16.9461 29.9575 17.0505 29.8802C17.1548 29.8028 17.2317 29.6942 17.27 29.5702L18.27 26.1902C19.0612 25.9585 19.8255 25.6434 20.55 25.2502L23.66 26.9102C23.7759 26.9717 23.9085 26.9942 24.0382 26.9744C24.1679 26.9546 24.2878 26.8935 24.38 26.8002L26.77 24.4102C26.8633 24.3179 26.9244 24.1981 26.9443 24.0684C26.9641 23.9387 26.9415 23.806 26.88 23.6902L25.22 20.5902C25.6174 19.8628 25.9358 19.0952 26.17 18.3002L29.54 17.3002C29.6641 17.2618 29.7727 17.1849 29.85 17.0806C29.9274 16.9763 29.9694 16.85 29.97 16.7202V13.3102C29.9759 13.1858 29.9436 13.0626 29.8775 12.9572C29.8113 12.8517 29.7145 12.769 29.6 12.7202ZM15.03 20.5002C13.9422 20.5002 12.8788 20.1776 11.9744 19.5732C11.0699 18.9689 10.3649 18.1099 9.94866 17.1049C9.53238 16.0999 9.42346 14.9941 9.63568 13.9272C9.8479 12.8603 10.3717 11.8803 11.1409 11.1111C11.9101 10.3419 12.8901 9.81805 13.957 9.60583C15.0239 9.39362 16.1298 9.50253 17.1348 9.91882C18.1398 10.3351 18.9987 11.04 19.6031 11.9445C20.2074 12.849 20.53 13.9124 20.53 15.0002C20.53 16.4588 19.9505 17.8578 18.9191 18.8892C17.8876 19.9207 16.4887 20.5002 15.03 20.5002Z" fill="#0189CD"/>
+            </svg>
+          </div>
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="30" viewBox="0 0 24 30" fill="none">
+              <path d="M23.7273 12.8571H14.1818C13.3138 12.8571 12.4814 12.5185 11.8677 11.9157C11.2539 11.3129 10.9091 10.4953 10.9091 9.64286V0.267857C10.9091 0.196817 10.8804 0.128687 10.8292 0.0784536C10.7781 0.0282206 10.7087 0 10.6364 0H4.36364C3.20633 0 2.09642 0.451529 1.27808 1.25526C0.459739 2.05898 0 3.14907 0 4.28571V25.7143C0 26.8509 0.459739 27.941 1.27808 28.7447C2.09642 29.5485 3.20633 30 4.36364 30H19.6364C20.7937 30 21.9036 29.5485 22.7219 28.7447C23.5403 27.941 24 26.8509 24 25.7143V13.125C24 13.054 23.9713 12.9858 23.9201 12.9356C23.869 12.8854 23.7996 12.8571 23.7273 12.8571Z" fill="#0189CD"/>
+              <path d="M23.1285 10.486L13.3233 0.855841C13.3043 0.837224 13.28 0.824559 13.2536 0.819437C13.2273 0.814316 13.1999 0.816967 13.1751 0.827058C13.1502 0.837148 13.129 0.854227 13.114 0.876149C13.099 0.89807 13.0909 0.923854 13.0908 0.950261V9.64289C13.0908 9.92706 13.2058 10.1996 13.4103 10.4005C13.6149 10.6014 13.8924 10.7143 14.1817 10.7143H23.0324C23.0593 10.7142 23.0856 10.7063 23.1079 10.6916C23.1302 10.6769 23.1476 10.656 23.1579 10.6316C23.1681 10.6072 23.1708 10.5803 23.1656 10.5544C23.1604 10.5285 23.1475 10.5047 23.1285 10.486Z" fill="#0189CD"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <!-- end right side bar -->
+    </div>
+    <div class="p-4">
+      <ol  class="list-decimal list-inside">
+        <li>you can cancel booking 24 hrs before meeting/ any cancellation after that, you won't be refund.</li>
+        <li>If doctor cancel your booking request, you will be refund.</li>
+        <li>you must be on the platform 10min-5min before the meeting.</li>
+      </ol>
+    </div>
+  </div>
+
+  <!--              SCRItPS        -->
+  <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+</body>
+
+</html>

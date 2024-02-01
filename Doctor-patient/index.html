@@ -1,0 +1,1582 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--       NAVIGATION BAR      -->
+
+    <nav
+      class="fixed top-0 z-50 w-full bg-white border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700"
+    >
+      <div class="px-3 py-3 lg:px-5 lg:pl-3">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center justify-start rtl:justify-end">
+            <button
+              data-drawer-target="logo-sidebar"
+              data-drawer-toggle="logo-sidebar"
+              aria-controls="logo-sidebar"
+              type="button"
+              class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            >
+              <span class="sr-only">Open sidebar</span>
+              <svg
+                class="w-6 h-6"
+                aria-hidden="true"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  fill-rule="evenodd"
+                  d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"
+                ></path>
+              </svg>
+            </button>
+            <a href="https://flowbite.com" class="flex ms-2 md:me-24">
+              <!-- <img
+                src="https://flowbite.com/docs/images/logo.svg"
+                class="h-8 me-3"
+                alt="FlowBite Logo"
+              />
+              <span
+                class="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white"
+                >Flowbite</span
+              > -->
+              <h2 class="font-bold text-lg">VIDEO MEDICO</h2>
+            </a>
+          </div>
+          <div class="flex items-center space-x-4">
+            <div class="flex items-center ms-3 space-x-1">
+              <div
+                class="md:flex flex-row items-center sm:hidden hidden"
+              >
+                <div class="flex items-center mr-4 space-x-4">
+                  <ul class="flex items-center space-x-6">
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center gap-2 text-[#00000099] text-[18px]"
+                        ><img
+                          src="./media/assets/images/alert.svg"
+                          alt="alert"
+                          width="25"
+                        />
+                        Alert</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center text-[#00000099] text-[18px] gap-2"
+                        ><img
+                          src="./media/assets/images/help.svg"
+                          alt="alert"
+                          width="25"
+                        />
+                        Help</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center text-[#00000099] text-[18px] gap-2"
+                        ><img
+                          src="./media/assets/images/settings.svg"
+                          alt="setting"
+                          width="25"
+                        />
+                        Settings</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="">
+                  <h3 class="font-bold">Dr. Isabella</h3>
+                  <p
+                    class="font-normal sm-w-full md-w-full max-w-full text-gray-500 text-[14px]"
+                  >
+                    Allergy & immunology
+                  </p>
+                </div>
+              </div>
+              <div>
+                <button
+                  type="button"
+                  class="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
+                  aria-expanded="false"
+                  data-dropdown-toggle="dropdown-user"
+                >
+                  <span class="sr-only">Open user menu</span>
+                  <img
+                    class="w-12 h-12 rounded-full"
+                    src="./media/assets/images/isabella.png"
+                    alt="user photo"
+                  />
+                </button>
+              </div>
+              <div
+                class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded shadow dark:bg-gray-700 dark:divide-gray-600"
+                id="dropdown-user"
+              >
+                <div class="px-4 py-3" role="none">
+                  <p class="text-sm text-gray-900 dark:text-white" role="none">
+                    Dr. Isabella
+                  </p>
+                  <p
+                    class="text-sm font-medium text-gray-900 truncate dark:text-gray-300"
+                    role="none"
+                  >
+                    Allergy & immunology
+                  </p>
+                </div>
+                <ul class="py-1" role="none">
+                  <li>
+                    <a
+                      href="#"
+                      class="block flex flex-row items-center space-x-2 gap-2 font-medium px-4 py-2 text-sm text-[#00000099] hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
+                      role="menuitem"
+                      ><img
+                        src="./media/assets/images/alert.svg"
+                        alt="setting"
+                        width="18"
+                      />Alert</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block flex flex-row items-center space-x-2 gap-2 font-medium px-4 py-2 text-sm text-[#00000099] hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
+                      role="menuitem"
+                      ><img
+                        src="./media/assets/images/help.svg"
+                        alt="setting"
+                        width="18"
+                      />Help</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block flex flex-row items-center space-x-2 gap-2 font-medium px-4 py-2 text-sm text-[#00000099] hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
+                      role="menuitem"
+                      ><img
+                        src="./media/assets/images/settings.svg"
+                        alt="setting"
+                        width="18"
+                      />Settings</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block border-t border-neutral-300 flex flex-row items-center space-x-2 gap-2 font-medium px-4 py-2 text-sm text-[00000099] hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
+                      role="menuitem"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M12.711 13.2001L9.95034 15.948C9.83784 16.0596 9.74854 16.1923 9.6876 16.3385C9.62667 16.4848 9.59529 16.6416 9.59529 16.8C9.59529 16.9585 9.62667 17.1153 9.6876 17.2615C9.74854 17.4078 9.83784 17.5405 9.95034 17.652C10.0619 17.7645 10.1947 17.8538 10.3409 17.9147C10.4872 17.9756 10.6441 18.007 10.8025 18.007C10.961 18.007 11.1179 17.9756 11.2641 17.9147C11.4104 17.8538 11.5432 17.7645 11.6547 17.652L16.4559 12.8521C16.5651 12.7379 16.6508 12.6034 16.7079 12.4561C16.828 12.1639 16.828 11.8362 16.7079 11.5441C16.6508 11.3968 16.5651 11.2622 16.4559 11.1481L11.6547 6.34809C11.5428 6.2362 11.41 6.14745 11.2637 6.0869C11.1175 6.02635 10.9608 5.99518 10.8025 5.99518C10.6443 5.99518 10.4875 6.02635 10.3413 6.0869C10.1951 6.14745 10.0622 6.2362 9.95034 6.34809C9.83842 6.45997 9.74965 6.5928 9.68908 6.73899C9.62852 6.88517 9.59734 7.04185 9.59734 7.20008C9.59734 7.35831 9.62852 7.515 9.68908 7.66118C9.74965 7.80737 9.83842 7.94019 9.95034 8.05208L12.711 10.8001H1.20028C0.881947 10.8001 0.576651 10.9265 0.351554 11.1515C0.126458 11.3766 0 11.6818 0 12.0001C0 12.3183 0.126458 12.6235 0.351554 12.8486C0.576651 13.0736 0.881947 13.2001 1.20028 13.2001H12.711ZM12.0028 0.000119632C9.7596 -0.00989286 7.55847 0.608772 5.64909 1.78594C3.73971 2.96311 2.1985 4.65167 1.20028 6.66009C1.05703 6.94652 1.03346 7.27811 1.13475 7.58192C1.23605 7.88573 1.45391 8.13686 1.74041 8.28008C2.02691 8.42329 2.35858 8.44686 2.66246 8.34559C2.96634 8.24432 3.21754 8.02651 3.36079 7.74008C4.1196 6.20807 5.27384 4.90644 6.70423 3.96968C8.13463 3.03293 9.78928 2.49505 11.4972 2.41162C13.2051 2.32819 14.9044 2.70224 16.4193 3.49511C17.9342 4.28799 19.2099 5.47093 20.1145 6.92168C21.019 8.37243 21.5197 10.0384 21.5647 11.7473C21.6098 13.4563 21.1975 15.1463 20.3706 16.6426C19.5437 18.139 18.3321 19.3874 16.861 20.2589C15.3899 21.1304 13.7128 21.5934 12.0028 21.6C10.2131 21.6078 8.45737 21.1109 6.93726 20.1663C5.41715 19.2218 4.19421 17.8679 3.4088 16.26C3.26555 15.9736 3.01435 15.7558 2.71047 15.6545C2.40659 15.5533 2.07492 15.5768 1.78842 15.72C1.50192 15.8633 1.28406 16.1144 1.18276 16.4182C1.08147 16.722 1.10504 17.0536 1.24829 17.34C2.19991 19.2546 3.64588 20.8803 5.43664 22.0489C7.2274 23.2174 9.29792 23.8865 11.434 23.9868C13.5701 24.0871 15.6943 23.615 17.5867 22.6194C19.4791 21.6238 21.0712 20.1408 22.1981 18.3238C23.325 16.5068 23.9459 14.4218 23.9966 12.2845C24.0473 10.1471 23.5259 8.03503 22.4864 6.16669C21.4468 4.29834 19.9269 2.74159 18.0838 1.65744C16.2406 0.573291 14.1413 0.00112337 12.0028 0.000119632Z"
+                          fill="#0189cd"
+                        />
+                      </svg>
+                      Sign out</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <aside
+      id="logo-sidebar"
+      class="fixed top-0 left-0 z-40 w-62 h-screen pt-20 transition-transform -translate-x-full bg-[#0574B2] border-r border-gray-200 sm:translate-x-0 dark:bg-gray-800 dark:border-gray-700"
+      aria-label="Sidebar"
+    >
+      <div
+        class="h-full px-3 pb-4 overflow-y-auto bg-[#0574B2] dark:bg-gray-800"
+      >
+        <ul class="space-y-2 font-medium">
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-[#015b8d] dark:hover:bg-gray-700 group"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="21"
+                viewBox="0 0 20 21"
+                fill="none"
+              >
+                <path
+                  d="M10.2834 0.479612C10.2089 0.402444 10.1099 0.359375 10.0069 0.359375C9.90385 0.359375 9.80481 0.402444 9.73037 0.479612L0.52539 10.0089C0.486298 10.0494 0.455197 10.0981 0.43397 10.152C0.412742 10.2059 0.401829 10.264 0.401891 10.3226L0.400391 19.2661C0.400391 19.726 0.568961 20.167 0.869019 20.4922C1.16908 20.8173 1.57604 21 2.00039 21H6.80537C7.01755 21 7.22103 20.9087 7.37106 20.7461C7.52109 20.5835 7.60537 20.363 7.60537 20.1331V12.7641C7.60537 12.6491 7.64752 12.5389 7.72253 12.4576C7.79754 12.3763 7.89929 12.3306 8.00537 12.3306H12.0054C12.1114 12.3306 12.2132 12.3763 12.2882 12.4576C12.3632 12.5389 12.4054 12.6491 12.4054 12.7641V20.1331C12.4054 20.363 12.4896 20.5835 12.6397 20.7461C12.7897 20.9087 12.9932 21 13.2054 21H18.0083C18.4327 21 18.8397 20.8173 19.1397 20.4922C19.4398 20.167 19.6083 19.726 19.6083 19.2661V10.3226C19.6084 10.264 19.5975 10.2059 19.5763 10.152C19.555 10.0981 19.5239 10.0494 19.4848 10.0089L10.2834 0.479612Z"
+                  fill="white"
+                />
+              </svg>
+              <span class="ms-3">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-[#015b8d] dark:hover:bg-gray-700 group"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M16.4211 15C15.3684 15 14.4737 14.5625 13.7368 13.6875C13 12.8125 12.6316 11.75 12.6316 10.5C12.6316 9.25 13 8.1875 13.7368 7.3125C14.4737 6.4375 15.3684 6 16.4211 6C17.4737 6 18.3684 6.4375 19.1053 7.3125C19.8421 8.1875 20.2105 9.25 20.2105 10.5C20.2105 11.75 19.8421 12.8125 19.1053 13.6875C18.3684 14.5625 17.4737 15 16.4211 15ZM8.8421 24V21.15C8.8421 20.625 8.94737 20.125 9.15789 19.65C9.36842 19.175 9.66316 18.8 10.0421 18.525C10.9895 17.85 11.9949 17.344 13.0585 17.007C14.1221 16.67 15.2429 16.501 16.4211 16.5C17.6 16.5 18.7213 16.669 19.7848 17.007C20.8484 17.345 21.8535 17.851 22.8 18.525C23.1789 18.8 23.4737 19.175 23.6842 19.65C23.8947 20.125 24 20.625 24 21.15V24H8.8421ZM0 15V12H10.1053V15H0ZM0 3V0H15.1579V3H0ZM10.2316 9H0V6H11.3684C11.0737 6.425 10.8371 6.8875 10.6585 7.3875C10.48 7.8875 10.3377 8.425 10.2316 9Z"
+                  fill="white"
+                />
+              </svg>
+              <span class="flex-1 ms-3 whitespace-nowrap">Patients</span>
+              <!-- <span
+                class="inline-flex items-center justify-center px-2 ms-3 text-sm font-medium text-gray-800 bg-gray-100 rounded-full dark:bg-gray-700 dark:text-gray-300"
+                >Pro</span
+              > -->
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-[#015b8d] dark:hover:bg-gray-700 group"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12 2.4C10.3209 2.39969 8.67111 2.83978 7.21526 3.67635C5.75942 4.51292 4.54845 5.7167 3.70323 7.16754C2.85801 8.61838 2.4081 10.2655 2.39841 11.9446C2.38872 13.6237 2.81959 15.2759 3.64801 16.7364C4.20794 16.0087 4.92772 15.4195 5.75171 15.0144C6.5757 14.6092 7.48181 14.399 8.4 14.4H15.6C16.5182 14.399 17.4243 14.6092 18.2483 15.0144C19.0723 15.4195 19.7921 16.0087 20.352 16.7364C21.1804 15.2759 21.6113 13.6237 21.6016 11.9446C21.5919 10.2655 21.142 8.61838 20.2968 7.16754C19.4516 5.7167 18.2406 4.51292 16.7847 3.67635C15.3289 2.83978 13.6791 2.39969 12 2.4ZM21.5316 19.2912C23.136 17.1995 24.0039 14.6361 24 12C24 5.3724 18.6276 0 12 0C5.37241 0 1.35039e-05 5.3724 1.35039e-05 12C-0.00394822 14.6361 0.863899 17.1996 2.46841 19.2912L2.46241 19.3128L2.88841 19.8084C4.01387 21.1242 5.41127 22.1803 6.98428 22.9039C8.5573 23.6276 10.2685 24.0015 12 24C14.4328 24.0045 16.8089 23.2655 18.81 21.882C19.6631 21.2926 20.4367 20.5956 21.1116 19.8084L21.5376 19.3128L21.5316 19.2912ZM12 4.8C11.0452 4.8 10.1295 5.17928 9.45442 5.85441C8.77929 6.52954 8.4 7.44521 8.4 8.39999C8.4 9.35477 8.77929 10.2704 9.45442 10.9456C10.1295 11.6207 11.0452 12 12 12C12.9548 12 13.8705 11.6207 14.5456 10.9456C15.2207 10.2704 15.6 9.35477 15.6 8.39999C15.6 7.44521 15.2207 6.52954 14.5456 5.85441C13.8705 5.17928 12.9548 4.8 12 4.8Z"
+                  fill="white"
+                />
+              </svg>
+              <span class="flex-1 ms-3 whitespace-nowrap">Profile</span>
+              <!-- <span
+                class="inline-flex items-center justify-center w-3 h-3 p-3 ms-3 text-sm font-medium text-blue-800 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300"
+                >3</span
+              > -->
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-[#015b8d] dark:hover:bg-gray-700 group"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="20"
+                viewBox="0 0 24 20"
+                fill="none"
+              >
+                <path
+                  d="M0 0V15H12.3826C12.1276 14.1933 11.998 13.3493 11.9986 12.5H4.79945C4.79945 11.837 4.54663 11.2011 4.09659 10.7322C3.64655 10.2634 3.03617 10 2.39973 10V5C3.73158 5 4.79945 3.8875 4.79945 2.5H16.7981C16.7981 3.16304 17.0509 3.79893 17.5009 4.26777C17.951 4.73661 18.5614 5 19.1978 5V5.075C20.0017 5.075 20.8056 5.225 21.5975 5.5V0H0ZM10.7988 3.75C8.759 3.7875 7.19918 5.375 7.19918 7.5C7.19918 9.625 8.759 11.175 10.7988 11.25C11.2547 11.25 11.7227 11.15 12.1666 10.9625C12.4906 9.5875 13.0305 8.2875 14.3624 7.0125C14.2184 5.35 12.7066 3.7125 10.7988 3.75ZM19.1978 6.25L21.8975 9.0625L19.1978 11.875V10C16.9781 10 15.5262 12.45 16.5101 14.525L15.2023 15.8875C13.0905 12.5625 15.3702 8.125 19.1978 8.125V6.25ZM19.1978 20L16.4981 17.1875L19.1978 14.375V16.25C21.4176 16.25 22.8694 13.8 21.8855 11.725L23.1934 10.3625C25.3051 13.6875 23.0254 18.125 19.1978 18.125V20Z"
+                  fill="white"
+                />
+              </svg>
+              <span class="flex-1 ms-3 whitespace-nowrap"
+                >Session/Calendar</span
+              >
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-[#015b8d] dark:hover:bg-gray-700 group"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M24 5.62522C24 4.75599 23.3733 3.96378 22.4133 3.61169L13.08 0.189799C12.3867 -0.0632665 11.6 -0.0632665 10.92 0.189799L1.58667 3.61169C0.626667 3.96378 0 4.75599 0 5.62522V10.7966C0 16.9032 5.12 22.6136 12 24C15.0667 23.3838 17.7733 21.9095 19.84 19.9179L15.68 16.485C14.3982 17.1841 12.863 17.4959 11.3344 17.3676C9.80591 17.2393 8.37819 16.6787 7.29333 15.7809C6.04451 14.7488 5.34308 13.3499 5.34308 11.8913C5.34308 10.4328 6.04451 9.03393 7.29333 8.00183C8.54404 6.97128 10.2392 6.39245 12.0067 6.39245C13.7741 6.39245 15.4693 6.97128 16.72 8.00183C17.8053 8.89837 18.4828 10.0763 18.6382 11.337C18.7936 12.5977 18.4176 13.8641 17.5733 14.9226L21.44 18.1135C23.0533 15.9569 24 13.4152 24 10.7966V5.62522Z"
+                  fill="white"
+                />
+                <path
+                  d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z"
+                  fill="white"
+                />
+              </svg>
+              <span class="flex-1 ms-3 whitespace-nowrap">Read T & C</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-[#015b8d] dark:hover:bg-gray-700 group"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M12.711 13.2001L9.95034 15.948C9.83784 16.0596 9.74854 16.1923 9.6876 16.3385C9.62667 16.4848 9.59529 16.6416 9.59529 16.8C9.59529 16.9585 9.62667 17.1153 9.6876 17.2615C9.74854 17.4078 9.83784 17.5405 9.95034 17.652C10.0619 17.7645 10.1947 17.8538 10.3409 17.9147C10.4872 17.9756 10.6441 18.007 10.8025 18.007C10.961 18.007 11.1179 17.9756 11.2641 17.9147C11.4104 17.8538 11.5432 17.7645 11.6547 17.652L16.4559 12.8521C16.5651 12.7379 16.6508 12.6034 16.7079 12.4561C16.828 12.1639 16.828 11.8362 16.7079 11.5441C16.6508 11.3968 16.5651 11.2622 16.4559 11.1481L11.6547 6.34809C11.5428 6.2362 11.41 6.14745 11.2637 6.0869C11.1175 6.02635 10.9608 5.99518 10.8025 5.99518C10.6443 5.99518 10.4875 6.02635 10.3413 6.0869C10.1951 6.14745 10.0622 6.2362 9.95034 6.34809C9.83842 6.45997 9.74965 6.5928 9.68908 6.73899C9.62852 6.88517 9.59734 7.04185 9.59734 7.20008C9.59734 7.35831 9.62852 7.515 9.68908 7.66118C9.74965 7.80737 9.83842 7.94019 9.95034 8.05208L12.711 10.8001H1.20028C0.881947 10.8001 0.576651 10.9265 0.351554 11.1515C0.126458 11.3766 0 11.6818 0 12.0001C0 12.3183 0.126458 12.6235 0.351554 12.8486C0.576651 13.0736 0.881947 13.2001 1.20028 13.2001H12.711ZM12.0028 0.000119632C9.7596 -0.00989286 7.55847 0.608772 5.64909 1.78594C3.73971 2.96311 2.1985 4.65167 1.20028 6.66009C1.05703 6.94652 1.03346 7.27811 1.13475 7.58192C1.23605 7.88573 1.45391 8.13686 1.74041 8.28008C2.02691 8.42329 2.35858 8.44686 2.66246 8.34559C2.96634 8.24432 3.21754 8.02651 3.36079 7.74008C4.1196 6.20807 5.27384 4.90644 6.70423 3.96968C8.13463 3.03293 9.78928 2.49505 11.4972 2.41162C13.2051 2.32819 14.9044 2.70224 16.4193 3.49511C17.9342 4.28799 19.2099 5.47093 20.1145 6.92168C21.019 8.37243 21.5197 10.0384 21.5647 11.7473C21.6098 13.4563 21.1975 15.1463 20.3706 16.6426C19.5437 18.139 18.3321 19.3874 16.861 20.2589C15.3899 21.1304 13.7128 21.5934 12.0028 21.6C10.2131 21.6078 8.45737 21.1109 6.93726 20.1663C5.41715 19.2218 4.19421 17.8679 3.4088 16.26C3.26555 15.9736 3.01435 15.7558 2.71047 15.6545C2.40659 15.5533 2.07492 15.5768 1.78842 15.72C1.50192 15.8633 1.28406 16.1144 1.18276 16.4182C1.08147 16.722 1.10504 17.0536 1.24829 17.34C2.19991 19.2546 3.64588 20.8803 5.43664 22.0489C7.2274 23.2174 9.29792 23.8865 11.434 23.9868C13.5701 24.0871 15.6943 23.615 17.5867 22.6194C19.4791 21.6238 21.0712 20.1408 22.1981 18.3238C23.325 16.5068 23.9459 14.4218 23.9966 12.2845C24.0473 10.1471 23.5259 8.03503 22.4864 6.16669C21.4468 4.29834 19.9269 2.74159 18.0838 1.65744C16.2406 0.573291 14.1413 0.00112337 12.0028 0.000119632Z"
+                  fill="white"
+                />
+              </svg>
+              <span class="flex-1 ms-3 whitespace-nowrap"> Sign out</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <div class="p-1 sm:ml-52 mt-8">
+      <h3 class="font-bold text-xl text-black mt-12 ml-4">
+        Patients > James Anthony
+      </h3>
+      <div class="bg-[#F8F8F8] rounded-lg p-4 mt-2">
+        <div
+          class="w-[100%] max-w-[100%] flex md:flex-row sm:flex-col flex-col items-start justify-center md:space-x-1 sm:space-y-0 space-y-2 mb-4"
+        >
+          <div class="w-[100%] sm:w-full md:w-[30%] bg-white rounded-lg">
+            <div class="flex justify-end px-4 pt-4">
+              <!-- Dropdown menu -->
+            </div>
+            <div class="flex flex-col items-center p-4">
+              <img
+                class="w-24 h-24 mb-3 rounded-full shadow-lg"
+                src="./media/assets/images/james.png"
+                alt="Bonnie image"
+              />
+              <h5
+                class="mb-0 text-xl font-medium text-[#022C49] dark:text-white"
+              >
+                James Anthony
+              </h5>
+              <span class="text-sm text-[#022C49] dark:text-gray-400"
+                >Jamesanthony560@gmail.com</span
+              >
+              <h5 class="text-xl font-medium text-[#022C49] dark:text-white">
+                Appointments
+              </h5>
+              <div
+                class="flex flex-row items-center justify-center space-x-6 mt-4 md:mt-6"
+              >
+                <div class="flex flex-col items-center mb-1">
+                  <span class="font-bold text-4xl">5</span>
+                  <span class="text-[#022C49] text-sm">Past</span>
+                </div>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="2"
+                    height="70"
+                    viewBox="0 0 2 83"
+                    fill="none"
+                  >
+                    <path
+                      d="M1 0L1 83"
+                      stroke="black"
+                      stroke-opacity="0.3"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </div>
+                <div class="flex flex-col items-center mb-1">
+                  <span class="font-bold text-4xl">5</span>
+                  <span class="text-[#022C49] text-sm">Past</span>
+                </div>
+              </div>
+
+              <a
+                href="#"
+                type="button"
+                class="text-white mt-4 bg-[#0189CD] hover:bg-[#027bb7] font-medium rounded-lg text-sm w-full flex items-center justify-center text-center py-2.5 mb-2 focus:outline-none"
+              >
+                Send Message
+              </a>
+            </div>
+          </div>
+          <form class="w-[100%] sm:w-full md:w-[45%] bg-white rounded-lg p-3">
+            <div class="w-full">
+              <div class="grid md:grid-cols-2 md:gap-6 mb-3">
+                <div class="relative z-0 w-full mb-5">
+                  <input
+                    type="text"
+                    name="gender"
+                    id="gender"
+                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    placeholder=" "
+                    required
+                  />
+                  <label
+                    for="gender"
+                    class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                    >Gender</label
+                  >
+                </div>
+                <div class="relative z-0 w-full mb-5 group">
+                  <input
+                    type="text"
+                    name="birthDay"
+                    id="birthDay"
+                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    placeholder=" "
+                    required
+                  />
+                  <label
+                    for="birthDay"
+                    class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                    >Birthday</label
+                  >
+                </div>
+              </div>
+              <div class="grid md:grid-cols-2 md:gap-6 mb-3">
+                <div class="relative z-0 w-full mb-5 group">
+                  <input
+                    type="number"
+                    name="number"
+                    id="number"
+                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    placeholder=" "
+                    required
+                  />
+                  <label
+                    for="number"
+                    class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                    >Phone No.</label
+                  >
+                </div>
+                <div class="relative z-0 w-full mb-5 group">
+                  <input
+                    type="text"
+                    name="address"
+                    id="address"
+                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    placeholder=" "
+                    required
+                  />
+                  <label
+                    for="address"
+                    class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                    >Address</label
+                  >
+                </div>
+              </div>
+              <div class="grid md:grid-cols-2 md:gap-6 mb-3">
+                <div class="relative z-0 w-full mb-5 group">
+                  <input
+                    type="text"
+                    name="city"
+                    id="city"
+                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    placeholder=" "
+                    required
+                  />
+                  <label
+                    for="city"
+                    class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                    >City</label
+                  >
+                </div>
+                <div class="relative z-0 w-full mb-5 group">
+                  <input
+                    type="text"
+                    name="zipcode"
+                    id="zipcode"
+                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    placeholder=" "
+                    required
+                  />
+                  <label
+                    for="zipcode"
+                    class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                    >Zip Code</label
+                  >
+                </div>
+              </div>
+              <div class="grid md:grid-cols-2 md:gap-6 mb-3">
+                <div class="relative z-0 w-full mb-5 group">
+                  <input
+                    type="text"
+                    name="weight-height"
+                    id="weight-height"
+                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    placeholder=" "
+                    required
+                  />
+                  <label
+                    for="weight-height"
+                    class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                    >weight/height</label
+                  >
+                </div>
+                <div class="relative z-0 w-full mb-5 group">
+                  <input
+                    type="text"
+                    name="registrationdate"
+                    id="registrationdate"
+                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    placeholder=" "
+                    required
+                  />
+                  <label
+                    for="registrationdate"
+                    class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                    >Registration Date</label
+                  >
+                </div>
+              </div>
+              <div class="grid md:grid-cols-2 md:gap-6 mt-5">
+                <div class="relative z-0 w-full mb-5 group">
+                  <span>Appointment Time: 12:30 pm</span>
+                </div>
+                <div class="relative z-0 w-full mb-5 group">
+                  <a
+                    href="#"
+                    type="submit"
+                    class="text-white bg-[#0189CD] hover:bg-[#027bb7] font-medium rounded-lg text-sm w-full sm:w-auto px-4 py-2.5 text-center flex items-center justify-center gap-2"
+                  >
+                    Start VIdeo Call
+                    <svg
+                      style="margin-left: 1px"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                    >
+                      <path
+                        d="M3.986 1.90829C3.76862 2.02877 3.61423 2.21682 3.55528 2.43287C3.49634 2.64893 3.53744 2.87616 3.66993 3.06677C3.80243 3.25739 4.01601 3.39654 4.26574 3.45495C4.51547 3.51337 4.7819 3.4865 5.009 3.38L5.018 3.37571L5.078 3.34743C5.139 3.32086 5.238 3.27886 5.378 3.22571C5.658 3.12029 6.101 2.97286 6.712 2.82286C7.935 2.52543 9.842 2.21429 12.5 2.21429C15.158 2.21429 17.065 2.52457 18.288 2.82457C18.9 2.97371 19.342 3.12114 19.622 3.22743C19.7442 3.27318 19.8643 3.32293 19.982 3.37657L19.992 3.38086C20.2195 3.49121 20.4883 3.52083 20.741 3.46337C20.9937 3.40591 21.21 3.26594 21.3438 3.07343C21.4775 2.88092 21.518 2.65118 21.4565 2.43341C21.3951 2.21563 21.2366 2.02714 21.015 1.90829L21.013 1.90657H21.011L21.006 1.904L20.994 1.89714C20.944 1.87268 20.8933 1.84924 20.842 1.82686C20.7055 1.7665 20.5667 1.7099 20.426 1.65714C19.9093 1.46665 19.3785 1.30573 18.837 1.17543C17.435 0.832572 15.342 0.5 12.5 0.5C9.658 0.5 7.565 0.832572 6.163 1.17543C5.463 1.34686 4.935 1.52171 4.575 1.65714C4.3813 1.72992 4.19145 1.81 4.006 1.89714L3.994 1.904L3.989 1.90571L3.987 1.90657L3.986 1.90829ZM4 5.21429C3.07174 5.21429 2.1815 5.53036 1.52513 6.09297C0.868749 6.65557 0.5 7.41864 0.5 8.21429V16.7857C0.5 17.5814 0.868749 18.3444 1.52513 18.907C2.1815 19.4696 3.07174 19.7857 4 19.7857H14C14.9283 19.7857 15.8185 19.4696 16.4749 18.907C17.1313 18.3444 17.5 17.5814 17.5 16.7857V15.0474L22.237 17.4491C22.4647 17.5644 22.7239 17.6261 22.9883 17.6279C23.2528 17.6296 23.5131 17.5714 23.7428 17.4592C23.9726 17.3469 24.1636 17.1846 24.2966 16.9886C24.4296 16.7927 24.4997 16.5701 24.5 16.3434V8.65486C24.5001 8.4363 24.4352 8.22133 24.3114 8.03025C24.1876 7.83918 24.009 7.67831 23.7925 7.56283C23.576 7.44736 23.3288 7.3811 23.0741 7.3703C22.8194 7.35951 22.5657 7.40454 22.337 7.50114L17.5 9.54543V8.21429C17.5 7.41864 17.1313 6.65557 16.4749 6.09297C15.8185 5.53036 14.9283 5.21429 14 5.21429H4ZM17.5 11.456L22.5 9.344V15.5917L17.5 13.0554V11.456ZM2.5 8.21429C2.5 7.87329 2.65804 7.54627 2.93934 7.30515C3.22064 7.06403 3.60218 6.92857 4 6.92857H14C14.3978 6.92857 14.7794 7.06403 15.0607 7.30515C15.342 7.54627 15.5 7.87329 15.5 8.21429V16.7857C15.5 17.1267 15.342 17.4537 15.0607 17.6949C14.7794 17.936 14.3978 18.0714 14 18.0714H4C3.60218 18.0714 3.22064 17.936 2.93934 17.6949C2.65804 17.4537 2.5 17.1267 2.5 16.7857V8.21429ZM3.643 21.9157C3.57528 22.0123 3.53043 22.1193 3.51101 22.2307C3.4916 22.3422 3.49801 22.4558 3.52986 22.5651C3.56172 22.6744 3.6184 22.7772 3.69667 22.8678C3.77494 22.9583 3.87326 23.0347 3.986 23.0926L3.989 23.0943L3.994 23.0969L4.006 23.102C4.05565 23.1273 4.10635 23.151 4.158 23.1731C4.256 23.2169 4.394 23.2751 4.575 23.3429C4.935 23.4783 5.462 23.6523 6.163 23.8246C7.565 24.1674 9.658 24.5 12.5 24.5C15.342 24.5 17.435 24.1674 18.837 23.8246C19.538 23.6531 20.065 23.4783 20.426 23.3429C20.6072 23.2749 20.785 23.2006 20.959 23.12L20.994 23.1029L21.006 23.096L21.011 23.0943L21.013 23.0926H21.015C21.243 22.9762 21.4076 22.7869 21.4728 22.5665C21.538 22.346 21.4983 22.1124 21.3625 21.917C21.2267 21.7216 21.0059 21.5805 20.7487 21.5246C20.4915 21.4687 20.219 21.5028 19.991 21.6191L19.983 21.6234C19.865 21.6774 19.7445 21.7274 19.622 21.7734C19.342 21.8789 18.9 22.0263 18.288 22.1763C17.065 22.4754 15.158 22.7857 12.5 22.7857C9.842 22.7857 7.935 22.4754 6.712 22.1754C6.25765 22.0669 5.81232 21.9323 5.379 21.7726C5.25648 21.7269 5.13605 21.6771 5.018 21.6234L5.009 21.6191C4.78174 21.504 4.5106 21.4706 4.2547 21.5262C3.99881 21.5817 3.77892 21.7218 3.643 21.9157Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </form>
+          <div class="w-full sm:w-full md:w-[25%] space-y-2">
+            <div class="bg-white rounded-lg p-2">
+              <h3 class="text-[#022C49] mb-[6px] font-medium text-md">
+                Files from Patient
+              </h3>
+              <div
+                class="border-2 border-[#0000001A] p-2 rounded-lg flex flex-row items-center justify-between mb-1 mt-1"
+              >
+                <div class="flex items-center space-x-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="18"
+                    viewBox="0 0 20 26"
+                    fill="none"
+                  >
+                    <path
+                      d="M0 2.6C0 1.91044 0.263392 1.24912 0.732233 0.761522C1.20107 0.273928 1.83696 0 2.5 0H12.5C12.8315 7.36286e-05 13.1494 0.137086 13.3837 0.3809L19.6338 6.8809C19.8682 7.12464 19.9999 7.45525 20 7.8V23.4C20 24.0896 19.7366 24.7509 19.2678 25.2385C18.7989 25.7261 18.163 26 17.5 26H2.5C1.83696 26 1.20107 25.7261 0.732233 25.2385C0.263392 24.7509 0 24.0896 0 23.4V2.6ZM16.9825 7.8L12.5 3.1382V7.8H16.9825ZM10 2.6H2.5V23.4H17.5V10.4H11.25C10.9185 10.4 10.6005 10.263 10.3661 10.0192C10.1317 9.77544 10 9.44478 10 9.1V2.6ZM5 14.3C5 13.9552 5.1317 13.6246 5.36612 13.3808C5.60054 13.137 5.91848 13 6.25 13H13.75C14.0815 13 14.3995 13.137 14.6339 13.3808C14.8683 13.6246 15 13.9552 15 14.3C15 14.6448 14.8683 14.9754 14.6339 15.2192C14.3995 15.463 14.0815 15.6 13.75 15.6H6.25C5.91848 15.6 5.60054 15.463 5.36612 15.2192C5.1317 14.9754 5 14.6448 5 14.3ZM5 19.5C5 19.1552 5.1317 18.8246 5.36612 18.5808C5.60054 18.337 5.91848 18.2 6.25 18.2H13.75C14.0815 18.2 14.3995 18.337 14.6339 18.5808C14.8683 18.8246 15 19.1552 15 19.5C15 19.8448 14.8683 20.1754 14.6339 20.4192C14.3995 20.663 14.0815 20.8 13.75 20.8H6.25C5.91848 20.8 5.60054 20.663 5.36612 20.4192C5.1317 20.1754 5 19.8448 5 19.5Z"
+                      fill="black"
+                      fill-opacity="0.7"
+                    />
+                  </svg>
+                  <span class="text-[#000000B2] text-[16px] font-medium"
+                    >Blood test.pdf</span
+                  >
+                </div>
+                <span class="text-[#000000B2] text-[16px]">27 kb</span>
+              </div>
+              <div
+                class="border-2 border-[#0000001A] p-2 rounded-lg flex flex-row items-center justify-between mb-1"
+              >
+                <div class="flex items-center space-x-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="18"
+                    viewBox="0 0 20 26"
+                    fill="none"
+                  >
+                    <path
+                      d="M0 2.6C0 1.91044 0.263392 1.24912 0.732233 0.761522C1.20107 0.273928 1.83696 0 2.5 0H12.5C12.8315 7.36286e-05 13.1494 0.137086 13.3837 0.3809L19.6338 6.8809C19.8682 7.12464 19.9999 7.45525 20 7.8V23.4C20 24.0896 19.7366 24.7509 19.2678 25.2385C18.7989 25.7261 18.163 26 17.5 26H2.5C1.83696 26 1.20107 25.7261 0.732233 25.2385C0.263392 24.7509 0 24.0896 0 23.4V2.6ZM16.9825 7.8L12.5 3.1382V7.8H16.9825ZM10 2.6H2.5V23.4H17.5V10.4H11.25C10.9185 10.4 10.6005 10.263 10.3661 10.0192C10.1317 9.77544 10 9.44478 10 9.1V2.6ZM5 14.3C5 13.9552 5.1317 13.6246 5.36612 13.3808C5.60054 13.137 5.91848 13 6.25 13H13.75C14.0815 13 14.3995 13.137 14.6339 13.3808C14.8683 13.6246 15 13.9552 15 14.3C15 14.6448 14.8683 14.9754 14.6339 15.2192C14.3995 15.463 14.0815 15.6 13.75 15.6H6.25C5.91848 15.6 5.60054 15.463 5.36612 15.2192C5.1317 14.9754 5 14.6448 5 14.3ZM5 19.5C5 19.1552 5.1317 18.8246 5.36612 18.5808C5.60054 18.337 5.91848 18.2 6.25 18.2H13.75C14.0815 18.2 14.3995 18.337 14.6339 18.5808C14.8683 18.8246 15 19.1552 15 19.5C15 19.8448 14.8683 20.1754 14.6339 20.4192C14.3995 20.663 14.0815 20.8 13.75 20.8H6.25C5.91848 20.8 5.60054 20.663 5.36612 20.4192C5.1317 20.1754 5 19.8448 5 19.5Z"
+                      fill="black"
+                      fill-opacity="0.7"
+                    />
+                  </svg>
+                  <span class="text-[#000000B2] text-[16px] font-medium"
+                    >Skin Prick.pdf</span
+                  >
+                </div>
+                <span class="text-[#000000B2] text-[16px]">32 kb</span>
+              </div>
+              <div
+                class="border-2 border-[#0000001A] p-2 rounded-lg flex flex-row items-center justify-between mb-1"
+              >
+                <div class="flex items-center space-x-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="18"
+                    viewBox="0 0 20 26"
+                    fill="none"
+                  >
+                    <path
+                      d="M0 2.6C0 1.91044 0.263392 1.24912 0.732233 0.761522C1.20107 0.273928 1.83696 0 2.5 0H12.5C12.8315 7.36286e-05 13.1494 0.137086 13.3837 0.3809L19.6338 6.8809C19.8682 7.12464 19.9999 7.45525 20 7.8V23.4C20 24.0896 19.7366 24.7509 19.2678 25.2385C18.7989 25.7261 18.163 26 17.5 26H2.5C1.83696 26 1.20107 25.7261 0.732233 25.2385C0.263392 24.7509 0 24.0896 0 23.4V2.6ZM16.9825 7.8L12.5 3.1382V7.8H16.9825ZM10 2.6H2.5V23.4H17.5V10.4H11.25C10.9185 10.4 10.6005 10.263 10.3661 10.0192C10.1317 9.77544 10 9.44478 10 9.1V2.6ZM5 14.3C5 13.9552 5.1317 13.6246 5.36612 13.3808C5.60054 13.137 5.91848 13 6.25 13H13.75C14.0815 13 14.3995 13.137 14.6339 13.3808C14.8683 13.6246 15 13.9552 15 14.3C15 14.6448 14.8683 14.9754 14.6339 15.2192C14.3995 15.463 14.0815 15.6 13.75 15.6H6.25C5.91848 15.6 5.60054 15.463 5.36612 15.2192C5.1317 14.9754 5 14.6448 5 14.3ZM5 19.5C5 19.1552 5.1317 18.8246 5.36612 18.5808C5.60054 18.337 5.91848 18.2 6.25 18.2H13.75C14.0815 18.2 14.3995 18.337 14.6339 18.5808C14.8683 18.8246 15 19.1552 15 19.5C15 19.8448 14.8683 20.1754 14.6339 20.4192C14.3995 20.663 14.0815 20.8 13.75 20.8H6.25C5.91848 20.8 5.60054 20.663 5.36612 20.4192C5.1317 20.1754 5 19.8448 5 19.5Z"
+                      fill="black"
+                      fill-opacity="0.7"
+                    />
+                  </svg>
+                  <span class="text-[#000000B2] text-[16px] font-medium"
+                    >Intradermal test</span
+                  >
+                </div>
+                <span class="text-[#000000B2] text-[16px]">32 kb</span>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg p-2">
+              <div class="flex flex-row justify-between items-center">
+                <h3 class="text-[#022C49] font-medium text-md">
+                  Upload Files/Document
+                </h3>
+                <span class="flex items-center space-x-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="12"
+                    height="16"
+                    viewBox="0 0 22 28"
+                    fill="none"
+                  >
+                    <path
+                      d="M14.5706 19.0554H7.42773M10.9992 22.6666V15.4443"
+                      stroke="#0189CD"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M1 25.5556V2.44444C1 2.06135 1.15051 1.69395 1.41842 1.42307C1.68633 1.15218 2.04969 1 2.42857 1H11.2457C12.0034 1.00016 12.73 1.30464 13.2657 1.84644L20.1629 8.82022C20.6987 9.36187 20.9998 10.0965 21 10.8627V25.5556C21 25.9386 20.8495 26.306 20.5816 26.5769C20.3137 26.8478 19.9503 27 19.5714 27H2.42857C2.04969 27 1.68633 26.8478 1.41842 26.5769C1.15051 26.306 1 25.9386 1 25.5556Z"
+                      stroke="#0189CD"
+                      stroke-width="2"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M11 1V9.66667C11 10.0498 11.1505 10.4172 11.4184 10.688C11.6863 10.9589 12.0497 11.1111 12.4286 11.1111H21"
+                      stroke="#0189CD"
+                      stroke-width="2"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <span class="text-[#0189CD] font-medium text-sm">
+                    Upload File
+                  </span>
+                </span>
+              </div>
+              <div
+                class="border-2 border-[#0000001A] p-2 rounded-lg flex flex-row items-center justify-between mb-1 mt-1"
+              >
+                <div class="flex items-center space-x-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="18"
+                    viewBox="0 0 20 26"
+                    fill="none"
+                  >
+                    <path
+                      d="M0 2.6C0 1.91044 0.263392 1.24912 0.732233 0.761522C1.20107 0.273928 1.83696 0 2.5 0H12.5C12.8315 7.36286e-05 13.1494 0.137086 13.3837 0.3809L19.6338 6.8809C19.8682 7.12464 19.9999 7.45525 20 7.8V23.4C20 24.0896 19.7366 24.7509 19.2678 25.2385C18.7989 25.7261 18.163 26 17.5 26H2.5C1.83696 26 1.20107 25.7261 0.732233 25.2385C0.263392 24.7509 0 24.0896 0 23.4V2.6ZM16.9825 7.8L12.5 3.1382V7.8H16.9825ZM10 2.6H2.5V23.4H17.5V10.4H11.25C10.9185 10.4 10.6005 10.263 10.3661 10.0192C10.1317 9.77544 10 9.44478 10 9.1V2.6ZM5 14.3C5 13.9552 5.1317 13.6246 5.36612 13.3808C5.60054 13.137 5.91848 13 6.25 13H13.75C14.0815 13 14.3995 13.137 14.6339 13.3808C14.8683 13.6246 15 13.9552 15 14.3C15 14.6448 14.8683 14.9754 14.6339 15.2192C14.3995 15.463 14.0815 15.6 13.75 15.6H6.25C5.91848 15.6 5.60054 15.463 5.36612 15.2192C5.1317 14.9754 5 14.6448 5 14.3ZM5 19.5C5 19.1552 5.1317 18.8246 5.36612 18.5808C5.60054 18.337 5.91848 18.2 6.25 18.2H13.75C14.0815 18.2 14.3995 18.337 14.6339 18.5808C14.8683 18.8246 15 19.1552 15 19.5C15 19.8448 14.8683 20.1754 14.6339 20.4192C14.3995 20.663 14.0815 20.8 13.75 20.8H6.25C5.91848 20.8 5.60054 20.663 5.36612 20.4192C5.1317 20.1754 5 19.8448 5 19.5Z"
+                      fill="black"
+                      fill-opacity="0.7"
+                    />
+                  </svg>
+                  <span class="text-[#000000B2] text-[16px] font-medium"
+                    >Blood test.pdf</span
+                  >
+                </div>
+                <span class="text-[#000000B2] text-[16px]">27 kb</span>
+              </div>
+              <div
+                class="border-2 border-[#0000001A] p-2 rounded-lg flex flex-row items-center justify-between mb-1"
+              >
+                <div class="flex items-center space-x-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="18"
+                    viewBox="0 0 20 26"
+                    fill="none"
+                  >
+                    <path
+                      d="M0 2.6C0 1.91044 0.263392 1.24912 0.732233 0.761522C1.20107 0.273928 1.83696 0 2.5 0H12.5C12.8315 7.36286e-05 13.1494 0.137086 13.3837 0.3809L19.6338 6.8809C19.8682 7.12464 19.9999 7.45525 20 7.8V23.4C20 24.0896 19.7366 24.7509 19.2678 25.2385C18.7989 25.7261 18.163 26 17.5 26H2.5C1.83696 26 1.20107 25.7261 0.732233 25.2385C0.263392 24.7509 0 24.0896 0 23.4V2.6ZM16.9825 7.8L12.5 3.1382V7.8H16.9825ZM10 2.6H2.5V23.4H17.5V10.4H11.25C10.9185 10.4 10.6005 10.263 10.3661 10.0192C10.1317 9.77544 10 9.44478 10 9.1V2.6ZM5 14.3C5 13.9552 5.1317 13.6246 5.36612 13.3808C5.60054 13.137 5.91848 13 6.25 13H13.75C14.0815 13 14.3995 13.137 14.6339 13.3808C14.8683 13.6246 15 13.9552 15 14.3C15 14.6448 14.8683 14.9754 14.6339 15.2192C14.3995 15.463 14.0815 15.6 13.75 15.6H6.25C5.91848 15.6 5.60054 15.463 5.36612 15.2192C5.1317 14.9754 5 14.6448 5 14.3ZM5 19.5C5 19.1552 5.1317 18.8246 5.36612 18.5808C5.60054 18.337 5.91848 18.2 6.25 18.2H13.75C14.0815 18.2 14.3995 18.337 14.6339 18.5808C14.8683 18.8246 15 19.1552 15 19.5C15 19.8448 14.8683 20.1754 14.6339 20.4192C14.3995 20.663 14.0815 20.8 13.75 20.8H6.25C5.91848 20.8 5.60054 20.663 5.36612 20.4192C5.1317 20.1754 5 19.8448 5 19.5Z"
+                      fill="black"
+                      fill-opacity="0.7"
+                    />
+                  </svg>
+                  <span class="text-[#000000B2] text-[16px] font-medium"
+                    >Skin Prick.pdf</span
+                  >
+                </div>
+                <span class="text-[#000000B2] text-[16px]">32 kb</span>
+              </div>
+              <div
+                class="border-2 border-[#0000001A] p-2 rounded-lg flex flex-row items-center justify-between mb-1"
+              >
+                <div class="flex items-center space-x-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="18"
+                    viewBox="0 0 20 26"
+                    fill="none"
+                  >
+                    <path
+                      d="M0 2.6C0 1.91044 0.263392 1.24912 0.732233 0.761522C1.20107 0.273928 1.83696 0 2.5 0H12.5C12.8315 7.36286e-05 13.1494 0.137086 13.3837 0.3809L19.6338 6.8809C19.8682 7.12464 19.9999 7.45525 20 7.8V23.4C20 24.0896 19.7366 24.7509 19.2678 25.2385C18.7989 25.7261 18.163 26 17.5 26H2.5C1.83696 26 1.20107 25.7261 0.732233 25.2385C0.263392 24.7509 0 24.0896 0 23.4V2.6ZM16.9825 7.8L12.5 3.1382V7.8H16.9825ZM10 2.6H2.5V23.4H17.5V10.4H11.25C10.9185 10.4 10.6005 10.263 10.3661 10.0192C10.1317 9.77544 10 9.44478 10 9.1V2.6ZM5 14.3C5 13.9552 5.1317 13.6246 5.36612 13.3808C5.60054 13.137 5.91848 13 6.25 13H13.75C14.0815 13 14.3995 13.137 14.6339 13.3808C14.8683 13.6246 15 13.9552 15 14.3C15 14.6448 14.8683 14.9754 14.6339 15.2192C14.3995 15.463 14.0815 15.6 13.75 15.6H6.25C5.91848 15.6 5.60054 15.463 5.36612 15.2192C5.1317 14.9754 5 14.6448 5 14.3ZM5 19.5C5 19.1552 5.1317 18.8246 5.36612 18.5808C5.60054 18.337 5.91848 18.2 6.25 18.2H13.75C14.0815 18.2 14.3995 18.337 14.6339 18.5808C14.8683 18.8246 15 19.1552 15 19.5C15 19.8448 14.8683 20.1754 14.6339 20.4192C14.3995 20.663 14.0815 20.8 13.75 20.8H6.25C5.91848 20.8 5.60054 20.663 5.36612 20.4192C5.1317 20.1754 5 19.8448 5 19.5Z"
+                      fill="black"
+                      fill-opacity="0.7"
+                    />
+                  </svg>
+                  <span class="text-[#000000B2] text-[16px] font-medium"
+                    >Intradermal test</span
+                  >
+                </div>
+                <span class="text-[#000000B2] text-[16px]">32 kb</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--  second Layout -->
+
+        <div
+          class="w-[100%] max-w-[100%] mt-10 flex md:flex-row sm:flex-col flex-col items-start justify-center md:space-x-1 sm:space-y-0 space-y-2 mb-4"
+        >
+          <div class="w-[100%] sm:w-full md:w-[30%] bg-white rounded-lg">
+            <div class="flex justify-end px-4 pt-4">
+              <!-- Dropdown menu -->
+            </div>
+            <div class="flex flex-col items-center p-4">
+              <img
+                class="w-24 h-24 mb-3 rounded-full shadow-xl shadpw-gray-800"
+                src="./media/assets/images/deborah.png"
+                alt="Bonnie image"
+              />
+              <h5
+                class="mb-0 text-xl font-medium text-[#022C49] dark:text-white"
+              >
+                Deborah Gonzales
+              </h5>
+              <span class="text-sm text-[#022C49] dark:text-gray-400"
+                >Debbygonzales5000@gmail.com</span
+              >
+              <h5 class="text-xl font-medium text-[#022C49] dark:text-white">
+                Appointments
+              </h5>
+              <div
+                class="flex flex-row items-end justify-center space-x-6 mt-4 md:mt-6"
+              >
+                <div class="flex flex-col items-center mb-1">
+                  <div class="h-1 w-[200%] mb-2 bg-[#022C49]"></div>
+                  <span class="text-[#022C49] text-sm">Past</span>
+                </div>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="2"
+                    height="70"
+                    viewBox="0 0 2 83"
+                    fill="none"
+                  >
+                    <path
+                      d="M1 0L1 83"
+                      stroke="black"
+                      stroke-opacity="0.3"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </div>
+                <div class="flex flex-col items-center mb-1">
+                  <span class="font-bold text-4xl">2</span>
+                  <span class="text-[#022C49] text-sm">Upcoming</span>
+                </div>
+              </div>
+
+              <a
+                href="#"
+                type="button"
+                class="text-white mt-4 bg-[#0189CD] hover:bg-[#027bb7] font-medium rounded-lg text-sm w-full flex items-center justify-center text-center py-2.5 mb-2 focus:outline-none"
+              >
+                Send Message
+              </a>
+            </div>
+          </div>
+          <form class="w-[100%] sm:w-full md:w-[45%] bg-white rounded-lg p-3">
+            <div class="w-full">
+              <div class="grid md:grid-cols-2 md:gap-6 mb-3">
+                <div class="relative z-0 w-full mb-5">
+                  <input
+                    type="text"
+                    name="gender"
+                    id="gender"
+                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    placeholder=" "
+                    required
+                  />
+                  <label
+                    for="gender"
+                    class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                    >Gender</label
+                  >
+                </div>
+                <div class="relative z-0 w-full mb-5 group">
+                  <input
+                    type="text"
+                    name="birthDay"
+                    id="birthDay"
+                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    placeholder=" "
+                    required
+                  />
+                  <label
+                    for="birthDay"
+                    class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                    >Birthday</label
+                  >
+                </div>
+              </div>
+              <div class="grid md:grid-cols-2 md:gap-6 mb-3">
+                <div class="relative z-0 w-full mb-5 group">
+                  <input
+                    type="number"
+                    name="number"
+                    id="number"
+                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    placeholder=" "
+                    required
+                  />
+                  <label
+                    for="number"
+                    class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                    >Phone No.</label
+                  >
+                </div>
+                <div class="relative z-0 w-full mb-5 group">
+                  <input
+                    type="text"
+                    name="address"
+                    id="address"
+                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    placeholder=" "
+                    required
+                  />
+                  <label
+                    for="address"
+                    class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                    >Address</label
+                  >
+                </div>
+              </div>
+              <div class="grid md:grid-cols-2 md:gap-6 mb-3">
+                <div class="relative z-0 w-full mb-5 group">
+                  <input
+                    type="text"
+                    name="city"
+                    id="city"
+                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    placeholder=" "
+                    required
+                  />
+                  <label
+                    for="city"
+                    class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                    >City</label
+                  >
+                </div>
+                <div class="relative z-0 w-full mb-5 group">
+                  <input
+                    type="text"
+                    name="zipcode"
+                    id="zipcode"
+                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    placeholder=" "
+                    required
+                  />
+                  <label
+                    for="zipcode"
+                    class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                    >Zip Code</label
+                  >
+                </div>
+              </div>
+              <div class="grid md:grid-cols-2 md:gap-6 mb-3">
+                <div class="relative z-0 w-full mb-5 group">
+                  <input
+                    type="text"
+                    name="weight-height"
+                    id="weight-height"
+                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    placeholder=" "
+                    required
+                  />
+                  <label
+                    for="weight-height"
+                    class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                    >weight/height</label
+                  >
+                </div>
+                <div class="relative z-0 w-full mb-5 group">
+                  <input
+                    type="text"
+                    name="registrationdate"
+                    id="registrationdate"
+                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    placeholder=" "
+                    required
+                  />
+                  <label
+                    for="registrationdate"
+                    class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                    >Registration Date</label
+                  >
+                </div>
+              </div>
+              <div class="grid md:grid-cols-2 md:gap-6 mt-5">
+                <div class="relative z-0 w-full mb-5 group">
+                  <span>Appointment Time: 12:30 pm</span>
+                </div>
+                <div class="relative z-0 w-full mb-5 group">
+                  <a
+                    href="#"
+                    type="submit"
+                    class="text-white bg-[#0189CD] hover:bg-[#027bb7] font-medium rounded-lg text-sm w-full sm:w-auto px-4 py-2.5 text-center flex items-center justify-center gap-2"
+                  >
+                    Start VIdeo Call
+                    <svg
+                      style="margin-left: 1px"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                    >
+                      <path
+                        d="M3.986 1.90829C3.76862 2.02877 3.61423 2.21682 3.55528 2.43287C3.49634 2.64893 3.53744 2.87616 3.66993 3.06677C3.80243 3.25739 4.01601 3.39654 4.26574 3.45495C4.51547 3.51337 4.7819 3.4865 5.009 3.38L5.018 3.37571L5.078 3.34743C5.139 3.32086 5.238 3.27886 5.378 3.22571C5.658 3.12029 6.101 2.97286 6.712 2.82286C7.935 2.52543 9.842 2.21429 12.5 2.21429C15.158 2.21429 17.065 2.52457 18.288 2.82457C18.9 2.97371 19.342 3.12114 19.622 3.22743C19.7442 3.27318 19.8643 3.32293 19.982 3.37657L19.992 3.38086C20.2195 3.49121 20.4883 3.52083 20.741 3.46337C20.9937 3.40591 21.21 3.26594 21.3438 3.07343C21.4775 2.88092 21.518 2.65118 21.4565 2.43341C21.3951 2.21563 21.2366 2.02714 21.015 1.90829L21.013 1.90657H21.011L21.006 1.904L20.994 1.89714C20.944 1.87268 20.8933 1.84924 20.842 1.82686C20.7055 1.7665 20.5667 1.7099 20.426 1.65714C19.9093 1.46665 19.3785 1.30573 18.837 1.17543C17.435 0.832572 15.342 0.5 12.5 0.5C9.658 0.5 7.565 0.832572 6.163 1.17543C5.463 1.34686 4.935 1.52171 4.575 1.65714C4.3813 1.72992 4.19145 1.81 4.006 1.89714L3.994 1.904L3.989 1.90571L3.987 1.90657L3.986 1.90829ZM4 5.21429C3.07174 5.21429 2.1815 5.53036 1.52513 6.09297C0.868749 6.65557 0.5 7.41864 0.5 8.21429V16.7857C0.5 17.5814 0.868749 18.3444 1.52513 18.907C2.1815 19.4696 3.07174 19.7857 4 19.7857H14C14.9283 19.7857 15.8185 19.4696 16.4749 18.907C17.1313 18.3444 17.5 17.5814 17.5 16.7857V15.0474L22.237 17.4491C22.4647 17.5644 22.7239 17.6261 22.9883 17.6279C23.2528 17.6296 23.5131 17.5714 23.7428 17.4592C23.9726 17.3469 24.1636 17.1846 24.2966 16.9886C24.4296 16.7927 24.4997 16.5701 24.5 16.3434V8.65486C24.5001 8.4363 24.4352 8.22133 24.3114 8.03025C24.1876 7.83918 24.009 7.67831 23.7925 7.56283C23.576 7.44736 23.3288 7.3811 23.0741 7.3703C22.8194 7.35951 22.5657 7.40454 22.337 7.50114L17.5 9.54543V8.21429C17.5 7.41864 17.1313 6.65557 16.4749 6.09297C15.8185 5.53036 14.9283 5.21429 14 5.21429H4ZM17.5 11.456L22.5 9.344V15.5917L17.5 13.0554V11.456ZM2.5 8.21429C2.5 7.87329 2.65804 7.54627 2.93934 7.30515C3.22064 7.06403 3.60218 6.92857 4 6.92857H14C14.3978 6.92857 14.7794 7.06403 15.0607 7.30515C15.342 7.54627 15.5 7.87329 15.5 8.21429V16.7857C15.5 17.1267 15.342 17.4537 15.0607 17.6949C14.7794 17.936 14.3978 18.0714 14 18.0714H4C3.60218 18.0714 3.22064 17.936 2.93934 17.6949C2.65804 17.4537 2.5 17.1267 2.5 16.7857V8.21429ZM3.643 21.9157C3.57528 22.0123 3.53043 22.1193 3.51101 22.2307C3.4916 22.3422 3.49801 22.4558 3.52986 22.5651C3.56172 22.6744 3.6184 22.7772 3.69667 22.8678C3.77494 22.9583 3.87326 23.0347 3.986 23.0926L3.989 23.0943L3.994 23.0969L4.006 23.102C4.05565 23.1273 4.10635 23.151 4.158 23.1731C4.256 23.2169 4.394 23.2751 4.575 23.3429C4.935 23.4783 5.462 23.6523 6.163 23.8246C7.565 24.1674 9.658 24.5 12.5 24.5C15.342 24.5 17.435 24.1674 18.837 23.8246C19.538 23.6531 20.065 23.4783 20.426 23.3429C20.6072 23.2749 20.785 23.2006 20.959 23.12L20.994 23.1029L21.006 23.096L21.011 23.0943L21.013 23.0926H21.015C21.243 22.9762 21.4076 22.7869 21.4728 22.5665C21.538 22.346 21.4983 22.1124 21.3625 21.917C21.2267 21.7216 21.0059 21.5805 20.7487 21.5246C20.4915 21.4687 20.219 21.5028 19.991 21.6191L19.983 21.6234C19.865 21.6774 19.7445 21.7274 19.622 21.7734C19.342 21.8789 18.9 22.0263 18.288 22.1763C17.065 22.4754 15.158 22.7857 12.5 22.7857C9.842 22.7857 7.935 22.4754 6.712 22.1754C6.25765 22.0669 5.81232 21.9323 5.379 21.7726C5.25648 21.7269 5.13605 21.6771 5.018 21.6234L5.009 21.6191C4.78174 21.504 4.5106 21.4706 4.2547 21.5262C3.99881 21.5817 3.77892 21.7218 3.643 21.9157Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </form>
+          <div class="w-full sm:w-full md:w-[25%] space-y-2">
+            <div class="bg-white rounded-lg p-2">
+              <h3 class="text-[#022C49] mb-[6px] font-medium text-md">
+                Files from Patient
+              </h3>
+              <div
+                class="border-2 border-[#0000001A] p-2 rounded-lg flex flex-row items-center justify-between mb-1 mt-1"
+              >
+                <div class="flex items-center space-x-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="18"
+                    viewBox="0 0 20 26"
+                    fill="none"
+                  >
+                    <path
+                      d="M0 2.6C0 1.91044 0.263392 1.24912 0.732233 0.761522C1.20107 0.273928 1.83696 0 2.5 0H12.5C12.8315 7.36286e-05 13.1494 0.137086 13.3837 0.3809L19.6338 6.8809C19.8682 7.12464 19.9999 7.45525 20 7.8V23.4C20 24.0896 19.7366 24.7509 19.2678 25.2385C18.7989 25.7261 18.163 26 17.5 26H2.5C1.83696 26 1.20107 25.7261 0.732233 25.2385C0.263392 24.7509 0 24.0896 0 23.4V2.6ZM16.9825 7.8L12.5 3.1382V7.8H16.9825ZM10 2.6H2.5V23.4H17.5V10.4H11.25C10.9185 10.4 10.6005 10.263 10.3661 10.0192C10.1317 9.77544 10 9.44478 10 9.1V2.6ZM5 14.3C5 13.9552 5.1317 13.6246 5.36612 13.3808C5.60054 13.137 5.91848 13 6.25 13H13.75C14.0815 13 14.3995 13.137 14.6339 13.3808C14.8683 13.6246 15 13.9552 15 14.3C15 14.6448 14.8683 14.9754 14.6339 15.2192C14.3995 15.463 14.0815 15.6 13.75 15.6H6.25C5.91848 15.6 5.60054 15.463 5.36612 15.2192C5.1317 14.9754 5 14.6448 5 14.3ZM5 19.5C5 19.1552 5.1317 18.8246 5.36612 18.5808C5.60054 18.337 5.91848 18.2 6.25 18.2H13.75C14.0815 18.2 14.3995 18.337 14.6339 18.5808C14.8683 18.8246 15 19.1552 15 19.5C15 19.8448 14.8683 20.1754 14.6339 20.4192C14.3995 20.663 14.0815 20.8 13.75 20.8H6.25C5.91848 20.8 5.60054 20.663 5.36612 20.4192C5.1317 20.1754 5 19.8448 5 19.5Z"
+                      fill="black"
+                      fill-opacity="0.7"
+                    />
+                  </svg>
+                  <span class="text-[#000000B2] text-[16px] font-medium"
+                    >Blood test.pdf</span
+                  >
+                </div>
+                <span class="text-[#000000B2] text-[16px]">27 kb</span>
+              </div>
+              <div
+                class="border-2 border-[#0000001A] p-2 rounded-lg flex flex-row items-center justify-between mb-1"
+              >
+                <div class="flex items-center space-x-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="18"
+                    viewBox="0 0 20 26"
+                    fill="none"
+                  >
+                    <path
+                      d="M0 2.6C0 1.91044 0.263392 1.24912 0.732233 0.761522C1.20107 0.273928 1.83696 0 2.5 0H12.5C12.8315 7.36286e-05 13.1494 0.137086 13.3837 0.3809L19.6338 6.8809C19.8682 7.12464 19.9999 7.45525 20 7.8V23.4C20 24.0896 19.7366 24.7509 19.2678 25.2385C18.7989 25.7261 18.163 26 17.5 26H2.5C1.83696 26 1.20107 25.7261 0.732233 25.2385C0.263392 24.7509 0 24.0896 0 23.4V2.6ZM16.9825 7.8L12.5 3.1382V7.8H16.9825ZM10 2.6H2.5V23.4H17.5V10.4H11.25C10.9185 10.4 10.6005 10.263 10.3661 10.0192C10.1317 9.77544 10 9.44478 10 9.1V2.6ZM5 14.3C5 13.9552 5.1317 13.6246 5.36612 13.3808C5.60054 13.137 5.91848 13 6.25 13H13.75C14.0815 13 14.3995 13.137 14.6339 13.3808C14.8683 13.6246 15 13.9552 15 14.3C15 14.6448 14.8683 14.9754 14.6339 15.2192C14.3995 15.463 14.0815 15.6 13.75 15.6H6.25C5.91848 15.6 5.60054 15.463 5.36612 15.2192C5.1317 14.9754 5 14.6448 5 14.3ZM5 19.5C5 19.1552 5.1317 18.8246 5.36612 18.5808C5.60054 18.337 5.91848 18.2 6.25 18.2H13.75C14.0815 18.2 14.3995 18.337 14.6339 18.5808C14.8683 18.8246 15 19.1552 15 19.5C15 19.8448 14.8683 20.1754 14.6339 20.4192C14.3995 20.663 14.0815 20.8 13.75 20.8H6.25C5.91848 20.8 5.60054 20.663 5.36612 20.4192C5.1317 20.1754 5 19.8448 5 19.5Z"
+                      fill="black"
+                      fill-opacity="0.7"
+                    />
+                  </svg>
+                  <span class="text-[#000000B2] text-[16px] font-medium"
+                    >Skin Prick.pdf</span
+                  >
+                </div>
+                <span class="text-[#000000B2] text-[16px]">32 kb</span>
+              </div>
+              <div
+                class="border-2 border-[#0000001A] p-2 rounded-lg flex flex-row items-center justify-between mb-1"
+              >
+                <div class="flex items-center space-x-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="18"
+                    viewBox="0 0 20 26"
+                    fill="none"
+                  >
+                    <path
+                      d="M0 2.6C0 1.91044 0.263392 1.24912 0.732233 0.761522C1.20107 0.273928 1.83696 0 2.5 0H12.5C12.8315 7.36286e-05 13.1494 0.137086 13.3837 0.3809L19.6338 6.8809C19.8682 7.12464 19.9999 7.45525 20 7.8V23.4C20 24.0896 19.7366 24.7509 19.2678 25.2385C18.7989 25.7261 18.163 26 17.5 26H2.5C1.83696 26 1.20107 25.7261 0.732233 25.2385C0.263392 24.7509 0 24.0896 0 23.4V2.6ZM16.9825 7.8L12.5 3.1382V7.8H16.9825ZM10 2.6H2.5V23.4H17.5V10.4H11.25C10.9185 10.4 10.6005 10.263 10.3661 10.0192C10.1317 9.77544 10 9.44478 10 9.1V2.6ZM5 14.3C5 13.9552 5.1317 13.6246 5.36612 13.3808C5.60054 13.137 5.91848 13 6.25 13H13.75C14.0815 13 14.3995 13.137 14.6339 13.3808C14.8683 13.6246 15 13.9552 15 14.3C15 14.6448 14.8683 14.9754 14.6339 15.2192C14.3995 15.463 14.0815 15.6 13.75 15.6H6.25C5.91848 15.6 5.60054 15.463 5.36612 15.2192C5.1317 14.9754 5 14.6448 5 14.3ZM5 19.5C5 19.1552 5.1317 18.8246 5.36612 18.5808C5.60054 18.337 5.91848 18.2 6.25 18.2H13.75C14.0815 18.2 14.3995 18.337 14.6339 18.5808C14.8683 18.8246 15 19.1552 15 19.5C15 19.8448 14.8683 20.1754 14.6339 20.4192C14.3995 20.663 14.0815 20.8 13.75 20.8H6.25C5.91848 20.8 5.60054 20.663 5.36612 20.4192C5.1317 20.1754 5 19.8448 5 19.5Z"
+                      fill="black"
+                      fill-opacity="0.7"
+                    />
+                  </svg>
+                  <span class="text-[#000000B2] text-[16px] font-medium"
+                    >Intradermal test</span
+                  >
+                </div>
+                <span class="text-[#000000B2] text-[16px]">32 kb</span>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg p-2">
+              <div class="flex flex-row justify-between items-center">
+                <h3 class="text-[#022C49] font-medium text-md">
+                  Upload Files/Document
+                </h3>
+                <span class="flex items-center space-x-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="12"
+                    height="16"
+                    viewBox="0 0 22 28"
+                    fill="none"
+                  >
+                    <path
+                      d="M14.5706 19.0554H7.42773M10.9992 22.6666V15.4443"
+                      stroke="#0189CD"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M1 25.5556V2.44444C1 2.06135 1.15051 1.69395 1.41842 1.42307C1.68633 1.15218 2.04969 1 2.42857 1H11.2457C12.0034 1.00016 12.73 1.30464 13.2657 1.84644L20.1629 8.82022C20.6987 9.36187 20.9998 10.0965 21 10.8627V25.5556C21 25.9386 20.8495 26.306 20.5816 26.5769C20.3137 26.8478 19.9503 27 19.5714 27H2.42857C2.04969 27 1.68633 26.8478 1.41842 26.5769C1.15051 26.306 1 25.9386 1 25.5556Z"
+                      stroke="#0189CD"
+                      stroke-width="2"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M11 1V9.66667C11 10.0498 11.1505 10.4172 11.4184 10.688C11.6863 10.9589 12.0497 11.1111 12.4286 11.1111H21"
+                      stroke="#0189CD"
+                      stroke-width="2"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <span class="text-[#0189CD] font-medium text-sm">
+                    Upload File
+                  </span>
+                </span>
+              </div>
+              <div
+                class="border-2 border-[#0000001A] p-2 rounded-lg flex flex-row items-center justify-between mb-1 mt-1"
+              >
+                <div class="flex items-center space-x-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="18"
+                    viewBox="0 0 20 26"
+                    fill="none"
+                  >
+                    <path
+                      d="M0 2.6C0 1.91044 0.263392 1.24912 0.732233 0.761522C1.20107 0.273928 1.83696 0 2.5 0H12.5C12.8315 7.36286e-05 13.1494 0.137086 13.3837 0.3809L19.6338 6.8809C19.8682 7.12464 19.9999 7.45525 20 7.8V23.4C20 24.0896 19.7366 24.7509 19.2678 25.2385C18.7989 25.7261 18.163 26 17.5 26H2.5C1.83696 26 1.20107 25.7261 0.732233 25.2385C0.263392 24.7509 0 24.0896 0 23.4V2.6ZM16.9825 7.8L12.5 3.1382V7.8H16.9825ZM10 2.6H2.5V23.4H17.5V10.4H11.25C10.9185 10.4 10.6005 10.263 10.3661 10.0192C10.1317 9.77544 10 9.44478 10 9.1V2.6ZM5 14.3C5 13.9552 5.1317 13.6246 5.36612 13.3808C5.60054 13.137 5.91848 13 6.25 13H13.75C14.0815 13 14.3995 13.137 14.6339 13.3808C14.8683 13.6246 15 13.9552 15 14.3C15 14.6448 14.8683 14.9754 14.6339 15.2192C14.3995 15.463 14.0815 15.6 13.75 15.6H6.25C5.91848 15.6 5.60054 15.463 5.36612 15.2192C5.1317 14.9754 5 14.6448 5 14.3ZM5 19.5C5 19.1552 5.1317 18.8246 5.36612 18.5808C5.60054 18.337 5.91848 18.2 6.25 18.2H13.75C14.0815 18.2 14.3995 18.337 14.6339 18.5808C14.8683 18.8246 15 19.1552 15 19.5C15 19.8448 14.8683 20.1754 14.6339 20.4192C14.3995 20.663 14.0815 20.8 13.75 20.8H6.25C5.91848 20.8 5.60054 20.663 5.36612 20.4192C5.1317 20.1754 5 19.8448 5 19.5Z"
+                      fill="black"
+                      fill-opacity="0.7"
+                    />
+                  </svg>
+                  <span class="text-[#000000B2] text-[16px] font-medium"
+                    >Blood test.pdf</span
+                  >
+                </div>
+                <span class="text-[#000000B2] text-[16px]">27 kb</span>
+              </div>
+              <div
+                class="border-2 border-[#0000001A] p-2 rounded-lg flex flex-row items-center justify-between mb-1"
+              >
+                <div class="flex items-center space-x-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="18"
+                    viewBox="0 0 20 26"
+                    fill="none"
+                  >
+                    <path
+                      d="M0 2.6C0 1.91044 0.263392 1.24912 0.732233 0.761522C1.20107 0.273928 1.83696 0 2.5 0H12.5C12.8315 7.36286e-05 13.1494 0.137086 13.3837 0.3809L19.6338 6.8809C19.8682 7.12464 19.9999 7.45525 20 7.8V23.4C20 24.0896 19.7366 24.7509 19.2678 25.2385C18.7989 25.7261 18.163 26 17.5 26H2.5C1.83696 26 1.20107 25.7261 0.732233 25.2385C0.263392 24.7509 0 24.0896 0 23.4V2.6ZM16.9825 7.8L12.5 3.1382V7.8H16.9825ZM10 2.6H2.5V23.4H17.5V10.4H11.25C10.9185 10.4 10.6005 10.263 10.3661 10.0192C10.1317 9.77544 10 9.44478 10 9.1V2.6ZM5 14.3C5 13.9552 5.1317 13.6246 5.36612 13.3808C5.60054 13.137 5.91848 13 6.25 13H13.75C14.0815 13 14.3995 13.137 14.6339 13.3808C14.8683 13.6246 15 13.9552 15 14.3C15 14.6448 14.8683 14.9754 14.6339 15.2192C14.3995 15.463 14.0815 15.6 13.75 15.6H6.25C5.91848 15.6 5.60054 15.463 5.36612 15.2192C5.1317 14.9754 5 14.6448 5 14.3ZM5 19.5C5 19.1552 5.1317 18.8246 5.36612 18.5808C5.60054 18.337 5.91848 18.2 6.25 18.2H13.75C14.0815 18.2 14.3995 18.337 14.6339 18.5808C14.8683 18.8246 15 19.1552 15 19.5C15 19.8448 14.8683 20.1754 14.6339 20.4192C14.3995 20.663 14.0815 20.8 13.75 20.8H6.25C5.91848 20.8 5.60054 20.663 5.36612 20.4192C5.1317 20.1754 5 19.8448 5 19.5Z"
+                      fill="black"
+                      fill-opacity="0.7"
+                    />
+                  </svg>
+                  <span class="text-[#000000B2] text-[16px] font-medium"
+                    >Skin Prick.pdf</span
+                  >
+                </div>
+                <span class="text-[#000000B2] text-[16px]">32 kb</span>
+              </div>
+              <div
+                class="border-2 border-[#0000001A] p-2 rounded-lg flex flex-row items-center justify-between mb-1"
+              >
+                <div class="flex items-center space-x-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="18"
+                    viewBox="0 0 20 26"
+                    fill="none"
+                  >
+                    <path
+                      d="M0 2.6C0 1.91044 0.263392 1.24912 0.732233 0.761522C1.20107 0.273928 1.83696 0 2.5 0H12.5C12.8315 7.36286e-05 13.1494 0.137086 13.3837 0.3809L19.6338 6.8809C19.8682 7.12464 19.9999 7.45525 20 7.8V23.4C20 24.0896 19.7366 24.7509 19.2678 25.2385C18.7989 25.7261 18.163 26 17.5 26H2.5C1.83696 26 1.20107 25.7261 0.732233 25.2385C0.263392 24.7509 0 24.0896 0 23.4V2.6ZM16.9825 7.8L12.5 3.1382V7.8H16.9825ZM10 2.6H2.5V23.4H17.5V10.4H11.25C10.9185 10.4 10.6005 10.263 10.3661 10.0192C10.1317 9.77544 10 9.44478 10 9.1V2.6ZM5 14.3C5 13.9552 5.1317 13.6246 5.36612 13.3808C5.60054 13.137 5.91848 13 6.25 13H13.75C14.0815 13 14.3995 13.137 14.6339 13.3808C14.8683 13.6246 15 13.9552 15 14.3C15 14.6448 14.8683 14.9754 14.6339 15.2192C14.3995 15.463 14.0815 15.6 13.75 15.6H6.25C5.91848 15.6 5.60054 15.463 5.36612 15.2192C5.1317 14.9754 5 14.6448 5 14.3ZM5 19.5C5 19.1552 5.1317 18.8246 5.36612 18.5808C5.60054 18.337 5.91848 18.2 6.25 18.2H13.75C14.0815 18.2 14.3995 18.337 14.6339 18.5808C14.8683 18.8246 15 19.1552 15 19.5C15 19.8448 14.8683 20.1754 14.6339 20.4192C14.3995 20.663 14.0815 20.8 13.75 20.8H6.25C5.91848 20.8 5.60054 20.663 5.36612 20.4192C5.1317 20.1754 5 19.8448 5 19.5Z"
+                      fill="black"
+                      fill-opacity="0.7"
+                    />
+                  </svg>
+                  <span class="text-[#000000B2] text-[16px] font-medium"
+                    >Intradermal test</span
+                  >
+                </div>
+                <span class="text-[#000000B2] text-[16px]">32 kb</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- THird Layout -->
+
+        <div
+          class="w-[100%] max-w-[100%] mt-10 flex md:flex-row sm:flex-col flex-col items-start justify-center md:space-x-1 sm:space-y-0 space-y-2 mb-4"
+        >
+          <div class="w-[100%] sm:w-full md:w-[30%] bg-white rounded-lg">
+            <div class="flex justify-end px-4 pt-4">
+              <!-- Dropdown menu -->
+            </div>
+            <div class="flex flex-col items-center p-4">
+              <img
+                class="w-24 h-24 mb-3 rounded-full shadow-xl shadpw-gray-800"
+                src="./media/assets/images/laura.png"
+                alt="Bonnie image"
+              />
+              <h5
+                class="mb-0 text-xl font-medium text-[#022C49] dark:text-white"
+              >
+                Laura Jacob
+              </h5>
+              <span class="text-sm text-[#022C49] dark:text-gray-400"
+                >Laurajacob0407@outlook.com</span
+              >
+              <h5 class="text-xl font-medium text-[#022C49] dark:text-white">
+                Appointments
+              </h5>
+              <div
+                class="flex flex-row items-end justify-center space-x-6 mt-4 md:mt-6"
+              >
+                <div class="flex flex-col items-center mb-1">
+                  <div class="h-1 w-[200%] mb-2 bg-[#022C49]"></div>
+                  <span class="text-[#022C49] text-sm">Past</span>
+                </div>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="2"
+                    height="70"
+                    viewBox="0 0 2 83"
+                    fill="none"
+                  >
+                    <path
+                      d="M1 0L1 83"
+                      stroke="black"
+                      stroke-opacity="0.3"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </div>
+                <div class="flex flex-col items-center mb-1">
+                  <span class="font-bold text-4xl">1</span>
+                  <span class="text-[#022C49] text-sm">Upcoming</span>
+                </div>
+              </div>
+
+              <a
+                href="#"
+                type="button"
+                class="text-white mt-4 bg-[#0189CD] hover:bg-[#027bb7] font-medium rounded-lg text-sm w-full flex items-center justify-center text-center py-2.5 mb-2 focus:outline-none"
+              >
+                Send Message
+              </a>
+            </div>
+          </div>
+
+          <form class="w-[100%] sm:w-full md:w-[45%] bg-white rounded-lg p-3">
+            <div class="w-full">
+              <div class="grid md:grid-cols-2 md:gap-6 mb-3">
+                <div class="relative z-0 w-full mb-5">
+                  <input
+                    type="text"
+                    name="gender"
+                    id="gender"
+                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    placeholder=" "
+                    required
+                  />
+                  <label
+                    for="gender"
+                    class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                    >Gender</label
+                  >
+                </div>
+                <div class="relative z-0 w-full mb-5 group">
+                  <input
+                    type="text"
+                    name="birthDay"
+                    id="birthDay"
+                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    placeholder=" "
+                    required
+                  />
+                  <label
+                    for="birthDay"
+                    class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                    >Birthday</label
+                  >
+                </div>
+              </div>
+              <div class="grid md:grid-cols-2 md:gap-6 mb-3">
+                <div class="relative z-0 w-full mb-5 group">
+                  <input
+                    type="number"
+                    name="number"
+                    id="number"
+                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    placeholder=" "
+                    required
+                  />
+                  <label
+                    for="number"
+                    class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                    >Phone No.</label
+                  >
+                </div>
+                <div class="relative z-0 w-full mb-5 group">
+                  <input
+                    type="text"
+                    name="address"
+                    id="address"
+                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    placeholder=" "
+                    required
+                  />
+                  <label
+                    for="address"
+                    class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                    >Address</label
+                  >
+                </div>
+              </div>
+              <div class="grid md:grid-cols-2 md:gap-6 mb-3">
+                <div class="relative z-0 w-full mb-5 group">
+                  <input
+                    type="text"
+                    name="city"
+                    id="city"
+                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    placeholder=" "
+                    required
+                  />
+                  <label
+                    for="city"
+                    class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                    >City</label
+                  >
+                </div>
+                <div class="relative z-0 w-full mb-5 group">
+                  <input
+                    type="text"
+                    name="zipcode"
+                    id="zipcode"
+                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    placeholder=" "
+                    required
+                  />
+                  <label
+                    for="zipcode"
+                    class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                    >Zip Code</label
+                  >
+                </div>
+              </div>
+              <div class="grid md:grid-cols-2 md:gap-6 mb-3">
+                <div class="relative z-0 w-full mb-5 group">
+                  <input
+                    type="text"
+                    name="weight-height"
+                    id="weight-height"
+                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    placeholder=" "
+                    required
+                  />
+                  <label
+                    for="weight-height"
+                    class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                    >weight/height</label
+                  >
+                </div>
+                <div class="relative z-0 w-full mb-5 group">
+                  <input
+                    type="text"
+                    name="registrationdate"
+                    id="registrationdate"
+                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    placeholder=" "
+                    required
+                  />
+                  <label
+                    for="registrationdate"
+                    class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                    >Registration Date</label
+                  >
+                </div>
+              </div>
+              <div class="grid md:grid-cols-2 md:gap-6 mt-5">
+                <div class="relative z-0 w-full mb-5 group">
+                  <span>Appointment Time: 12:30 pm</span>
+                </div>
+                <div class="relative z-0 w-full mb-5 group">
+                  <a
+                    href="#"
+                    type="submit"
+                    class="text-white bg-[#0189CD] hover:bg-[#027bb7] font-medium rounded-lg text-sm w-full sm:w-auto px-4 py-2.5 text-center flex items-center justify-center gap-2"
+                  >
+                    Start VIdeo Call
+                    <svg
+                      style="margin-left: 1px"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                    >
+                      <path
+                        d="M3.986 1.90829C3.76862 2.02877 3.61423 2.21682 3.55528 2.43287C3.49634 2.64893 3.53744 2.87616 3.66993 3.06677C3.80243 3.25739 4.01601 3.39654 4.26574 3.45495C4.51547 3.51337 4.7819 3.4865 5.009 3.38L5.018 3.37571L5.078 3.34743C5.139 3.32086 5.238 3.27886 5.378 3.22571C5.658 3.12029 6.101 2.97286 6.712 2.82286C7.935 2.52543 9.842 2.21429 12.5 2.21429C15.158 2.21429 17.065 2.52457 18.288 2.82457C18.9 2.97371 19.342 3.12114 19.622 3.22743C19.7442 3.27318 19.8643 3.32293 19.982 3.37657L19.992 3.38086C20.2195 3.49121 20.4883 3.52083 20.741 3.46337C20.9937 3.40591 21.21 3.26594 21.3438 3.07343C21.4775 2.88092 21.518 2.65118 21.4565 2.43341C21.3951 2.21563 21.2366 2.02714 21.015 1.90829L21.013 1.90657H21.011L21.006 1.904L20.994 1.89714C20.944 1.87268 20.8933 1.84924 20.842 1.82686C20.7055 1.7665 20.5667 1.7099 20.426 1.65714C19.9093 1.46665 19.3785 1.30573 18.837 1.17543C17.435 0.832572 15.342 0.5 12.5 0.5C9.658 0.5 7.565 0.832572 6.163 1.17543C5.463 1.34686 4.935 1.52171 4.575 1.65714C4.3813 1.72992 4.19145 1.81 4.006 1.89714L3.994 1.904L3.989 1.90571L3.987 1.90657L3.986 1.90829ZM4 5.21429C3.07174 5.21429 2.1815 5.53036 1.52513 6.09297C0.868749 6.65557 0.5 7.41864 0.5 8.21429V16.7857C0.5 17.5814 0.868749 18.3444 1.52513 18.907C2.1815 19.4696 3.07174 19.7857 4 19.7857H14C14.9283 19.7857 15.8185 19.4696 16.4749 18.907C17.1313 18.3444 17.5 17.5814 17.5 16.7857V15.0474L22.237 17.4491C22.4647 17.5644 22.7239 17.6261 22.9883 17.6279C23.2528 17.6296 23.5131 17.5714 23.7428 17.4592C23.9726 17.3469 24.1636 17.1846 24.2966 16.9886C24.4296 16.7927 24.4997 16.5701 24.5 16.3434V8.65486C24.5001 8.4363 24.4352 8.22133 24.3114 8.03025C24.1876 7.83918 24.009 7.67831 23.7925 7.56283C23.576 7.44736 23.3288 7.3811 23.0741 7.3703C22.8194 7.35951 22.5657 7.40454 22.337 7.50114L17.5 9.54543V8.21429C17.5 7.41864 17.1313 6.65557 16.4749 6.09297C15.8185 5.53036 14.9283 5.21429 14 5.21429H4ZM17.5 11.456L22.5 9.344V15.5917L17.5 13.0554V11.456ZM2.5 8.21429C2.5 7.87329 2.65804 7.54627 2.93934 7.30515C3.22064 7.06403 3.60218 6.92857 4 6.92857H14C14.3978 6.92857 14.7794 7.06403 15.0607 7.30515C15.342 7.54627 15.5 7.87329 15.5 8.21429V16.7857C15.5 17.1267 15.342 17.4537 15.0607 17.6949C14.7794 17.936 14.3978 18.0714 14 18.0714H4C3.60218 18.0714 3.22064 17.936 2.93934 17.6949C2.65804 17.4537 2.5 17.1267 2.5 16.7857V8.21429ZM3.643 21.9157C3.57528 22.0123 3.53043 22.1193 3.51101 22.2307C3.4916 22.3422 3.49801 22.4558 3.52986 22.5651C3.56172 22.6744 3.6184 22.7772 3.69667 22.8678C3.77494 22.9583 3.87326 23.0347 3.986 23.0926L3.989 23.0943L3.994 23.0969L4.006 23.102C4.05565 23.1273 4.10635 23.151 4.158 23.1731C4.256 23.2169 4.394 23.2751 4.575 23.3429C4.935 23.4783 5.462 23.6523 6.163 23.8246C7.565 24.1674 9.658 24.5 12.5 24.5C15.342 24.5 17.435 24.1674 18.837 23.8246C19.538 23.6531 20.065 23.4783 20.426 23.3429C20.6072 23.2749 20.785 23.2006 20.959 23.12L20.994 23.1029L21.006 23.096L21.011 23.0943L21.013 23.0926H21.015C21.243 22.9762 21.4076 22.7869 21.4728 22.5665C21.538 22.346 21.4983 22.1124 21.3625 21.917C21.2267 21.7216 21.0059 21.5805 20.7487 21.5246C20.4915 21.4687 20.219 21.5028 19.991 21.6191L19.983 21.6234C19.865 21.6774 19.7445 21.7274 19.622 21.7734C19.342 21.8789 18.9 22.0263 18.288 22.1763C17.065 22.4754 15.158 22.7857 12.5 22.7857C9.842 22.7857 7.935 22.4754 6.712 22.1754C6.25765 22.0669 5.81232 21.9323 5.379 21.7726C5.25648 21.7269 5.13605 21.6771 5.018 21.6234L5.009 21.6191C4.78174 21.504 4.5106 21.4706 4.2547 21.5262C3.99881 21.5817 3.77892 21.7218 3.643 21.9157Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </form>
+
+          <div class="w-full sm:w-full md:w-[25%] space-y-2">
+            <div class="bg-white rounded-lg p-2">
+              <h3 class="text-[#022C49] mb-[6px] font-medium text-md">
+                Files from Patient
+              </h3>
+              <div
+                class="border-2 border-[#0000001A] p-2 rounded-lg flex flex-row items-center justify-between mb-1 mt-1"
+              >
+                <div class="flex items-center space-x-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="18"
+                    viewBox="0 0 20 26"
+                    fill="none"
+                  >
+                    <path
+                      d="M0 2.6C0 1.91044 0.263392 1.24912 0.732233 0.761522C1.20107 0.273928 1.83696 0 2.5 0H12.5C12.8315 7.36286e-05 13.1494 0.137086 13.3837 0.3809L19.6338 6.8809C19.8682 7.12464 19.9999 7.45525 20 7.8V23.4C20 24.0896 19.7366 24.7509 19.2678 25.2385C18.7989 25.7261 18.163 26 17.5 26H2.5C1.83696 26 1.20107 25.7261 0.732233 25.2385C0.263392 24.7509 0 24.0896 0 23.4V2.6ZM16.9825 7.8L12.5 3.1382V7.8H16.9825ZM10 2.6H2.5V23.4H17.5V10.4H11.25C10.9185 10.4 10.6005 10.263 10.3661 10.0192C10.1317 9.77544 10 9.44478 10 9.1V2.6ZM5 14.3C5 13.9552 5.1317 13.6246 5.36612 13.3808C5.60054 13.137 5.91848 13 6.25 13H13.75C14.0815 13 14.3995 13.137 14.6339 13.3808C14.8683 13.6246 15 13.9552 15 14.3C15 14.6448 14.8683 14.9754 14.6339 15.2192C14.3995 15.463 14.0815 15.6 13.75 15.6H6.25C5.91848 15.6 5.60054 15.463 5.36612 15.2192C5.1317 14.9754 5 14.6448 5 14.3ZM5 19.5C5 19.1552 5.1317 18.8246 5.36612 18.5808C5.60054 18.337 5.91848 18.2 6.25 18.2H13.75C14.0815 18.2 14.3995 18.337 14.6339 18.5808C14.8683 18.8246 15 19.1552 15 19.5C15 19.8448 14.8683 20.1754 14.6339 20.4192C14.3995 20.663 14.0815 20.8 13.75 20.8H6.25C5.91848 20.8 5.60054 20.663 5.36612 20.4192C5.1317 20.1754 5 19.8448 5 19.5Z"
+                      fill="black"
+                      fill-opacity="0.7"
+                    />
+                  </svg>
+                  <span class="text-[#000000B2] text-[16px] font-medium"
+                    >Blood test.pdf</span
+                  >
+                </div>
+                <span class="text-[#000000B2] text-[16px]">27 kb</span>
+              </div>
+              <div
+                class="border-2 border-[#0000001A] p-2 rounded-lg flex flex-row items-center justify-between mb-1"
+              >
+                <div class="flex items-center space-x-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="18"
+                    viewBox="0 0 20 26"
+                    fill="none"
+                  >
+                    <path
+                      d="M0 2.6C0 1.91044 0.263392 1.24912 0.732233 0.761522C1.20107 0.273928 1.83696 0 2.5 0H12.5C12.8315 7.36286e-05 13.1494 0.137086 13.3837 0.3809L19.6338 6.8809C19.8682 7.12464 19.9999 7.45525 20 7.8V23.4C20 24.0896 19.7366 24.7509 19.2678 25.2385C18.7989 25.7261 18.163 26 17.5 26H2.5C1.83696 26 1.20107 25.7261 0.732233 25.2385C0.263392 24.7509 0 24.0896 0 23.4V2.6ZM16.9825 7.8L12.5 3.1382V7.8H16.9825ZM10 2.6H2.5V23.4H17.5V10.4H11.25C10.9185 10.4 10.6005 10.263 10.3661 10.0192C10.1317 9.77544 10 9.44478 10 9.1V2.6ZM5 14.3C5 13.9552 5.1317 13.6246 5.36612 13.3808C5.60054 13.137 5.91848 13 6.25 13H13.75C14.0815 13 14.3995 13.137 14.6339 13.3808C14.8683 13.6246 15 13.9552 15 14.3C15 14.6448 14.8683 14.9754 14.6339 15.2192C14.3995 15.463 14.0815 15.6 13.75 15.6H6.25C5.91848 15.6 5.60054 15.463 5.36612 15.2192C5.1317 14.9754 5 14.6448 5 14.3ZM5 19.5C5 19.1552 5.1317 18.8246 5.36612 18.5808C5.60054 18.337 5.91848 18.2 6.25 18.2H13.75C14.0815 18.2 14.3995 18.337 14.6339 18.5808C14.8683 18.8246 15 19.1552 15 19.5C15 19.8448 14.8683 20.1754 14.6339 20.4192C14.3995 20.663 14.0815 20.8 13.75 20.8H6.25C5.91848 20.8 5.60054 20.663 5.36612 20.4192C5.1317 20.1754 5 19.8448 5 19.5Z"
+                      fill="black"
+                      fill-opacity="0.7"
+                    />
+                  </svg>
+                  <span class="text-[#000000B2] text-[16px] font-medium"
+                    >Skin Prick.pdf</span
+                  >
+                </div>
+                <span class="text-[#000000B2] text-[16px]">32 kb</span>
+              </div>
+              <div
+                class="border-2 border-[#0000001A] p-2 rounded-lg flex flex-row items-center justify-between mb-1"
+              >
+                <div class="flex items-center space-x-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="18"
+                    viewBox="0 0 20 26"
+                    fill="none"
+                  >
+                    <path
+                      d="M0 2.6C0 1.91044 0.263392 1.24912 0.732233 0.761522C1.20107 0.273928 1.83696 0 2.5 0H12.5C12.8315 7.36286e-05 13.1494 0.137086 13.3837 0.3809L19.6338 6.8809C19.8682 7.12464 19.9999 7.45525 20 7.8V23.4C20 24.0896 19.7366 24.7509 19.2678 25.2385C18.7989 25.7261 18.163 26 17.5 26H2.5C1.83696 26 1.20107 25.7261 0.732233 25.2385C0.263392 24.7509 0 24.0896 0 23.4V2.6ZM16.9825 7.8L12.5 3.1382V7.8H16.9825ZM10 2.6H2.5V23.4H17.5V10.4H11.25C10.9185 10.4 10.6005 10.263 10.3661 10.0192C10.1317 9.77544 10 9.44478 10 9.1V2.6ZM5 14.3C5 13.9552 5.1317 13.6246 5.36612 13.3808C5.60054 13.137 5.91848 13 6.25 13H13.75C14.0815 13 14.3995 13.137 14.6339 13.3808C14.8683 13.6246 15 13.9552 15 14.3C15 14.6448 14.8683 14.9754 14.6339 15.2192C14.3995 15.463 14.0815 15.6 13.75 15.6H6.25C5.91848 15.6 5.60054 15.463 5.36612 15.2192C5.1317 14.9754 5 14.6448 5 14.3ZM5 19.5C5 19.1552 5.1317 18.8246 5.36612 18.5808C5.60054 18.337 5.91848 18.2 6.25 18.2H13.75C14.0815 18.2 14.3995 18.337 14.6339 18.5808C14.8683 18.8246 15 19.1552 15 19.5C15 19.8448 14.8683 20.1754 14.6339 20.4192C14.3995 20.663 14.0815 20.8 13.75 20.8H6.25C5.91848 20.8 5.60054 20.663 5.36612 20.4192C5.1317 20.1754 5 19.8448 5 19.5Z"
+                      fill="black"
+                      fill-opacity="0.7"
+                    />
+                  </svg>
+                  <span class="text-[#000000B2] text-[16px] font-medium"
+                    >Intradermal test</span
+                  >
+                </div>
+                <span class="text-[#000000B2] text-[16px]">32 kb</span>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg p-2">
+              <div class="flex flex-row justify-between items-center">
+                <h3 class="text-[#022C49] font-medium text-md">
+                  Upload Files/Document
+                </h3>
+                <span class="flex items-center space-x-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="12"
+                    height="16"
+                    viewBox="0 0 22 28"
+                    fill="none"
+                  >
+                    <path
+                      d="M14.5706 19.0554H7.42773M10.9992 22.6666V15.4443"
+                      stroke="#0189CD"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M1 25.5556V2.44444C1 2.06135 1.15051 1.69395 1.41842 1.42307C1.68633 1.15218 2.04969 1 2.42857 1H11.2457C12.0034 1.00016 12.73 1.30464 13.2657 1.84644L20.1629 8.82022C20.6987 9.36187 20.9998 10.0965 21 10.8627V25.5556C21 25.9386 20.8495 26.306 20.5816 26.5769C20.3137 26.8478 19.9503 27 19.5714 27H2.42857C2.04969 27 1.68633 26.8478 1.41842 26.5769C1.15051 26.306 1 25.9386 1 25.5556Z"
+                      stroke="#0189CD"
+                      stroke-width="2"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M11 1V9.66667C11 10.0498 11.1505 10.4172 11.4184 10.688C11.6863 10.9589 12.0497 11.1111 12.4286 11.1111H21"
+                      stroke="#0189CD"
+                      stroke-width="2"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <span class="text-[#0189CD] font-medium text-sm">
+                    Upload File
+                  </span>
+                </span>
+              </div>
+              <div
+                class="border-2 border-[#0000001A] p-2 rounded-lg flex flex-row items-center justify-between mb-1 mt-1"
+              >
+                <div class="flex items-center space-x-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="18"
+                    viewBox="0 0 20 26"
+                    fill="none"
+                  >
+                    <path
+                      d="M0 2.6C0 1.91044 0.263392 1.24912 0.732233 0.761522C1.20107 0.273928 1.83696 0 2.5 0H12.5C12.8315 7.36286e-05 13.1494 0.137086 13.3837 0.3809L19.6338 6.8809C19.8682 7.12464 19.9999 7.45525 20 7.8V23.4C20 24.0896 19.7366 24.7509 19.2678 25.2385C18.7989 25.7261 18.163 26 17.5 26H2.5C1.83696 26 1.20107 25.7261 0.732233 25.2385C0.263392 24.7509 0 24.0896 0 23.4V2.6ZM16.9825 7.8L12.5 3.1382V7.8H16.9825ZM10 2.6H2.5V23.4H17.5V10.4H11.25C10.9185 10.4 10.6005 10.263 10.3661 10.0192C10.1317 9.77544 10 9.44478 10 9.1V2.6ZM5 14.3C5 13.9552 5.1317 13.6246 5.36612 13.3808C5.60054 13.137 5.91848 13 6.25 13H13.75C14.0815 13 14.3995 13.137 14.6339 13.3808C14.8683 13.6246 15 13.9552 15 14.3C15 14.6448 14.8683 14.9754 14.6339 15.2192C14.3995 15.463 14.0815 15.6 13.75 15.6H6.25C5.91848 15.6 5.60054 15.463 5.36612 15.2192C5.1317 14.9754 5 14.6448 5 14.3ZM5 19.5C5 19.1552 5.1317 18.8246 5.36612 18.5808C5.60054 18.337 5.91848 18.2 6.25 18.2H13.75C14.0815 18.2 14.3995 18.337 14.6339 18.5808C14.8683 18.8246 15 19.1552 15 19.5C15 19.8448 14.8683 20.1754 14.6339 20.4192C14.3995 20.663 14.0815 20.8 13.75 20.8H6.25C5.91848 20.8 5.60054 20.663 5.36612 20.4192C5.1317 20.1754 5 19.8448 5 19.5Z"
+                      fill="black"
+                      fill-opacity="0.7"
+                    />
+                  </svg>
+                  <span class="text-[#000000B2] text-[16px] font-medium"
+                    >Blood test.pdf</span
+                  >
+                </div>
+                <span class="text-[#000000B2] text-[16px]">27 kb</span>
+              </div>
+              <div
+                class="border-2 border-[#0000001A] p-2 rounded-lg flex flex-row items-center justify-between mb-1"
+              >
+                <div class="flex items-center space-x-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="18"
+                    viewBox="0 0 20 26"
+                    fill="none"
+                  >
+                    <path
+                      d="M0 2.6C0 1.91044 0.263392 1.24912 0.732233 0.761522C1.20107 0.273928 1.83696 0 2.5 0H12.5C12.8315 7.36286e-05 13.1494 0.137086 13.3837 0.3809L19.6338 6.8809C19.8682 7.12464 19.9999 7.45525 20 7.8V23.4C20 24.0896 19.7366 24.7509 19.2678 25.2385C18.7989 25.7261 18.163 26 17.5 26H2.5C1.83696 26 1.20107 25.7261 0.732233 25.2385C0.263392 24.7509 0 24.0896 0 23.4V2.6ZM16.9825 7.8L12.5 3.1382V7.8H16.9825ZM10 2.6H2.5V23.4H17.5V10.4H11.25C10.9185 10.4 10.6005 10.263 10.3661 10.0192C10.1317 9.77544 10 9.44478 10 9.1V2.6ZM5 14.3C5 13.9552 5.1317 13.6246 5.36612 13.3808C5.60054 13.137 5.91848 13 6.25 13H13.75C14.0815 13 14.3995 13.137 14.6339 13.3808C14.8683 13.6246 15 13.9552 15 14.3C15 14.6448 14.8683 14.9754 14.6339 15.2192C14.3995 15.463 14.0815 15.6 13.75 15.6H6.25C5.91848 15.6 5.60054 15.463 5.36612 15.2192C5.1317 14.9754 5 14.6448 5 14.3ZM5 19.5C5 19.1552 5.1317 18.8246 5.36612 18.5808C5.60054 18.337 5.91848 18.2 6.25 18.2H13.75C14.0815 18.2 14.3995 18.337 14.6339 18.5808C14.8683 18.8246 15 19.1552 15 19.5C15 19.8448 14.8683 20.1754 14.6339 20.4192C14.3995 20.663 14.0815 20.8 13.75 20.8H6.25C5.91848 20.8 5.60054 20.663 5.36612 20.4192C5.1317 20.1754 5 19.8448 5 19.5Z"
+                      fill="black"
+                      fill-opacity="0.7"
+                    />
+                  </svg>
+                  <span class="text-[#000000B2] text-[16px] font-medium"
+                    >Skin Prick.pdf</span
+                  >
+                </div>
+                <span class="text-[#000000B2] text-[16px]">32 kb</span>
+              </div>
+              <div
+                class="border-2 border-[#0000001A] p-2 rounded-lg flex flex-row items-center justify-between mb-1"
+              >
+                <div class="flex items-center space-x-1">
+                  <span class="text-[#000000B2] text-[16px] font-medium"
+                    >Intradermal test</span
+                  >
+                </div>
+                <span class="text-[#000000B2] text-[16px]">32 kb</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--  layout  -->
+      </div>
+    </div>
+    <!--              SCRItPS        -->
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+  </body>
+</html>

@@ -12,13 +12,21 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Patient Consultant</title>
     <style>
-      table{
-        border-radius: 20px !important;
+      table {
+        border-radius: 10px !important;
       }
       td,
       th {
         border: 1px solid black;
       }
+      th {
+        border-top: none;
+        border-left: none;
+      }
+      td {
+        border-left: none;
+      }
+
       tbody button {
         border-radius: 0px !important;
         padding-left: 2px;
@@ -225,81 +233,81 @@
     </aside>
 
     <div class="p-1 sm:ml-52 mt-8">
-      <div class="rounded-lg p-4 mt-8">
+      <div class="rounded-lg lg:p-4 p-0 mt-8">
         <div
-          class="w-[100%] max-w-[100%] flex md:flex-row sm:flex-col flex-col items-start justify-between md:space-x-1 sm:space-y-0 space-y-2 mb-4"
+          class="w-[100%] max-w-[100%] flex flex-row items-start justify-between md:space-x-1 space-x-1 sm:space-y-0 space-y-2 mb-4"
         >
           <div
             class="w-[100%] sm:w-full md:w-[92%] bg-[#F8F8F8] rounded-lg"
             style="box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)"
           >
             <div
-              class="flex md:flex-row flex-col items-start justify-between p-2"
+              class="flex lg:flex-row md:flex-col sm:flex-col flex-col items-start justify-between p-2"
             >
-              <div class="border-black sm:w-[50%] w-full max-w-full">
-                <div
-                  class="flex sm:flex-row flex-col items-start space-x-2 "
-                >
+              <div
+                class="border-black lg:w-[50%] md:w-[100%] w-full max-w-full"
+              >
+                <div class="flex flex-row items-start space-x-2">
                   <img
-                    class="rounded-full shadow-normal-2"
+                    class="rounded-full shadow-normal-2 w-14 h-14"
                     src="../media/assets/images/isabella.png"
                     alt="isabella"
                   />
                   <div>
-                    <h3 class="font-medium text-black text-[20px] m-0 p-0">
+                    <h3 class="font-medium text-black text-[17px] m-0 p-0">
                       Dr. Isabella Giovanna
                     </h3>
-                    <p class="font-medium text-[#000000B2] text-[16px] m-0 p-0">
+                    <p class="font-medium text-[#000000B2] text-[14px] m-0 p-0">
                       Allergy and immunology
                     </p>
                     <div class="flex flex-row items-center space-x-2">
                       <div class="flex items-center space-x-[1px]">
                         <img
-                          class="w-5 h-5"
+                          class="w-4 h-4"
                           src="../media/assets/images/star.svg"
                           alt="star"
                         />
                         <img
-                          class="w-5 h-5"
+                          class="w-4 h-4"
                           src="../media/assets/images/star.svg"
                           alt="star"
                         />
                         <img
-                          class="w-5 h-5"
+                          class="w-4 h-4"
                           src="../media/assets/images/star.svg"
                           alt="star"
                         />
                         <img
-                          class="w-5 h-5"
+                          class="w-4 h-4"
                           src="../media/assets/images/star.svg"
                           alt="star"
                         />
                         <img
-                          class="w-5 h-5"
+                          class="w-4 h-4"
                           src="../media/assets/images/star.svg"
                           alt="star"
                         />
                       </div>
-                      <span class="text-neutral-500 text-[18px]"
+                      <span class="text-neutral-500 text-[16px]"
                         >25 Reviews</span
                       >
                     </div>
                     <div class="flex flex-row items-center space-x-2 my-1">
                       <a
                         href="#"
-                        class="bg-[#022C49] hover:bg-[#0574b2] text-white px-4 py-[5px] rounded-md"
+                        class="bg-[#022C49] hover:bg-[#0574b2] text-white px-4 text-sm py-[4px] rounded-md"
                         >$50/session</a
                       >
                       <a
                         href="#"
-                        class="bg-[#022C49] hover:bg-[#0574b2] text-white px-4 py-[5px] rounded-md"
+                        class="bg-[#022C49] hover:bg-[#0574b2] text-white px-4 text-sm py-[4px] rounded-md"
                         >$40/session 2nd Visit</a
                       >
                     </div>
                   </div>
                 </div>
                 <div
-                  class="my-4 mx-1 flex flex-row items-center justify-center bg-white rounded-lg  w-[260px] font-medium text-neutral-700"
+                  class="my-1 mx-1 flex flex-row border border-black items-center justify-center bg-white rounded-lg w-[240px] font-medium text-sm text-neutral-700"
                 >
                   <span
                     class="border-r border-black p-2 flex items-center justify-center"
@@ -308,22 +316,22 @@
                   <span class="border-r border-black p-2">Locations</span>
                   <span class="border-black p-2">Locations</span>
                 </div>
-                <div class="mt-6">
-                  <h4 class="font-medium text-[#000000B2] mb-1 text-[18px]">
+                <div class="mt-3 w-full">
+                  <h4 class="font-medium text-[#000000B2] mb-1 text-[16px]">
                     Location
                   </h4>
                   <div
-                    class="bg-white rounded-lg p-2 h-24 sm:w-[90%] w-full max-w-full text-[17px] text-[#000000B2]"
+                    class="bg-white rounded-lg p-2 h-20 sm:w-[98%] w-full max-w-full text-[16px] text-[#000000B2]"
                   >
                     Via Lombardi 128, lanciano
                   </div>
                 </div>
-                <div class="mt-6">
-                  <h4 class="font-medium text-[#000000B2] mb-1 text-[18px]">
+                <div class="mt-3 w-full">
+                  <h4 class="font-medium text-[#000000B2] mb-1 text-[16px]">
                     Experience:
                   </h4>
                   <div
-                    class="bg-white rounded-lg p-2 pb-6 sm:w-[90%] w-full max-w-full text-[17px] text-[#000000B2]"
+                    class="bg-white rounded-lg p-2 pb-6 sm:w-[98%] w-full max-w-full text-[16px] text-[#000000B2]"
                   >
                     <div>
                       <p
@@ -332,11 +340,12 @@
                         <img
                           src="../media/assets/images/about.svg"
                           alt="about"
+                          class="w-5 h-5"
                         />
                         About me:
                       </p>
                       <p
-                        class="text-[15px] mx-2 my-1 text-[#000000B2] font-medium"
+                        class="text-[14px] mx-2 my-[1px] text-[#000000B2] font-medium"
                       >
                         Experience It is a long established fact that a reader
                         will be distracted by the readable content of a page
@@ -355,18 +364,19 @@
                         <img
                           src="../media/assets/images/training.svg"
                           alt="about"
+                          class="w-5 h-5"
                         />
                         Training:
                       </p>
-                      <p class="text-[15px] mx-2 text-[#000000B2] font-medium">
+                      <p class="text-[14px] mx-2 text-[#000000B2] font-medium">
                         1. Experience
                       </p>
                       <p
-                        class="text-[15px] mx-2 my-[1px] text-[#000000B2] font-medium"
+                        class="text-[14px] mx-2 my-[1px] text-[#000000B2] font-medium"
                       >
                         2. distracted
                       </p>
-                      <p class="text-[15px] mx-2 text-[#000000B2] font-medium">
+                      <p class="text-[14px] mx-2 text-[#000000B2] font-medium">
                         3. distracted
                       </p>
                       <div
@@ -375,26 +385,25 @@
                     </div>
                     <div>
                       <p
-                        class="font-medium flex flex-row items-center gap-2 text-neutral-600"
+                        class="font-medium text-[16px] flex flex-row items-center gap-2 text-neutral-600"
                       >
                         <img
                           src="../media/assets/images/special.svg"
                           alt="about"
+                          class="w-5 h-5"
                         />
                         Specialization:
                       </p>
-                      <p class="text-[15px] mx-2 text-[#000000B2] font-medium">
+                      <p class="text-[14px] mx-2 text-[#000000B2] font-medium">
                         1. Experience
                       </p>
-                      <p
-                        class="text-[15px] mx-2 my-[1px] text-[#000000B2] font-medium"
-                      >
+                      <p class="text-[14px] mx-2 text-[#000000B2] font-medium">
                         2. distracted
                       </p>
-                      <p class="text-[15px] mx-2 text-[#000000B2] font-medium">
+                      <p class="text-[14px] mx-2 text-[#000000B2] font-medium">
                         3. distracted
                       </p>
-                      <p class="text-[15px] mx-2 text-[#000000B2] font-medium">
+                      <p class="text-[14px] mx-2 text-[#000000B2] font-medium">
                         4. manin kwpfs
                       </p>
                       <div
@@ -403,18 +412,19 @@
                     </div>
                     <div>
                       <p
-                        class="font-medium flex flex-row items-center gap-2 text-neutral-600"
+                        class="font-medium text-[16px] flex flex-row items-center gap-2 text-neutral-600"
                       >
                         <img
                           src="../media/assets/images/school.svg"
                           alt="about"
+                          class="w-5 h-5"
                         />
                         School/institution/internship/program
                       </p>
-                      <p class="text-[15px] mx-2 text-[#000000B2] font-medium">
+                      <p class="text-[14px] mx-2 text-[#000000B2] font-medium">
                         University of ltaly
                       </p>
-                      <p class="text-[15px] mx-2 text-[#000000B2] font-medium">
+                      <p class="text-[14px] mx-2 text-[#000000B2] font-medium">
                         medical school of lanciano
                       </p>
                       <div
@@ -423,25 +433,28 @@
                     </div>
                     <div>
                       <p
-                        class="font-medium flex flex-row items-center gap-2 mb-3 text-neutral-600"
+                        class="font-medium text-[16px] flex flex-row items-center gap-2 mb-3 text-neutral-600"
                       >
                         <img
                           src="../media/assets/images/certificate.svg"
                           alt="about"
+                          class="w-5 h-5"
                         />
                         Certificate:
                       </p>
                       <a
                         href="#"
-                        class="bg-[#0574B2] text-black px-3 py-[6px] rounded-lg mt-2 text-[16px] font-medium"
+                        class="bg-[#0574B2] flex items-center lg:w-[40%] md:w-auto w-full justify-center text-black px-3 py-[6px] rounded-lg mt-2 text-[16px] font-medium"
                         >See doctor certificate</a
                       >
                       <div
-                        class="sm:w-[98%] mx-auto h-[1px] mt-6 bg-[#00000099] rounded-full"
+                        class="sm:w-[98%] mx-auto h-[1px] mt-3 bg-[#00000099] rounded-full"
                       ></div>
                     </div>
                     <div class="flex flex-col mt-1 items-start text-center">
-                      <h3 class="text-black w-[20%] text-neutral-600">
+                      <h3
+                        class="text-black w-[16%] text-[14px] text-neutral-600"
+                      >
                         Socials
                       </h3>
                       <div
@@ -450,12 +463,18 @@
                         <img
                           src="../media/assets/images/x twitter.svg"
                           alt=""
+                          class="w-5 h-5"
                         />
                         <img
                           src="../media/assets/images/instagram.svg"
                           alt=""
+                          class="w-5 h-5"
                         />
-                        <img src="../media/assets/images/facebook.svg" alt="" />
+                        <img
+                          src="../media/assets/images/facebook.svg"
+                          alt=""
+                          class="w-5 h-5"
+                        />
                       </div>
                     </div>
                   </div>
@@ -463,545 +482,819 @@
               </div>
 
               <!-- SECOND LAYOUT -->
-              <div class=" sm:w-[50%] w-full max-w-full">
-                <div class="flex items-center justify-end gap-2 font-medium">
+              <div class="lg:w-[50%] md:w-[100%] w-full max-w-full">
+                <div
+                  class="flex items-center justify-end gap-2 lg:p-2 p-0 mt-4 lg:mt-0 sm:mt-1 lg:mr-0 mr-2 font-medium"
+                >
                   <img
                     src="../media/assets/images/heart.svg"
-                    
                     alt="heart"
                     class="w-5 h-5"
                   />
                   SAVES
                 </div>
-                <div class="overflow-x-auto mt-4 ">
-                  <table class="text-black tableMain bg-white rounded-lg">
-                    <thead class="rounded-lg text-center">
-                      <tr class="">
-                        <th scope="col" class="px-1 w-2">
-                          <p>
+                <h4
+                  class="lg:mt-24 text-[#022C49] text-[16px] font-bold ml-2 mb-1"
+                >
+                  See Doctor Appointment Date
+                </h4>
+                <div class="bg-white rounded-md">
+                  <div class="overflow-x-auto">
+                    <table class="text-black bg-white rounded-sm">
+                      <thead class="rounded-sm py-4 text-center">
+                        <tr class="">
+                          <th scope="col" class="px-1 w-2">
+                            <p>
+                              <img
+                                src="../media/assets/images/calender.svg"
+                                alt="calender"
+                                class="w-6 h-6 mx-auto"
+                              />
+                            </p>
+                          </th>
+                          <th scope="col" class="px-4 text-center">
+                            <p
+                              class="text-[12px] break-normal text-[#022C49] font-bold"
+                            >
+                              Mon
+                            </p>
+                            <p class="text-[#022C49] font-bold text-[12px]">
+                              Jan 16
+                            </p>
+                          </th>
+                          <th scope="col" class="px-1 w-20">
+                            <p
+                              class="text-[12px] break-normal text-[#022C49] font-bold"
+                            >
+                              Tues.
+                            </p>
+                            <p
+                              class="text-[12px] break-normal text-[#022C49] font-bold"
+                            >
+                              Jan 17
+                            </p>
+                          </th>
+                          <th scope="col" class="px-1 w-20">
+                            <p
+                              class="text-[12px] break-normal text-[#022C49] font-bold"
+                            >
+                              Wed.
+                            </p>
+                            <p
+                              class="text-[12px] break-normal text-[#022C49] font-bold"
+                            >
+                              Jan 18
+                            </p>
+                          </th>
+                          <th scope="col" class="px-1 w-20">
+                            <p
+                              class="text-[12px] break-normal text-[#022C49] font-bold"
+                            >
+                              Thur.
+                            </p>
 
-                            <img src="../media/assets/images/calender.svg" alt="calender" class="w-6 h-6 mx-auto" />
-                          </p>
-                        </th>
-                        <th scope="col" class="">
-                          <p class="text-[#022C49] font-bold text-[12px]"></p>
-                            Mon
-                          </p>
-                          <p class="text-[#022C49] font-bold text-[12px]">
-                            Jan 16
-                          </p>
-                        </th>
-                        <th scope="col" class="px-1 w-20">
-                          <p
-                            class="text-[12px] break-normal text-[#022C49] font-bold"
+                            <p
+                              class="text-[12px] break-normal text-[#022C49] font-bold"
+                            >
+                              Jan 19
+                            </p>
+                          </th>
+                          <th scope="col" class="px-1 w-20">
+                            <p
+                              class="text-[12px] break-normal text-[#022C49] font-bold"
+                            >
+                              Fri.
+                            </p>
+                            <p
+                              class="text-[12px] break-normal text-[#022C49] font-bold"
+                            >
+                              Jan 17
+                            </p>
+                          </th>
+                          <th
+                            scope="col"
+                            class="px-1 w-20 border-r border-none"
                           >
-                            Tues.
-                          </p>
-                          <p
-                            class="text-[12px] break-normal text-[#022C49] font-bold"
-                          >
-                            Jan 17
-                          </p>
-                        </th>
-                        <th scope="col" class="px-1 w-20">
-                          <p
-                            class="text-[12px] break-normal text-[#022C49] font-bold"
-                          >
-                            Wed.
-                          </p>
-                          <p
-                            class="text-[12px] break-normal text-[#022C49] font-bold"
-                          >
-                            Jan 18
-                          </p>
-                        </th>
-                        <th scope="col" class="px-1 w-20">
-                          <p
-                            class="text-[12px] break-normal text-[#022C49] font-bold"
-                          >
-                            Thur.
-                          </p>
+                            <p
+                              class="text-[12px] break-normal text-[#022C49] font-bold"
+                            >
+                              Sat
+                            </p>
+                            <p
+                              class="text-[12px] break-normal text-[#022C49] font-bold"
+                            >
+                              Jan 21
+                            </p>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody class="text-sm">
+                        <tr>
+                          <td scope="row" class="font-medium px-4">
+                            <span class="text-[12px] text-[#022C49] font-bold"
+                              >07:00</span
+                            ><br />
+                            <span class="text-[12px] text-[#022C49] font-bold"
+                              >08:00</span
+                            >
+                          </td>
+                          <td class="text-center font-bold">---</td>
+                          <td class="text-center">
+                            <button class="bg-[#008000] text-white font-bold">
+                              Booked
+                            </button>
+                          </td>
+                          <td class="text-center font-bold">---</td>
+                          <td class="text-center">
+                            <button
+                              class="bg-[#008000] text-white font-bold rounded-lg"
+                            >
+                              Booked
+                            </button>
+                          </td>
+                          <td class="text-center">
+                            <button
+                              class="bg-[#008000] text-white font-bold rounded-lg"
+                            >
+                              Booked
+                            </button>
+                          </td>
+                          <td class="text-center font-bold border-r-0">---</td>
+                        </tr>
 
-                          <p
-                            class="text-[12px] break-normal text-[#022C49] font-bold"
+                        <tr class="border-b border-white">
+                          <th
+                            scope="row"
+                            class="font-medium text-black whitespace-nowrap dark:text-black"
                           >
-                            Jan 19
-                          </p>
-                        </th>
-                        <th scope="col" class="px-1 w-20">
-                          <p
-                            class="text-[12px] break-normal text-[#022C49] font-bold"
-                          >
-                            Fri.
-                          </p>
-                          <p
-                            class="text-[12px] break-normal text-[#022C49] font-bold"
-                          >
-                            Jan 17
-                          </p>
-                        </th>
-                        <th scope="col" class="px-1 w-20">
-                          <p
-                            class="text-[12px] break-normal text-[#022C49] font-bold"
-                          >
-                            Sat
-                          </p>
-                          <p
-                            class="text-[12px] break-normal text-[#022C49] font-bold"
-                          >
-                            Jan 21
-                          </p>
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody class="text-sm">
-                      <tr>
-                        <td scope="row" class="font-medium  p-2">
-                          <span class="text-[12px] text-[#022C49] font-bold"
-                            >07:00</span
-                          ><br />
-                          <span class="text-[12px] text-[#022C49] font-bold"
-                            >08:00</span
-                          >
-                        </td>
-                        <td class="text-center font-bold">---</td>
-                        <td class="text-center">
-                          <button class="bg-[#008000] text-white font-bold">
-                            Booked
-                          </button>
-                        </td>
-                        <td class="text-center font-bold">---</td>
-                        <td class="text-center">
-                          <button
-                            class="bg-[#008000] text-white font-bold rounded-lg"
-                          >
-                            Booked
-                          </button>
-                        </td>
-                        <td class="text-center">
-                          <button
-                            class="bg-[#008000] text-white font-bold rounded-lg"
-                          >
-                            Booked
-                          </button>
-                        </td>
-                        <td class="text-center font-bold">---</td>
-                      </tr>
+                            <span
+                              class="text-[12px] break-normal text-[#022C49] font-bold"
+                              >08:00</span
+                            ><br />
+                            <span
+                              class="text-[12px] break-normal text-[#022C49] font-bold"
+                              >09:00</span
+                            >
+                          </th>
+                          <td class="text-center">
+                            <button
+                              class="bg-[#008000] text-white font-bold rounded-lg"
+                            >
+                              Booked
+                            </button>
+                          </td>
+                          <td class="text-center font-bold text-center">---</td>
+                          <td class="text-center font-bold">---</td>
+                          <td class="text-center">
+                            <button
+                              class="bg-[#008000] text-white font-bold rounded-lg"
+                            >
+                              Booked
+                            </button>
+                          </td>
+                          <td class="text-center font-bold">---</td>
+                          <td class="text-center border-r-0">
+                            <button
+                              class="bg-[#008000] text-white font-bold rounded-lg"
+                            >
+                              Booked
+                            </button>
+                          </td>
+                        </tr>
 
-                      <tr class="border-b border-white hover:bg-white">
-                        <th
-                          scope="row"
-                          class="font-medium text-black whitespace-nowrap dark:text-black"
-                        >
-                          <span
-                            class="text-[12px] break-normal text-[#022C49] font-bold"
-                            >08:00</span
-                          ><br />
-                          <span
-                            class="text-[12px] break-normal text-[#022C49] font-bold"
-                            >09:00</span
+                        <tr class="border-b border-white">
+                          <th
+                            scope="row"
+                            class="font-medium text-black whitespace-nowrap dark:text-black"
                           >
-                        </th>
-                        <td class="text-center">
-                          <button
-                            class="bg-[#008000] text-white font-bold rounded-lg"
-                          >
-                            Booked
-                          </button>
-                        </td>
-                        <td class="text-center font-bold">---</td>
-                        <td class="text-center font-bold">---</td>
-                        <td class="text-center">
-                          <button
-                            class="bg-[#008000] text-white font-bold rounded-lg"
-                          >
-                            Booked
-                          </button>
-                        </td>
-                        <td class="text-center font-bold">---</td>
-                        <td class="text-center">
-                          <button
-                            class="bg-[#008000] text-white font-bold rounded-lg"
-                          >
-                            Booked
-                          </button>
-                        </td>
-                      </tr>
+                            <span
+                              class="text-[12px] break-normal text-[#022C49] font-bold"
+                              >09:00</span
+                            ><br />
+                            <span
+                              class="text-[12px] break-normal text-[#022C49] font-bold"
+                              >10:00</span
+                            >
+                          </th>
+                          <td class="font-bold text-center">---</td>
+                          <td class="text-center">
+                            <button
+                              class="bg-[#008000] text-white font-bold rounded-lg"
+                            >
+                              Booked
+                            </button>
+                          </td>
+                          <td class="text-center font-bold">---</td>
+                          <td class="text-center">
+                            <button
+                              class="bg-[#008000] text-white font-bold rounded-lg"
+                            >
+                              Booked
+                            </button>
+                          </td>
+                          <td class="text-center font-bold">---</td>
+                          <td class="text-center border-r-0">
+                            <button
+                              class="bg-[#008000] text-white font-bold rounded-lg"
+                            >
+                              Booked
+                            </button>
+                          </td>
+                        </tr>
 
-                      <tr class="border-b border-white hover:bg-white">
-                        <th
-                          scope="row"
-                          class="font-medium text-black whitespace-nowrap dark:text-black"
-                        >
-                          <span
-                            class="text-[12px] break-normal text-[#022C49] font-bold"
-                            >09:00</span
-                          ><br />
-                          <span
-                            class="text-[12px] break-normal text-[#022C49] font-bold"
-                            >10:00</span
+                        <tr class="border-b border-white">
+                          <th
+                            scope="row"
+                            class="font-medium text-black whitespace-nowrap dark:text-black"
                           >
-                        </th>
-                        <td class="font-bold">---</td>
-                        <td class="text-center">
-                          <button
-                            class="bg-[#008000] text-white font-bold rounded-lg"
-                          >
-                            Booked
-                          </button>
-                        </td>
-                        <td class="text-center font-bold">---</td>
-                        <td class="text-center">
-                          <button
-                            class="bg-[#008000] text-white font-bold rounded-lg"
-                          >
-                            Booked
-                          </button>
-                        </td>
-                        <td class="text-center font-bold">---</td>
-                        <td class="text-center">
-                          <button
-                            class="bg-[#008000] text-white font-bold rounded-lg"
-                          >
-                            Booked
-                          </button>
-                        </td>
-                      </tr>
+                            <span
+                              class="text-[12px] break-normal text-[#022C49] font-bold"
+                              >10:00</span
+                            ><br />
+                            <span
+                              class="text-[12px] break-normal text-[#022C49] font-bold"
+                              >11:00</span
+                            >
+                          </th>
+                          <td class="text-center">
+                            <button
+                              class="bg-[#008000] text-white font-bold rounded-lg"
+                            >
+                              Booked
+                            </button>
+                          </td>
+                          <td class="text-center font-bold">---</td>
+                          <td class="text-center font-bold">---</td>
+                          <td class="text-center">
+                            <button
+                              class="bg-[#008000] text-white font-bold rounded-lg"
+                            >
+                              Booked
+                            </button>
+                          </td>
+                          <td class="text-center font-bold">---</td>
+                          <td class="text-center border-r-0">
+                            <button
+                              class="bg-[#008000] text-white font-bold rounded-lg"
+                            >
+                              Booked
+                            </button>
+                          </td>
+                        </tr>
 
-                      <tr class="border-b border-white hover:bg-white">
-                        <th
-                          scope="row"
-                          class="font-medium text-black whitespace-nowrap dark:text-black"
-                        >
-                          <span
-                            class="text-[12px] break-normal text-[#022C49] font-bold"
-                            >10:00</span
-                          ><br />
-                          <span
-                            class="text-[12px] break-normal text-[#022C49] font-bold"
-                            >11:00</span
+                        <tr class="border-b border-white">
+                          <th
+                            scope="row"
+                            class="font-medium text-black whitespace-nowrap dark:text-black"
                           >
-                        </th>
-                        <td class="text-center">
-                          <button
-                            class="bg-[#008000] text-white font-bold rounded-lg"
-                          >
-                            Booked
-                          </button>
-                        </td>
-                        <td class="text-center font-bold">---</td>
-                        <td class="text-center font-bold">---</td>
-                        <td class="text-center">
-                          <button
-                            class="bg-[#008000] text-white font-bold rounded-lg"
-                          >
-                            Booked
-                          </button>
-                        </td>
-                        <td class="text-center font-bold">---</td>
-                        <td class="text-center">
-                          <button
-                            class="bg-[#008000] text-white font-bold rounded-lg"
-                          >
-                            Booked
-                          </button>
-                        </td>
-                      </tr>
+                            <span
+                              class="text-[12px] break-normal text-[#022C49] font-bold"
+                              >11:00</span
+                            ><br />
+                            <span
+                              class="text-[12px] break-normal text-[#022C49] font-bold"
+                              >12:00</span
+                            >
+                          </th>
+                          <td class="text-center">
+                            <button
+                              class="bg-[#008000] text-white font-bold rounded-lg"
+                            >
+                              Booked
+                            </button>
+                          </td>
+                          <td class="text-center font-bold">---</td>
+                          <td class="text-center">
+                            <button
+                              class="bg-[#008000] text-white font-bold rounded-lg"
+                            >
+                              Booked
+                            </button>
+                          </td>
+                          <td class="text-center font-bold">---</td>
+                          <td class="text-center">
+                            <button
+                              class="bg-[#008000] text-white font-bold rounded-lg"
+                            >
+                              Booked
+                            </button>
+                          </td>
+                          <td class="text-center font-bold border-r-0">---</td>
+                        </tr>
 
-                      <tr class="border-b border-white hover:bg-white">
-                        <th
-                          scope="row"
-                          class="font-medium text-black whitespace-nowrap dark:text-black"
-                        >
-                          <span
-                            class="text-[12px] break-normal text-[#022C49] font-bold"
-                            >11:00</span
-                          ><br />
-                          <span
-                            class="text-[12px] break-normal text-[#022C49] font-bold"
-                            >12:00</span
+                        <tr class="border-b border-white">
+                          <th
+                            scope="row"
+                            class="font-medium text-black whitespace-nowrap dark:text-black"
                           >
-                        </th>
-                        <td class="text-center">
-                          <button
-                            class="bg-[#008000] text-white font-bold rounded-lg"
-                          >
-                            Booked
-                          </button>
-                        </td>
-                        <td class="text-center font-bold">---</td>
-                        <td class="text-center">
-                          <button
-                            class="bg-[#008000] text-white font-bold rounded-lg"
-                          >
-                            Booked
-                          </button>
-                        </td>
-                        <td class="text-center font-bold">---</td>
-                        <td class="text-center">
-                          <button
-                            class="bg-[#008000] text-white font-bold rounded-lg"
-                          >
-                            Booked
-                          </button>
-                        </td>
-                        <td class="text-center font-bold">---</td>
-                      </tr>
+                            <span
+                              class="text-[12px] break-normal text-[#022C49] font-bold"
+                              >12:00</span
+                            ><br />
+                            <span
+                              class="text-[12px] break-normal text-[#022C49] font-bold"
+                              >01:00</span
+                            >
+                          </th>
+                          <td class="text-center font-bold">---</td>
+                          <td class="text-center">
+                            <button
+                              class="bg-[#008000] text-white font-bold rounded-lg"
+                            >
+                              Booked
+                            </button>
+                          </td>
+                          <td class="text-center">
+                            <button
+                              class="bg-[#008000] text-white font-bold rounded-lg"
+                            >
+                              Booked
+                            </button>
+                          </td>
+                          <td class="text-center">
+                            <button
+                              class="bg-[#008000] text-white font-bold rounded-lg"
+                            >
+                              Booked
+                            </button>
+                          </td>
+                          <td class="text-center font-bold">---</td>
+                          <td class="text-center font-bold border-r-0">---</td>
+                        </tr>
 
-                      <tr class="border-b border-white hover:bg-white">
-                        <th
-                          scope="row"
-                          class="font-medium text-black whitespace-nowrap dark:text-black"
-                        >
-                          <span
-                            class="text-[12px] break-normal text-[#022C49] font-bold"
-                            >12:00</span
-                          ><br />
-                          <span
-                            class="text-[12px] break-normal text-[#022C49] font-bold"
-                            >01:00</span
+                        <tr class="border-b border-white">
+                          <th
+                            scope="row"
+                            class="font-medium text-black whitespace-nowrap dark:text-black"
                           >
-                        </th>
-                        <td class="text-center font-bold">---</td>
-                        <td class="text-center">
-                          <button
-                            class="bg-[#008000] text-white font-bold rounded-lg"
-                          >
-                            Booked
-                          </button>
-                        </td>
-                        <td class="text-center">
-                          <button
-                            class="bg-[#008000] text-white font-bold rounded-lg"
-                          >
-                            Booked
-                          </button>
-                        </td>
-                        <td class="text-center">
-                          <button
-                            class="bg-[#008000] text-white font-bold rounded-lg"
-                          >
-                            Booked
-                          </button>
-                        </td>
-                        <td class="text-center font-bold">---</td>
-                        <td class="text-center font-bold">---</td>
-                      </tr>
+                            <span
+                              class="text-[12px] break-normal text-[#022C49] font-bold"
+                              >01:00</span
+                            ><br />
+                            <span
+                              class="text-[12px] break-normal text-[#022C49] font-bold"
+                              >02:00</span
+                            >
+                          </th>
+                          <td class="text-center">
+                            <button
+                              class="bg-[#008000] text-white font-bold rounded-lg"
+                            >
+                              Booked
+                            </button>
+                          </td>
+                          <td class="text-center">
+                            <button
+                              class="bg-[#008000] text-white font-bold rounded-lg"
+                            >
+                              Booked
+                            </button>
+                          </td>
+                          <td class="text-center font-bold">---</td>
+                          <td class="text-center">
+                            <button
+                              class="bg-[#008000] text-white font-bold rounded-lg"
+                            >
+                              Booked
+                            </button>
+                          </td>
+                          <td class="text-center font-bold">---</td>
+                          <td class="text-center font-bold border-r-0">---</td>
+                        </tr>
 
-                      <tr class="border-b border-white hover:bg-white">
-                        <th
-                          scope="row"
-                          class="font-medium text-black whitespace-nowrap dark:text-black"
-                        >
-                          <span
-                            class="text-[12px] break-normal text-[#022C49] font-bold"
-                            >01:00</span
-                          ><br />
-                          <span
-                            class="text-[12px] break-normal text-[#022C49] font-bold"
-                            >02:00</span
+                        <tr class="border-b border-white">
+                          <th
+                            scope="row"
+                            class="font-medium text-black whitespace-nowrap dark:text-black"
                           >
-                        </th>
-                        <td class="text-center">
-                          <button
-                            class="bg-[#008000] text-white font-bold rounded-lg"
-                          >
-                            Booked
-                          </button>
-                        </td>
-                        <td class="text-center">
-                          <button
-                            class="bg-[#008000] text-white font-bold rounded-lg"
-                          >
-                            Booked
-                          </button>
-                        </td>
-                        <td class="text-center font-bold">---</td>
-                        <td class="text-center">
-                          <button
-                            class="bg-[#008000] text-white font-bold rounded-lg"
-                          >
-                            Booked
-                          </button>
-                        </td>
-                        <td class="text-center font-bold">---</td>
-                        <td class="text-center font-bold">---</td>
-                      </tr>
+                            <span
+                              class="text-[12px] break-normal text-[#022C49] font-bold"
+                              >02:00</span
+                            ><br />
+                            <span
+                              class="text-[12px] break-normal text-[#022C49] font-bold"
+                              >03:00</span
+                            >
+                          </th>
+                          <td class="text-center font-bold">---</td>
+                          <td class="text-center">
+                            <button
+                              class="bg-[#008000] text-white font-bold rounded-lg"
+                            >
+                              Booked
+                            </button>
+                          </td>
+                          <td class="text-center font-bold">---</td>
+                          <td class="text-center">
+                            <button
+                              class="bg-[#008000] text-white font-bold rounded-lg"
+                            >
+                              Booked
+                            </button>
+                          </td>
+                          <td class="text-center">
+                            <button
+                              class="bg-[#008000] text-white font-bold rounded-lg"
+                            >
+                              Booked
+                            </button>
+                          </td>
+                          <td class="text-center font-bold border-r-0">---</td>
+                        </tr>
 
-                      <tr class="border-b border-white hover:bg-white">
-                        <th
-                          scope="row"
-                          class="font-medium text-black whitespace-nowrap dark:text-black"
-                        >
-                          <span
-                            class="text-[12px] break-normal text-[#022C49] font-bold"
-                            >02:00</span
-                          ><br />
-                          <span
-                            class="text-[12px] break-normal text-[#022C49] font-bold"
-                            >03:00</span
+                        <tr class="border-b border-white">
+                          <th
+                            scope="row"
+                            class="font-medium text-black whitespace-nowrap dark:text-black"
                           >
-                        </th>
-                        <td class="text-center font-bold">---</td>
-                        <td class="text-center">
-                          <button
-                            class="bg-[#008000] text-white font-bold rounded-lg"
-                          >
-                            Booked
-                          </button>
-                        </td>
-                        <td class="text-center font-bold">---</td>
-                        <td class="text-center">
-                          <button
-                            class="bg-[#008000] text-white font-bold rounded-lg"
-                          >
-                            Booked
-                          </button>
-                        </td>
-                        <td class="text-center">
-                          <button
-                            class="bg-[#008000] text-white font-bold rounded-lg"
-                          >
-                            Booked
-                          </button>
-                        </td>
-                        <td class="text-center font-bold">---</td>
-                      </tr>
+                            <span
+                              class="text-[12px] break-normal text-[#022C49] font-bold"
+                              >03:00</span
+                            ><br />
+                            <span
+                              class="text-[12px] break-normal text-[#022C49] font-bold"
+                              >04:00</span
+                            >
+                          </th>
+                          <td class="text-center">
+                            <button
+                              class="bg-[#008000] text-white font-bold rounded-lg"
+                            >
+                              Booked
+                            </button>
+                          </td>
+                          <td class="text-center font-bold">---</td>
+                          <td class="text-center">
+                            <button
+                              class="bg-[#008000] text-white font-bold rounded-lg"
+                            >
+                              Booked
+                            </button>
+                          </td>
+                          <td class="text-center font-bold">---</td>
+                          <td class="text-center font-bold">---</td>
+                          <td class="text-center border-r-0">
+                            <button
+                              class="bg-[#008000] text-white font-bold rounded-lg"
+                            >
+                              Booked
+                            </button>
+                          </td>
+                        </tr>
 
-                      <tr class="border-b border-white hover:bg-white">
-                        <th
-                          scope="row"
-                          class="font-medium text-black whitespace-nowrap dark:text-black"
-                        >
-                          <span
-                            class="text-[12px] break-normal text-[#022C49] font-bold"
-                            >03:00</span
-                          ><br />
-                          <span
-                            class="text-[12px] break-normal text-[#022C49] font-bold"
-                            >04:00</span
+                        <tr class="border-b border-white">
+                          <th
+                            scope="row"
+                            class="font-medium text-black whitespace-nowrap dark:text-black"
                           >
-                        </th>
-                        <td class="text-center">
-                          <button
-                            class="bg-[#008000] text-white font-bold rounded-lg"
-                          >
-                            Booked
-                          </button>
-                        </td>
-                        <td class="text-center font-bold">---</td>
-                        <td class="text-center">
-                          <button
-                            class="bg-[#008000] text-white font-bold rounded-lg"
-                          >
-                            Booked
-                          </button>
-                        </td>
-                        <td class="text-center font-bold">---</td>
-                        <td class="text-center font-bold">---</td>
-                        <td class="text-center">
-                          <button
-                            class="bg-[#008000] text-white font-bold rounded-lg"
-                          >
-                            Booked
-                          </button>
-                        </td>
-                      </tr>
+                            <span
+                              class="text-[12px] break-normal text-[#022C49] font-bold"
+                              >04:00</span
+                            ><br />
+                            <span
+                              class="text-[12px] break-normal text-[#022C49] font-bold"
+                              >05:00</span
+                            >
+                          </th>
+                          <td class="text-center">
+                            <button
+                              class="bg-[#008000] text-white font-bold rounded-lg"
+                            >
+                              Booked
+                            </button>
+                          </td>
+                          <td class="text-center">
+                            <button
+                              class="bg-[#008000] text-white font-bold rounded-lg"
+                            >
+                              Booked
+                            </button>
+                          </td>
+                          <td class="text-center font-bold">---</td>
+                          <td class="text-center">
+                            <button
+                              class="bg-[#008000] text-white font-bold rounded-lg"
+                            >
+                              Booked
+                            </button>
+                          </td>
+                          <td class="text-center font-bold">---</td>
+                          <td class="text-center font-bold border-r-0">---</td>
+                        </tr>
 
-                      <tr class="border-b border-white hover:bg-white">
-                        <th
-                          scope="row"
-                          class="font-medium text-black whitespace-nowrap dark:text-black"
-                        >
-                          <span
-                            class="text-[12px] break-normal text-[#022C49] font-bold"
-                            >04:00</span
-                          ><br />
-                          <span
-                            class="text-[12px] break-normal text-[#022C49] font-bold"
-                            >05:00</span
+                        <tr class="border-b-0 border-white">
+                          <th
+                            scope="row"
+                            class="font-medium text-black whitespace-nowrap dark:text-black border-b-0 px-4"
                           >
-                        </th>
-                        <td class="text-center">
-                          <button
-                            class="bg-[#008000] text-white font-bold rounded-lg"
+                            <span
+                              class="text-[12px] break-normal text-[#022C49] font-bold"
+                              >05:00</span
+                            ><br />
+                            <span
+                              class="text-[12px] break-normal text-[#022C49] font-bold"
+                              >06:00</span
+                            >
+                          </th>
+                          <td class="text-center border-b-0">
+                            <button
+                              class="bg-[#008000] text-white font-bold rounded-lg"
+                            >
+                              Booked
+                            </button>
+                          </td>
+                          <td class="text-center font-bold border-b-0">---</td>
+                          <td class="text-center border-b-0">
+                            <button
+                              class="bg-[#008000] text-white font-bold rounded-lg"
+                            >
+                              Booked
+                            </button>
+                          </td>
+                          <td class="text-center border-b-0">
+                            <button
+                              class="bg-[#008000] text-white font-bold rounded-lg"
+                            >
+                              Booked
+                            </button>
+                          </td>
+                          <td class="text-center font-bold border-b-0">---</td>
+                          <td
+                            class="text-center font-bold border-r-0 border-b-0"
                           >
-                            Booked
-                          </button>
-                        </td>
-                        <td class="text-center">
-                          <button
-                            class="bg-[#008000] text-white font-bold rounded-lg"
-                          >
-                            Booked
-                          </button>
-                        </td>
-                        <td class="text-center font-bold">---</td>
-                        <td class="text-center">
-                          <button
-                            class="bg-[#008000] text-white font-bold rounded-lg"
-                          >
-                            Booked
-                          </button>
-                        </td>
-                        <td class="text-center font-bold">---</td>
-                        <td class="text-center font-bold">---</td>
-                      </tr>
-
-                      <tr class="border-b border-white hover:bg-white">
-                        <th
-                          scope="row"
-                          class="font-medium text-black whitespace-nowrap dark:text-black"
-                        >
-                          <span
-                            class="text-[12px] break-normal text-[#022C49] font-bold"
-                            >05:00</span
-                          ><br />
-                          <span
-                            class="text-[12px] break-normal text-[#022C49] font-bold"
-                            >06:00</span
-                          >
-                        </th>
-                        <td class="text-center">
-                          <button
-                            class="bg-[#008000] text-white font-bold rounded-lg"
-                          >
-                            Booked
-                          </button>
-                        </td>
-                        <td class="text-center font-bold">---</td>
-                        <td class="text-center">
-                          <button
-                            class="bg-[#008000] text-white font-bold rounded-lg"
-                          >
-                            Booked
-                          </button>
-                        </td>
-                        <td class="text-center">
-                          <button
-                            class="bg-[#008000] text-white font-bold rounded-lg"
-                          >
-                            Booked
-                          </button>
-                        </td>
-                        <td class="text-center font-bold">---</td>
-                        <td class="text-center font-bold">---</td>
-                      </tr>
-                    </tbody>
-                  </table>
-
-                  <p class="pt-14 text-md font-bold">
-                    NOTE: there will 20% charges deducted from your initial
-                    sessions payment, for more Information, go to the Terms and
-                    condition / policy page
-                  </p>
+                            ---
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="p-2 w-[90%]">
+                    <div class="mt-4 flex flex-row items-center space-x-3">
+                      <div class="flex flex-col w-full">
+                        <label
+                          for="chooseDate"
+                          class="text-[#000000B2] font-medium"
+                          >Choose Date:</label
+                        ><input
+                          class="rounded-lg dates border-2 border-[0000001a] w-full"
+                          type="date"
+                          name="chooseDate"
+                          id="chooseDate"
+                          placeholder="Choose Date"
+                        />
+                      </div>
+                      <div class="flex flex-col w-full">
+                        <label
+                          for="chooseTime"
+                          class="text-[#000000B2] font-medium"
+                          >Choose Time:</label
+                        ><input
+                          class="rounded-lg dates border-2 border-[0000001a] w-full"
+                          type="time"
+                          name="chooseTime"
+                          id="chooseTime"
+                          placeholder="Choose Time"
+                        />
+                      </div>
+                    </div>
+                    <div class="flex flex-col w-full mt-2">
+                      <label
+                        for="countries"
+                        class="block text-sm font-medium text-gray-900 dark:text-white"
+                        >Choose Sessions</label
+                      >
+                      <select
+                        id="countries"
+                        class="bg-gray-50 my-0 dates border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 focus:border-none outline-none"
+                      >
+                        <option selected>
+                          Allergy Consultation $50/sessions
+                        </option>
+                        <option value="Allergy Consultation $50/sessions">
+                          Allergy Consultation $50/sessions
+                        </option>
+                        <option value="Allergy $50/sessions">
+                          Allergy $50/sessions
+                        </option>
+                        <option value="Germany">Germany</option>
+                      </select>
+                    </div>
+                    <div
+                      class="flex flex-row items-center mt-2 space-x-2 w-full"
+                    >
+                      <input
+                        class="border-[2px] w-[17px] h-[17px] border-[0000001a]"
+                        type="checkbox"
+                        name="checkOne"
+                        id="checkOne"
+                        placeholder="checkOne"
+                      />
+                      <label for="checkOne" class="text-[#000000B2] font-medium"
+                        >First time</label
+                      >
+                    </div>
+                    <div
+                      class="flex flex-row items-center mt-1 space-x-2 w-full"
+                    >
+                      <input
+                        class="border-[2px] w-[17px] h-[17px] border-[0000001a]"
+                        type="checkbox"
+                        name="checkOne"
+                        id="checkOne"
+                        placeholder="checkOne"
+                      />
+                      <label for="checkOne" class="text-[#000000B2] font-medium"
+                        >Returning Sessions</label
+                      >
+                    </div>
+                  </div>
+                  <div class="flex items-end justify-end p-4">
+                    <a
+                      href="#"
+                      class="bg-[#022C49] text-[#FAFAFA] rounded-md py-2 px-6"
+                      >Book Now!!!</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-2 w-full">
+              <h4 class="text-[#000000] mb-1 ml-2 font-medium">Reviews 25</h4>
+              <div class="bg-white rounded-md p-3">
+                <div class="flex flex-row items-start space-x-3">
+                  <img
+                    src="../media/assets/images/laura.png"
+                    alt="doctor"
+                    class="w-16 w-16 shadow-normal rounded-full"
+                  />
+                  <div class="flex flex-col mt-3">
+                    <div class="flex flex-row items-center space-x-1">
+                      <img
+                        src="../media/assets/images/yellowStar.svg"
+                        alt="yellowStar"
+                        class="w-5 h-5"
+                      />
+                      <img
+                        src="../media/assets/images/yellowStar.svg"
+                        alt="yellowStar"
+                        class="w-5 h-5"
+                      />
+                      <img
+                        src="../media/assets/images/yellowStar.svg"
+                        alt="yellowStar"
+                        class="w-5 h-5"
+                      />
+                      <img
+                        src="../media/assets/images/yellowStar.svg"
+                        alt="yellowStar"
+                        class="w-5 h-5"
+                      />
+                      <img
+                        src="../media/assets/images/yellowStar.svg"
+                        alt="yellowStar"
+                        class="w-5 h-5"
+                      />
+                    </div>
+                    <h4 class="font-medium text-[18px]">Alessia Jones</h4>
+                    <p class="lg:w-[90%] w-full text-md">
+                      Dr. Isabella ongoing support and commitment to patient
+                      well-being extend beyond the initial consultation.
+                      Trustworthy and dedicated,
+                    </p>
+                  </div>
+                </div>
+                <div class="flex flex-row items-start mt-2 space-x-3">
+                  <img
+                    src="../media/assets/images/laura.png"
+                    alt="doctor"
+                    class="w-16 w-16 shadow-normal rounded-full"
+                  />
+                  <div class="flex flex-col mt-3">
+                    <div class="flex flex-row items-center space-x-1">
+                      <img
+                        src="../media/assets/images/yellowStar.svg"
+                        alt="yellowStar"
+                        class="w-5 h-5"
+                      />
+                      <img
+                        src="../media/assets/images/yellowStar.svg"
+                        alt="yellowStar"
+                        class="w-5 h-5"
+                      />
+                      <img
+                        src="../media/assets/images/yellowStar.svg"
+                        alt="yellowStar"
+                        class="w-5 h-5"
+                      />
+                      <img
+                        src="../media/assets/images/yellowStar.svg"
+                        alt="yellowStar"
+                        class="w-5 h-5"
+                      />
+                      <img
+                        src="../media/assets/images/yellowStar.svg"
+                        alt="yellowStar"
+                        class="w-5 h-5"
+                      />
+                    </div>
+                    <h4 class="font-medium text-[18px]">Alessia Jones</h4>
+                    <p class="lg:w-[90%] w-full text-md">
+                      Dr. Isabella ongoing support and commitment to patient
+                      well-being extend beyond the initial consultation.
+                      Trustworthy and dedicated,
+                    </p>
+                  </div>
+                </div>
+                <div class="flex flex-row items-start mt-2 space-x-3">
+                  <img
+                    src="../media/assets/images/laura.png"
+                    alt="doctor"
+                    class="w-16 w-16 shadow-normal rounded-full"
+                  />
+                  <div class="flex flex-col mt-3">
+                    <div class="flex flex-row items-center space-x-1">
+                      <img
+                        src="../media/assets/images/yellowStar.svg"
+                        alt="yellowStar"
+                        class="w-5 h-5"
+                      />
+                      <img
+                        src="../media/assets/images/yellowStar.svg"
+                        alt="yellowStar"
+                        class="w-5 h-5"
+                      />
+                      <img
+                        src="../media/assets/images/yellowStar.svg"
+                        alt="yellowStar"
+                        class="w-5 h-5"
+                      />
+                      <img
+                        src="../media/assets/images/yellowStar.svg"
+                        alt="yellowStar"
+                        class="w-5 h-5"
+                      />
+                      <img
+                        src="../media/assets/images/yellowStar.svg"
+                        alt="yellowStar"
+                        class="w-5 h-5"
+                      />
+                    </div>
+                    <h4 class="font-medium text-[18px]">Alessia Jones</h4>
+                    <p class="lg:w-[90%] w-full text-md">
+                      Dr. Isabella ongoing support and commitment to patient
+                      well-being extend beyond the initial consultation.
+                      Trustworthy and dedicated,
+                    </p>
+                  </div>
+                </div>
+                <div class="flex flex-row items-start mt-2 space-x-3">
+                  <img
+                    src="../media/assets/images/laura.png"
+                    alt="doctor"
+                    class="w-16 w-16 shadow-normal rounded-full"
+                  />
+                  <div class="flex flex-col mt-3">
+                    <div class="flex flex-row items-center space-x-1">
+                      <img
+                        src="../media/assets/images/yellowStar.svg"
+                        alt="yellowStar"
+                        class="w-5 h-5"
+                      />
+                      <img
+                        src="../media/assets/images/yellowStar.svg"
+                        alt="yellowStar"
+                        class="w-5 h-5"
+                      />
+                      <img
+                        src="../media/assets/images/yellowStar.svg"
+                        alt="yellowStar"
+                        class="w-5 h-5"
+                      />
+                      <img
+                        src="../media/assets/images/yellowStar.svg"
+                        alt="yellowStar"
+                        class="w-5 h-5"
+                      />
+                      <img
+                        src="../media/assets/images/yellowStar.svg"
+                        alt="yellowStar"
+                        class="w-5 h-5"
+                      />
+                    </div>
+                    <h4 class="font-medium text-[18px]">Alessia Jones</h4>
+                    <p class="lg:w-[90%] w-full text-md">
+                      Dr. Isabella ongoing support and commitment to patient
+                      well-being extend beyond the initial consultation.
+                      Trustworthy and dedicated,
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
           <div
-            class="w-full sm:w-full md:w-[7%] p-1 flex flex-col items-center justify-center space-y-2"
+            class="w-[10%] sm:w-[14%] md:w-[7%] p-1 lg:flex md:flex sm:flex hidden flex-col items-center justify-center space-y-2"
           >
             <div>
               <img
@@ -1013,7 +1306,7 @@
             </div>
             <div
               style="box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)"
-              class="bg-[#F8F8F8] h-screen w-full flex flex-col space-y-10 items-center rounded-lg py-10"
+              class="bg-[#F8F8F8] h-screen w-full flex flex-col lg:space-y-10 md:space-y-8 space-y-6 items-center rounded-lg py-10"
             >
               <div>
                 <img

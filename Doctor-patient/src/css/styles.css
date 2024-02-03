@@ -1,9 +1,13 @@
-.shadow-normal{
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-
+.shadow-normal {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.shadow-normal-2{
-    box-shadow: 0px 4px 8px 0px #00000080;
+.shadow-normal-2 {
+  box-shadow: 0px 4px 8px 0px #00000080;
+}
 
+.dates {
+  box-shadow: 4px 4px 4px 0px #0000001a;
+  box-shadow: 4px 4px 4px 0px #0000001a inset;
+  border: 2px solid #0000001a;
 }

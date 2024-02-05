@@ -367,115 +367,415 @@
     <!-- dashboard -->
 
     <div class="mt-24 sm:ml-52 pl-8">
-      <div class="p-4 grid grid-cols-12">
-        <!-- Payment Section -->
-        <div class="main bg-[#F8F8F8] md:w-[800px] w-[350px]  h-[500px] mr-4">
-            <h1 class="px-2 py-2 font-bold md:text-lg text-sm">Add Your Payment Method</h1>
-            <div class=" md:w-[530px]  flex flex-col md:flex-row justify-between">
-              <div>
-                <label
-                  for="first_name"
-                  class="block md:mb-2 px-2 py-2 text-sm md:font-bold font-medium text-gray-900 dark:text-white"
-                  >Card holder Name:</label
-                >
-  
-                <input
-                type="text"
-                id="first_name"
-                class="bg-white md:w-64 w-46 border-none ml-2 text-gray-900 text-sm rounded focus:ring-blue-500 block md:w-"
-                placeholder="Alessia Jones"
-                required
-              />
-              </div>
-  
-              <div class="w-56 md:pl-[0px] pl-[20px]">
-                <div class="flex">
-                  <div><img src="Assets/67.jpg" class="md:w-full w-[40px] md:pt-0 pt-2" /></div>
-                  <div class="md:pl-[8px;] pl-[4px] pt-[2px;] md:pt-0">
-                    <input
-                      id="patient-checkbox"
-                      type="checkbox"
-                      value=""
-                      class="md:w-4 md:h-4 w-2 h-2 text-blue-600 text-#022C49"
-                    />
-                  </div>
-  
-                  <div class="pl-2"><img src="Assets/68.jpg" class="md:w-full w-[40px] md:pt-0 pt-2" /></div>
-                  <div class="md:pl-[8px;] pl-[4px] pt-[2px;] md:pt-0">
-                    <input
-                      id="patient-checkbox"
-                      type="checkbox"
-                      value=""
-                      class="md:w-4 md:h-4 w-2 h-2 text-blue-600 text-#022C49"
-                    />
-                  </div>
-  
-  
-                  <div class="pl-2"><img src="Assets/69.jpg" class="md:w-full w-[40px] md:pt-0 pt-2" /></div>
-                  <div class="md:pl-[8px;] pl-[4px] pt-[2px;] md:pt-0">
-                    <input
-                      id="patient-checkbox"
-                      type="checkbox"
-                      value=""
-                      class="md:w-4 md:h-4 w-2 h-2 text-blue-600 text-#022C49"
-                    />
-                  </div>
-  
-                </div>
-              </div>
-            </div>
-          
-            <label for="card-no" class="mt-4 mb-2 block px-2 py-2 font-bold">Card Number</label>
-              <div class="flex flex-col md:flex-row">
-                <div class="relative w-[330px] flex-shrink-0">
-                  <input type="text" id="card-no" name="card-no" class="md:w-64 w-full    rounded-md border border-gray-200  pl-11 text-sm shadow-sm outline-none focus:z-10 focus:border-[#fdba74] focus:ring-blue-500" placeholder="xxxx-xxxx-xxxx-xxxx" />
-                  <div class="pointer-events-none absolute inset-y-0 left-0 inline-flex items-center px-3">
-                    <svg class="h-4 w-4 text-gray-400" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                      <path d="M11 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1z" />
-                      <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm13 2v5H1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zm-1 9H2a1 1 0 0 1-1-1v-1h14v1a1 1 0 0 1-1 1z" />
-                    </svg>
-                  </div>
-                </div>
-                
-                <input type="text" name="credit-expiry" class="md:w-24  w-[330px] rounded-md border border-gray-200  text-sm shadow-sm outline-none focus:z-10 focus:border-[#fdba74] focus:ring-blue-500" placeholder="MM/YY" />
-                <input type="text" name="credit-cvc" class="md:w-24 w-[330px] md:ml-2 pl-4 flex-shrink-0 rounded-md border border-gray-200 px-2 py-3 text-sm shadow-sm outline-none focus:z-10 focus:border-[#fdba74] focus:ring-blue-500" placeholder="CVC" />
-          </div>
-          
-          <div>
-              <label
-                for="first_name"
-                class="block mb-2 px-2 py-2 pt-14 text-sm font-bold text-gray-900 dark:text-white"
-                >Pay with Paypal:</label
-              >
-            
-          <input
+      <div class="flex">
+        <div
+          class="bg-[#F8F8F8] lg:w-10/12 w-11/12 p-2 shadow-[1px_1px_2px_2px_gray] rounded-lg"
+        >
+          <form
+            class="rounded-lg pt-2 bg-white pl-2 flex flex-col lg:flex-row md:gap-[60px;] gap-[20px;] mb-2"
+          >
+            <input
               type="text"
-              id="first_name"
-              class="bg-white w-64 border-none ml-2 text-gray-900 text-sm rounded focus:ring-blue-500 block md:w-"
-              placeholder="Alessia Jones"
-              required
+              id="Enter Doctors Name.."
+              name="Enter Doctors Name.."
+              placeholder="Enter Doctors Name.."
+              class="placeholder-[#0574B2] rounded-lg"
             />
-          </div>
-  
-          <div class="top-0 right-0 flex item-center justify-center mt-4 mr-10">
-              <button
-                type="submit"
-                class="text-white mb-10 bg-[#FF0000] focus:ring-4 focus:outline-none font-medium rounded-lg text-sm w-auto sm:w-auto px-5 py-2.5 text-center dark:bg-bg-[#FF0000]"
-              >
-              Click Save Now
-              </button>
+
+            <div
+              class="flex flex-row items-center justify-batween border-2 border-gray-300 rounded-lg w-full"
+            >
+              <input
+                type="text"
+                id="Specialization.."
+                name="Specialization.."
+                placeholder="Specialization.."
+                class="placeholder-[#0574B2] w-full rounded-lg border-none"
+              />
+
+              <i
+                class="text-[#0189CD] pr-2 text-2xl bx bxs-caret-down-circle"
+              ></i>
             </div>
-  
-          
-  
-            
-  </div>
-  
 
-        <!-- Payment Section Ended -->
+            <div
+              class="flex flex-row items-center justify-batween border-2 border-gray-300 rounded-lg w-full"
+            >
+              <input
+                type="text"
+                id="Loaction.."
+                name="Loaction.."
+                placeholder="Loaction.."
+                class="placeholder-[#0574B2] w-full rounded-lg border-none"
+              />
 
+              <i class="text-[#0189CD] text-2xl bx bxs-search-alt-2"></i>
+            </div>
+          </form>
+        </div>
+        <!-- <div class=" pl-16 hidden ">
+      <img src="Assets/mask-group.jpg" class="rounded-full" width="70px" height="70px" alt="">
+    </div> -->
+      </div>
+      <div class="p-4 grid grid-cols-12">
+        <div class="flex gap-5 flex-col lg:flex-row w-11/12 col-span-11">
+          <!-- component -->
+
+          <div
+            class="bg-[#F8F8F8] shadow-lg flex flex-col items-center rounded-lg p-4 w-[full] lg:w-1/2"
+          >
+            <div
+              class="lg:w-12/12 sm:w-12/12 md:w-full bg-white p-4 dark:bg-gray-800 mt-4 dark:border-gray-700"
+            >
+              <div class="flex mb-2">
+                <div>
+                  <img
+                    src="Assets/Mask group1.jpg"
+                    width="100px"
+                    height="100px"
+                    class="rounded-full"
+                    alt=""
+                  />
+                </div>
+                <div class="ms-2">
+                  <i
+                    class="bx bxs-edit-location text-sm font-normal text-gray-700 dark:text-gray-400"
+                    >Lanciano</i
+                  >
+                  <h5
+                    class="text-sm md:text-lg font-bold tracking-tight text-gray-900 dark:text-white"
+                  >
+                    Dr. Isabella Giovanna
+                  </h5>
+                  <span class="text-gray-500 text-[13px] sm:text-sm"
+                    >Allergy and immunology</span
+                  >
+                  <div>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="flex justify-batween gap-[20px;] lg:gap-[20px] md:gap-[220px]"
+              >
+                <div>
+                  <a
+                    href="#"
+                    class="inline-flex w-40 px-3 py-2 text-sm font-medium text-black border-2 bg-white hover:bg-black hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  >
+                    <i class="bx bx-phone-call">Check Availability</i>
+                  </a>
+                </div>
+                <div class="">
+                  <a
+                    href="#"
+                    class="inline-flex w-32 items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#022C49] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  >
+                    <i class="bx bx-video-off">Consult Now!</i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="lg:w-12/12 sm:w-12/12 md:w-full bg-white p-4 dark:bg-gray-800 mt-4 dark:border-gray-700"
+            >
+              <div class="flex mb-2">
+                <div>
+                  <img
+                    src="Assets/mask3.jpg"
+                    width="100px"
+                    height="100px"
+                    class="rounded-full"
+                    alt=""
+                  />
+                </div>
+                <div class="ms-2">
+                  <i
+                    class="bx bxs-edit-location text-sm font-normal text-gray-700 dark:text-gray-400"
+                    >Lanciano</i
+                  >
+                  <h5
+                    class="text-sm md:text-lg font-bold tracking-tight text-gray-900 dark:text-white"
+                  >
+                    Dr. Isabella Giovanna
+                  </h5>
+                  <span class="text-gray-500 text-[13px] sm:text-sm"
+                    >Allergy and immunology</span
+                  >
+                  <div>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="flex justify-batween gap-[20px;] lg:gap-[20px] md:gap-[220px]"
+              >
+                <div>
+                  <a
+                    href="#"
+                    class="inline-flex w-40 px-3 py-2 text-sm font-medium text-black border-2 bg-white hover:bg-black hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  >
+                    <i class="bx bx-phone-call">Check Availability</i>
+                  </a>
+                </div>
+                <div class="">
+                  <a
+                    href="#"
+                    class="inline-flex w-32 items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#022C49] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  >
+                    <i class="bx bx-video-off">Consult Now!</i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="lg:w-12/12 sm:w-12/12 md:w-full bg-white p-4 dark:bg-gray-800 mt-4 dark:border-gray-700"
+            >
+              <div class="flex mb-2">
+                <div>
+                  <img
+                    src="Assets/mask5.jpg"
+                    width="100px"
+                    height="100px"
+                    class="rounded-full"
+                    alt=""
+                  />
+                </div>
+                <div class="ms-2">
+                  <i
+                    class="bx bxs-edit-location text-sm font-normal text-gray-700 dark:text-gray-400"
+                    >Lanciano</i
+                  >
+                  <h5
+                    class="text-sm md:text-lg font-bold tracking-tight text-gray-900 dark:text-white"
+                  >
+                    Dr. Isabella Giovanna
+                  </h5>
+                  <span class="text-gray-500 text-[13px] sm:text-sm"
+                    >Allergy and immunology</span
+                  >
+                  <div>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="flex justify-batween gap-[20px;] lg:gap-[20px] md:gap-[220px]"
+              >
+                <div>
+                  <a
+                    href="#"
+                    class="inline-flex w-40 px-3 py-2 text-sm font-medium text-black border-2 bg-white hover:bg-black hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  >
+                    <i class="bx bx-phone-call">Check Availability</i>
+                  </a>
+                </div>
+                <div class="">
+                  <a
+                    href="#"
+                    class="inline-flex w-32 items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#022C49] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  >
+                    <i class="bx bx-video-off">Consult Now!</i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-[#F8F8F8] shadow-lg flex flex-col items-center rounded-lg p-4 w-full lg:w-1/2"
+          >
+            <div
+              class="lg:w-12/12 sm:w-12/12 md:w-full bg-white p-4 dark:bg-gray-800 mt-4 dark:border-gray-700"
+            >
+              <div class="flex mb-2">
+                <div>
+                  <img
+                    src="Assets/mask2.jpg"
+                    width="100px"
+                    height="100px"
+                    class="rounded-full"
+                    alt=""
+                  />
+                </div>
+                <div class="ms-2">
+                  <i
+                    class="bx bxs-edit-location text-sm font-normal text-gray-700 dark:text-gray-400"
+                    >Lanciano</i
+                  >
+                  <h5
+                    class="text-sm md:text-lg font-bold tracking-tight text-gray-900 dark:text-white"
+                  >
+                    Dr. Isabella Giovanna
+                  </h5>
+                  <span class="text-gray-500 text-[13px] sm:text-sm"
+                    >Allergy and immunology</span
+                  >
+                  <div>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="flex justify-batween gap-[20px;] lg:gap-[20px] md:gap-[220px]"
+              >
+                <div>
+                  <a
+                    href="#"
+                    class="inline-flex w-40 px-3 py-2 text-sm font-medium text-black border-2 bg-white hover:bg-black hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  >
+                    <i class="bx bx-phone-call">Check Availability</i>
+                  </a>
+                </div>
+                <div class="">
+                  <a
+                    href="#"
+                    class="inline-flex w-32 items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#022C49] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  >
+                    <i class="bx bx-video-off">Consult Now!</i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="lg:w-12/12 sm:w-12/12 md:w-full bg-white p-4 dark:bg-gray-800 mt-4 dark:border-gray-700"
+            >
+              <div class="flex mb-2">
+                <div>
+                  <img
+                    src="Assets/mask4.jpg"
+                    width="100px"
+                    height="100px"
+                    class="rounded-full"
+                    alt=""
+                  />
+                </div>
+                <div class="ms-2">
+                  <i
+                    class="bx bxs-edit-location text-sm font-normal text-gray-700 dark:text-gray-400"
+                    >Lanciano</i
+                  >
+                  <h5
+                    class="text-sm md:text-lg font-bold tracking-tight text-gray-900 dark:text-white"
+                  >
+                    Dr. Isabella Giovanna
+                  </h5>
+                  <span class="text-gray-500 text-[13px] sm:text-sm"
+                    >Allergy and immunology</span
+                  >
+                  <div>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="flex justify-batween gap-[20px;] lg:gap-[20px] md:gap-[220px]"
+              >
+                <div>
+                  <a
+                    href="#"
+                    class="inline-flex w-40 px-3 py-2 text-sm font-medium text-black border-2 bg-white hover:bg-black hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  >
+                    <i class="bx bx-phone-call">Check Availability</i>
+                  </a>
+                </div>
+                <div class="">
+                  <a
+                    href="#"
+                    class="inline-flex w-32 items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#022C49] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  >
+                    <i class="bx bx-video-off">Consult Now!</i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="lg:w-12/12 sm:w-12/12 md:w-full bg-white p-4 dark:bg-gray-800 mt-4 dark:border-gray-700"
+            >
+              <div class="flex mb-2">
+                <div>
+                  <img
+                    src="Assets/mask6.jpg"
+                    width="100px"
+                    height="100px"
+                    class="rounded-full"
+                    alt=""
+                  />
+                </div>
+                <div class="ms-2">
+                  <i
+                    class="bx bxs-edit-location text-sm font-normal text-gray-700 dark:text-gray-400"
+                    >Lanciano</i
+                  >
+                  <h5
+                    class="text-sm md:text-lg font-bold tracking-tight text-gray-900 dark:text-white"
+                  >
+                    Dr. Isabella Giovanna
+                  </h5>
+                  <span class="text-gray-500 text-[13px] sm:text-sm"
+                    >Allergy and immunology</span
+                  >
+                  <div>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="flex justify-batween gap-[20px;] lg:gap-[20px] md:gap-[220px]"
+              >
+                <div>
+                  <a
+                    href="#"
+                    class="inline-flex w-40 px-3 py-2 text-sm font-medium text-black border-2 bg-white hover:bg-black hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  >
+                    <i class="bx bx-phone-call">Check Availability</i>
+                  </a>
+                </div>
+                <div class="">
+                  <a
+                    href="#"
+                    class="inline-flex w-32 items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#022C49] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  >
+                    <i class="bx bx-video-off">Consult Now!</i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- right side bar -->
-        <div class="flex flex-col items-center col-span-1 hidden">
+        <div class="lg:flex flex-col items-center col-span-1 hidden">
           <div>
             <img
               src="Assets/mask-group.jpg"
@@ -586,6 +886,7 @@
             </div>
           </div>
         </div>
+        <!-- end right side bar -->
         <!-- end right side bar -->
       </div>
     </div>
